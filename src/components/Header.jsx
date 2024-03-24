@@ -9,6 +9,7 @@ import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
 import { useState } from "react";
+import { SignInButton, SignUpButton } from "@clerk/clerk-react";
 
 const Header = () => {
   const pathname = useLocation();
@@ -47,7 +48,7 @@ const Header = () => {
             openNavigation ? "flex" : "hidden"
           } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
         >
-          <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
+          <div className="relative flex flex-col items-center justify-center m-auto z-2 lg:flex-row">
             {navigation.map((item) => (
               <a
                 key={item.id}
@@ -68,16 +69,20 @@ const Header = () => {
 
           <HamburgerMenu />
         </nav>
-
+        <SignUpButton>    
         <a
           href="#signup"
-          className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
+          className="hidden mr-8 transition-colors button text-n-1/50 hover:text-n-1 lg:block"
         >
           New account
         </a>
-        <Button className="hidden lg:flex" href="#login">
+        </SignUpButton>
+     
+       <Button className="hidden lg:flex" href="#login">
           Sign in
         </Button>
+      
+      
 
         <Button
           className="ml-auto lg:hidden"
