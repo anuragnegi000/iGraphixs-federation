@@ -78,9 +78,13 @@ const Header = () => {
         </a>
         </SignUpButton>
      
-       <Button className="hidden lg:flex" href="#login">
+     <SignInButton>
+     <Button className="hidden lg:flex" href="#login">
           Sign in
         </Button>
+      
+     </SignInButton>
+      
       
       
 
