@@ -1,10 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
-
-import { brainwave } from "../assets";
-import {pfp} from "../assets";
 import { navigation } from "../constants";
-import {logo} from "../assets";
+import { logo } from "../assets";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
@@ -69,21 +66,25 @@ const Header = () => {
 
           <HamburgerMenu />
         </nav>
-        <SignUpButton>    
+
+        <SignUpButton mode="model" >
+
         <a
           href="#signup"
           className="hidden mr-8 transition-colors button text-n-1/50 hover:text-n-1 lg:block"
         >
           New account
         </a>
+        </SignUpButton>
+
+        
+        <SignInButton mode="model"> 
         <Button className="hidden lg:flex" href="#login">
           Sign in
         </Button>
-      
-     </SignInButton>
-      
-      
-      
+
+        </SignInButton>
+        
 
         <Button
           className="ml-auto lg:hidden"
