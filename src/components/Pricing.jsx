@@ -28,7 +28,7 @@ const Pricing = () => {
         </div>
 
         <Heading
-          tag=" with Brainwave"
+          tag=" with Experts"
           title="Pay once, use forever"
         />
 
