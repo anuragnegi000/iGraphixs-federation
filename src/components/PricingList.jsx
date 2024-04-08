@@ -1,9 +1,13 @@
+import { useState } from "react";
 import { check } from "../assets";
 import { pricing } from "../constants";
 import Button from "./Button";
 
 const PricingList = () => {
-  const amount = 500;
+
+  const [data,setData]=useState(2);
+
+  const amount = (data)*100;
   const currency = "INR";
   const receiptId = "Receipt no. 1";
 
@@ -77,14 +81,18 @@ const PricingList = () => {
           </p>
 
           <div className="flex items-center h-[5.5rem] mb-6">
-            {item.price && (
+            
+              
               <>
+              
                 <div className="h3">$</div>
                 <div className="text-[5.5rem] leading-none font-bold">
                   {item.price}
+                  
+                  
                 </div>
               </>
-            )}
+            
           </div>
 
           <Button

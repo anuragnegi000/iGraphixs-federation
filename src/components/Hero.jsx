@@ -35,14 +35,23 @@ const Hero = () => {
         "key": "rzp_test_CvTTtX7qEECnrc", // Enter the Key ID generated from the Dashboard
         amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
         currency,
-        "name": "Acme Corp", //your business name
+        "name": "iGraphixs", //your business name
         "description": "Test Transaction",
         "image": "https://example.com/your_logo",
         "order_id":order.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
-        "handler": function (response){
-            alert(response.razorpay_payment_id);
-            alert(response.razorpay_order_id);
-            alert(response.razorpay_signature)
+        "handler": async function (response){
+            const body={
+              ...response,
+            };
+            const validateRes = await fetch("http://localhost:5000/order/validate",{
+              method:"POST",
+              body:JSON.stringify(body),
+              headers:{
+                "Content-Type":"application/json",
+              }
+            })
+            const jsonRes=await validateRes.json();
+            console.log(jsonRes);
         },
         "prefill": { //We recommend using the prefill parameter to auto-fill customer's contact information, especially their phone number
             "name": "Anurag negi", //your customer's name
@@ -132,7 +141,7 @@ const Hero = () => {
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification
                     className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
-                    title="Code generation"
+                    title="Our developers"
                   />
                 </ScrollParallax>
               </div>

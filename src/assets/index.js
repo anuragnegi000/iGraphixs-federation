@@ -55,10 +55,10 @@ import roadmap3 from "./roadmap/image-3.png";
 import roadmap4 from "./roadmap/image-4.png";
 import undone from "./roadmap/undone.svg";
 
-import notification1 from "./notification/image-1.png";
-import notification2 from "./notification/image-2.png";
-import notification3 from "./notification/image-3.png";
-import notification4 from "./notification/image-4.png";
+import notification1 from "./notification/pfp3.jpg";
+import notification2 from "./notification/pfp.jpg";
+import notification3 from "./notification/pfp2.jpg";
+import notification4 from "./notification/pfp3.jpg";
 
 import benefitCard1 from "./benefits/card-1.svg";
 import benefitCard2 from "./benefits/card-2.svg";
@@ -66,10 +66,12 @@ import benefitCard3 from "./benefits/card-3.svg";
 import benefitCard4 from "./benefits/card-4.svg";
 import benefitCard5 from "./benefits/card-5.svg";
 import benefitCard6 from "./benefits/card-6.svg";
-import benefitIcon1 from "./benefits/icon-1.svg";
-import benefitIcon2 from "./benefits/icon-2.svg";
-import benefitIcon3 from "./benefits/icon-3.svg";
-import benefitIcon4 from "./benefits/icon-4.svg";
+import benefitIcon1 from "./benefits/PiGraphixs.png";
+import benefitIcon2 from "./benefits/BiGraphixs.png";
+import benefitIcon3 from "./benefits/OiGraphixs.png";
+import benefitIcon4 from "./benefits/YiGraphixs.png";
+import benefitIcon5 from "./benefits/DBiGraphixs.png";
+import benefitIcon6 from "./benefits/CiGraphixs.png";
 import benefitImage2 from "./benefits/image-2.png";
 
 import discordBlack from "./socials/discord.svg";
@@ -78,7 +80,18 @@ import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
+import upwork from "../works/upwork.png";
+import behance from "../works/behance-2161.png";
+import youtube from "../works/Youtube_logo.png";
+import twitterX from "../works/twitterX.png";
+import insta from "../works/insta.png";
+
 export {
+  upwork,
+  behance,
+  youtube,
+  twitterX,
+  insta,
   brainwave,
   check,
   check2,
@@ -141,6 +154,8 @@ export {
   benefitIcon2,
   benefitIcon3,
   benefitIcon4,
+  benefitIcon5,
+  benefitIcon6,
   benefitImage2,
   discordBlack,
   facebook,

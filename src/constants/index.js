@@ -3,6 +3,8 @@ import {
   benefitIcon2,
   benefitIcon3,
   benefitIcon4,
+  benefitIcon5,
+  benefitIcon6,
   benefitImage2,
   chromecast,
   disc02,
@@ -35,7 +37,12 @@ import {
   twitter,
   yourlogo,
   works,
-  logo
+  logo,
+  twitterX,
+  youtube,
+  upwork,
+  behance,
+  insta
   
 } from "../assets";
 
@@ -78,7 +85,7 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [logo, logo, logo, logo, logo];
+export const companyLogos = [upwork, insta, behance, youtube, twitterX];
 
 export const brainwaveServices = [
   "Photo generating",
@@ -284,7 +291,7 @@ export const benefits = [
     title: "Ask anything",
     text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
     backgroundUrl: "./src/assets/benefits/card-5.svg",
-    iconUrl: benefitIcon1,
+    iconUrl: benefitIcon5,
     imageUrl: benefitImage2,
   },
   {
@@ -292,7 +299,7 @@ export const benefits = [
     title: "Improve everyday",
     text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
-    iconUrl: benefitIcon2,
+    iconUrl: benefitIcon6,
     imageUrl: benefitImage2,
   },
 ];

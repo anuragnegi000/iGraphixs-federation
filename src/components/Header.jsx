@@ -69,7 +69,7 @@ const Header = () => {
 
           <HamburgerMenu />
         </nav>
-        <SignUpButton>    
+           
         <a
           href="#signup"
           className="hidden mr-8 transition-colors button text-n-1/50 hover:text-n-1 lg:block"
@@ -80,7 +80,7 @@ const Header = () => {
           Sign in
         </Button>
       
-     </SignInButton>
+     
       
       
       
