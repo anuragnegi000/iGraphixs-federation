@@ -7,7 +7,8 @@ import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
 import { useState } from "react";
-import AuthButton from "./SignButton";
+
+import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from "@clerk/clerk-react";
 
 const Header = () => {
   const pathname = useLocation();
@@ -68,9 +69,27 @@ const Header = () => {
           <HamburgerMenu />
         </nav>
 
-       <AuthButton/>  {/* Sign in and Sign up button*/ }
+        {/* Sign in and Sign up button*/}
+<SignedOut>  
+        <SignUpButton>
+          <a
+            href="#signup"
+            className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
+          >
+            New account
+          </a>
+        </SignUpButton>
+        <Button className="hidden lg:flex" href="#login">
+          <SignInButton>Sign in</SignInButton>
+        </Button>
 
-      
+        </SignedOut>
+
+        <SignedIn>
+        <UserButton />
+        </SignedIn>
+
+        
 
         <Button
           className="ml-auto lg:hidden"
