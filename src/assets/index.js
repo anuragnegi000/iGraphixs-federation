@@ -64,7 +64,7 @@ import hero from "./roadmap/hero.png";
 import roadmap1 from "./roadmap/soul_Logo.png";
 import roadmap2 from "./roadmap/keepers.jpg";
 import roadmap3 from "./roadmap/soul_Sid.png";
-import roadmap4 from "./roadmap/clash.jpg";
+import roadmap4 from "./roadmap/coc.png";
 import undone from "./roadmap/undone.svg";
 
 import notification1 from "./notification/pfp3.jpg";
