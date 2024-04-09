@@ -27,6 +27,15 @@ import pfp from "./pfp.png";
 import logo from "./logo.png"
 import works from "./works.jpg"
 
+import iGraphixs_C from "./collaboration/iGraphixs_main.png";
+import AdobeAE from "./collaboration/Adobe_After_Effects.png";
+import AdobePS from "./collaboration/adobe-photoshop-icon.png";
+import DAvinci from "./collaboration/DaVinci_Resolve_Studio.png";
+import random from "./collaboration/random.png";
+import illustrator from "./collaboration/Illustrator_Logo_Vector.png";
+import icon_IP from "./collaboration/Icon-oqxjf.png";
+import AdobePR from "./collaboration/Adobe-Premiere-Pro-Icon-PNG.png";
+
 import curve from "./hero/curve.png";
 import robot from "./hero/robot.jpg";
 import heroBackground from "./hero/hero-background.jpg";
@@ -170,5 +179,13 @@ export {
   twitter,
   pfp,
   logo,
-  works
+  works,
+  iGraphixs_C,
+  AdobeAE,
+  AdobePS,
+  DAvinci,
+  random,
+  illustrator,
+  icon_IP,
+  AdobePR,
 };

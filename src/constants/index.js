@@ -46,6 +46,14 @@ import {
   smart,
   seam,
   top,
+  iGraphixs_C,
+  AdobeAE,
+  AdobePS,
+  DAvinci,
+  random,
+  illustrator,
+  icon_IP,
+  AdobePR
   
 } from "../assets";
 
@@ -166,7 +174,7 @@ export const collabContent = [
 export const collabApps = [
   {
     id: "0",
-    title: "Figma",
+    title: "iGraphixs_logo",
     icon: figma,
     width: 26,
     height: 36,
@@ -174,49 +182,49 @@ export const collabApps = [
   {
     id: "1",
     title: "Notion",
-    icon: notion,
+    icon: AdobeAE,
     width: 34,
     height: 36,
   },
   {
     id: "2",
     title: "Discord",
-    icon: discord,
+    icon: AdobePS,
     width: 36,
     height: 28,
   },
   {
     id: "3",
     title: "Slack",
-    icon: slack,
+    icon: illustrator,
     width: 34,
     height: 35,
   },
   {
     id: "4",
     title: "Photoshop",
-    icon: photoshop,
+    icon: DAvinci,
     width: 34,
     height: 34,
   },
   {
     id: "5",
     title: "Protopie",
-    icon: protopie,
+    icon: random,
     width: 34,
     height: 34,
   },
   {
     id: "6",
     title: "Framer",
-    icon: framer,
+    icon: icon_IP,
     width: 26,
     height: 34,
   },
   {
     id: "7",
     title: "Raindrop",
-    icon: raindrop,
+    icon: AdobePR,
     width: 38,
     height: 32,
   },
