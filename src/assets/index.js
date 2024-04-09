@@ -1,5 +1,8 @@
 import brainwave from "./brainwave.svg";
 import check from "./check.svg";
+import seam from "./Seam.png";
+import smart from "./Smart.png";
+import top from "./TopNotch.png";
 import brainwaveSymbol from "./brainwave-symbol.svg";
 import brainwaveWhiteSymbol from "./brainwave-symbol-white.svg";
 import play from "./play.svg";
@@ -110,6 +113,9 @@ export {
   recording03,
   recording01,
   disc02,
+  seam,
+  smart,
+  top,
   chromecast,
   sliders04,
   loading,

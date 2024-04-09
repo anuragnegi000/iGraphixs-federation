@@ -42,7 +42,10 @@ import {
   youtube,
   upwork,
   behance,
-  insta
+  insta,
+  smart,
+  seam,
+  top,
   
 } from "../assets";
 
@@ -145,14 +148,18 @@ export const collabContent = [
     id: "0",
     title: "Seamless Integration",
     text: collabText,
+    img:smart,
   },
   {
     id: "1",
     title: "Smart Automation",
+    img:seam,
+    
   },
   {
     id: "2",
     title: "Top-notch Security",
+    img:top,
   },
 ];
 

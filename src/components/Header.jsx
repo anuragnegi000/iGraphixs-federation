@@ -70,7 +70,7 @@ const Header = () => {
         </nav>
 
         {/* Sign in and Sign up button*/}
-<SignedOut>  
+        <SignedOut>  
         <SignUpButton>
           <a
             href="#signup"
