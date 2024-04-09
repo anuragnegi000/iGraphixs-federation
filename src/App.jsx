@@ -7,7 +7,6 @@ import Hero from "./components/Hero";
 import Pricing from "./components/Pricing";
 import Roadmap from "./components/Roadmap";
 import Services from "./components/Services";
-import React from "react";
 
 
 const App = () => {
