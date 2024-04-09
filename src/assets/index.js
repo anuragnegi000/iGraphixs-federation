@@ -58,6 +58,8 @@ import service3 from "./services/Service2.jpg";
 import lines from "./pricing/lines.svg";
 import stars from "./pricing/stars.svg";
 
+import mainstory from "./mainstory.jpg";
+
 import coins from "./roadmap/coins.png";
 import done from "./roadmap/done.svg";
 import hero from "./roadmap/hero.png";
@@ -188,4 +190,5 @@ export {
   illustrator,
   icon_IP,
   AdobePR,
+  mainstory,
 };
