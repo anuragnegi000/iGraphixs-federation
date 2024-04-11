@@ -138,7 +138,7 @@ export const roadmap = [
   {
     id: "0",
     title: "Voice recognition",
-    text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
+    text: "Enable theee chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
     date: "January 2024",
     status: "done",
     imageUrl: roadmap1,
