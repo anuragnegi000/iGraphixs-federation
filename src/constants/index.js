@@ -307,8 +307,8 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    title: "MORE ADVANCED CREATIVE SERVICE",
+    text: "We can help you to unlock the full potential of your brands visual and graphics identity with our advanced services. From banners, social media post to stream assests and visually stunning animations. Our expertise ensurinh that your brands resonates across every platform. Lets explore the endless possibilities together with our advanced services!",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
@@ -333,7 +333,7 @@ export const benefits = [
   {
     id: "5",
     title: "Visualized Animation Package Service",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    text: "We create a specialized animation packages with a experience of 3.5 years. With years of experience in animated stream package, we bring a great understanding of animation principles & colors to every project. Let us transform your vision into stunning animated stream masterpiece that attracts your audience. ",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon6,
     imageUrl: benefitImage2,
