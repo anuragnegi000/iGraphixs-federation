@@ -182,12 +182,12 @@ export const collabContent = [
   },
   {
     id: "1",
-    title: "Smart Automation",
+    title: "TRY IT NOW ❌",
     img: seam,
   },
   {
     id: "2",
-    title: "Top-notch Security",
+    title: "WORK WITH US ✅",
     img: top,
   },
 ];
