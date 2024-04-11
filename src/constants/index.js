@@ -171,12 +171,12 @@ export const roadmap = [
 ];
 
 export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+  "Creative Designs,To meet your imagination into reality with top notch works.24/7 service available! We are able to deliver graphics in your expected time.";
 
 export const collabContent = [
   {
     id: "0",
-    title: "Seamless Integration",
+    title: "Creative Designs",
     text: collabText,
     img: smart,
   },
@@ -308,7 +308,7 @@ export const benefits = [
   {
     id: "2",
     title: "MORE ADVANCED CREATIVE SERVICE",
-    text: "We can help you to unlock the full potential of your brands visual and graphics identity with our advanced services. From banners, social media post to stream assests and visually stunning animations. Our expertise ensurinh that your brands resonates across every platform. Lets explore the endless possibilities together with our advanced services!",
+    text: "We can help you to unlock the full potential of your brands visual and graphics identity with our advanced services. From banners, social media post to stream assests and visually stunning animations.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
@@ -333,8 +333,8 @@ export const benefits = [
   {
     id: "5",
     title: "Visualized Animation Package Service",
-    text: "We create a specialized animation packages with a experience of 3.5 years. With years of experience in animated stream package, we bring a great understanding of animation principles & colors to every project. Let us transform your vision into stunning animated stream masterpiece that attracts your audience. ",
-    backgroundUrl: "./src/assets/benefits/card-6.svg",
+    text: "We create a specialized animation packages with a experience of 3.5 years. With years of experience in animated stream package, we bring a great understanding of animation principles & colors to every project. ",
+    backgroundUrl: "./src/assets/benefits/card-6.svg",  
     iconUrl: benefitIcon6,
     imageUrl: benefitImage2,
   },
