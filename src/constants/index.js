@@ -290,16 +290,16 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Professional thumbnail creation service!",
+    text: "We have proffesional thumbnail designers with 4-5 years experience. Get high-quality thumbnails with iGraphixs! Our portfolio includes collaborations with numerous big clients",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Creative Logo creation service" ,
+    text: "We spealize in creating mascot, vector, wordmark, modern, minimalist and others logo style. We will represent your brands identity and vision. Checkout our diverse portfolio showcasing a different styles of logo!",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
