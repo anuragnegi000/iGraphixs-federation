@@ -53,8 +53,7 @@ import {
   random,
   illustrator,
   icon_IP,
-  AdobePR
-  
+  AdobePR,
 } from "../assets";
 
 export const navigation = [
@@ -89,6 +88,29 @@ export const navigation = [
     title: "Sign in",
     url: "/login",
     onlyMobile: true,
+  },
+];
+
+export const LoggedNavigation = [
+  {
+    id: "0",
+    title: "Features",
+    url: "#features",
+  },
+  {
+    id: "1",
+    title: "Pricing",
+    url: "#pricing",
+  },
+  {
+    id: "2",
+    title: "How to use",
+    url: "#how-to-use",
+  },
+  {
+    id: "3",
+    title: "Roadmap",
+    url: "#roadmap",
   },
 ];
 
@@ -156,18 +178,17 @@ export const collabContent = [
     id: "0",
     title: "Seamless Integration",
     text: collabText,
-    img:smart,
+    img: smart,
   },
   {
     id: "1",
     title: "Smart Automation",
-    img:seam,
-    
+    img: seam,
   },
   {
     id: "2",
     title: "Top-notch Security",
-    img:top,
+    img: top,
   },
 ];
 
