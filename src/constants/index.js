@@ -121,9 +121,9 @@ export const notificationImages = [notification4, notification3, notification2];
 export const companyLogos = [upwork, insta, behance, youtube, twitterX];
 
 export const brainwaveServices = [
-  "Photo generating",
-  "Photo enhance",
-  "Seamless Integration",
+  "Brand related Graphics",
+  "Content creation related Graphics",
+  "Any other field related Graphics",
 ];
 
 export const brainwaveServicesIcons = [
@@ -139,7 +139,7 @@ export const roadmap = [
     id: "0",
     title: "Voice recognition",
     text: "Enable theee chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
-    date: "January 2024",
+    date: "January 2023",
     status: "done",
     imageUrl: roadmap1,
     colorful: true,
@@ -254,35 +254,35 @@ export const collabApps = [
 export const pricing = [
   {
     id: "0",
-    title: "Basic",
-    description: "AI chatbot, personalized recommendations",
-    price: "0",
+    title: "Basic Branding Package",
+    description: "At iGraphixs we understand the critcal role a cohesive brand identity plays a establishing your presence in market. Our brand provide you with the tools and knowledge necessary to maintain a consistent and compelling brand existence",
+    price: "150",
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "We provide you social media kit, vector file, source file, logo transparency",
+      "Your project will be delivered in approx 7-12 working days!",
+      "To make you get satisfied with our service there will be additional 2 revisions for your project",
     ],
   },
   {
     id: "1",
-    title: "Premium",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
-    price: "9.99",
+    title: "Basic Stream Animated Package",
+    description: "Enhance your streaming setup with our stream pack, mericuluosly crafted to provide you with everything yiu need for a captivating streaming journey. Designed with both quality and affordability in mind, the pack is tailored to empower streamers of all levels to standout and angage their audience effectively! ",
+    price: "175",
     features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
+      "We provide you animated overlay, facecam, live chat box, stream screens, stinger transition, and alerts",
+      "Your project will be delivered in approx 7-10 working days! ",
+      "To make you get satisfied with our service there will be additional 2 revisions for your project",
     ],
   },
   {
     id: "2",
-    title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
-    price: "49.99",
+    title: "Premium Branding/Stream Package",
+    description: "Our brand provide you with the knowledge and graphics necessary to maintain a consitent and compelling brand/content presence, empowering you yo communicate effectively with your audience and standout in crowded market place.",
+    price: "225",
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "We provide you everything what you want for your brand/streaming in best possible quality with full satisfaction of your money you invested",
+      "Your project will be prioritised and delivered in just 1 week time-limit",
+      "There will be maximum 4 revisions for your project to get your issues solved in less possible time",
     ],
   },
 ];
