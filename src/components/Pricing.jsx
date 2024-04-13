@@ -28,8 +28,8 @@ const Pricing = () => {
         </div>
 
         <Heading
-          tag=" with Experts"
-          title="Pay once, use forever"
+          tag=" WITH DESIGNERS!!"
+          title="WE DONT JUST DELIVER PACKAGE, WE DELIVER EXPERIENCE"
         />
 
         <div className="relative">
