@@ -1,5 +1,6 @@
 import ButtonGradient from "./assets/svg/ButtonGradient";
 import Benefits from "./components/Benefits";
+import Carousel from "./components/Carousel";
 import Collaboration from "./components/Collaboration";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -7,7 +8,8 @@ import Hero from "./components/Hero";
 import Pricing from "./components/Pricing";
 import Roadmap from "./components/Roadmap";
 import Services from "./components/Services";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const App = () => {
 
@@ -24,6 +26,7 @@ const App = () => {
         <Pricing />
         <Roadmap />
         <Benefits />
+        <Carousel/>
         <Footer />
       </div>
 
