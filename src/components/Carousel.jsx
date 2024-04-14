@@ -1,4 +1,3 @@
-
 import Slider from 'react-slick';
 import { motion } from 'framer-motion';
 import "slick-carousel/slick/slick.css";
@@ -40,12 +39,12 @@ export default function Carousel() {
     };
 
     return (
-        <div className='gap-3 p-3 m-3  '>
-            <Slider {...settings}>
-            <Cards />
-            <Cards />
-            <Cards />
-        </Slider>
+        <div className='gap-3 p-3 m-3 carousel-container'>
+            <Slider className='gap-2'{...settings}>
+                <Cards />
+                <Cards />
+                <Cards />
+            </Slider>
         </div>
     );
 }
@@ -57,7 +56,7 @@ function Cards() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5 }}
-            className="overflow-hidden rounded-lg shadow-lg transition hover:shadow-xl"
+            className="overflow-hidden rounded-lg shadow-lg transition hover:shadow-xl card"
         >
             <img
                 alt=""
@@ -80,3 +79,4 @@ function Cards() {
         </motion.div>
     );
 }
+
