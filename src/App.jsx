@@ -1,5 +1,6 @@
 import ButtonGradient from "./assets/svg/ButtonGradient";
 import Benefits from "./components/Benefits";
+import Carousel from "./components/Carousel";
 import Collaboration from "./components/Collaboration";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -24,6 +25,7 @@ const App = () => {
         <Pricing />
         <Roadmap />
         <Benefits />
+        <Carousel/>
         <Footer />
       </div>
 
