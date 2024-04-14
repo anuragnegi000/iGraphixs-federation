@@ -182,12 +182,12 @@ export const collabContent = [
   },
   {
     id: "1",
-    title: "TRY IT NOW ❌",
+    title: "24/7 service available! We are able to deliver graphics in your expected time.",
     img: seam,
   },
   {
     id: "2",
-    title: "WORK WITH US ✅",
+    title: "Our staff and designer team focus on customers satisfaction",
     img: top,
   },
 ];
