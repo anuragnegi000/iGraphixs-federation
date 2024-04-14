@@ -182,12 +182,12 @@ export const collabContent = [
   },
   {
     id: "1",
-    title: "TRY IT NOW ❌",
+    title: "24/7 service available! We are able to deliver graphics in your expected time.",
     img: seam,
   },
   {
     id: "2",
-    title: "WORK WITH US ✅",
+    title: "Our staff and designer team focus on customers satisfaction",
     img: top,
   },
 ];
@@ -296,7 +296,7 @@ export const benefits = [
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
-  {
+  { 
     id: "1",
     title: "Creative Logo creation service" ,
     text: "We spealize in creating mascot, vector, wordmark, modern, minimalist and others logo style. We will represent your brands identity and vision. Checkout our diverse portfolio showcasing a different styles of logo!",
@@ -307,10 +307,10 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "MORE ADVANCED CREATIVE SERVICE",
-    text: "We can help you to unlock the full potential of your brands visual and graphics identity with our advanced services. From banners, social media post to stream assests and visually stunning animations.",
-    backgroundUrl: "./src/assets/benefits/card-3.svg",
-    iconUrl: benefitIcon3,
+    title: "Visualized Animation Package Service",
+    text: "We create a specialized animation packages with a experience of 3.5 years. With years of experience in animated stream package, we bring a great understanding of animation principles & colors to every project. ",
+    backgroundUrl: "./src/assets/benefits/card-6.svg",  
+    iconUrl: benefitIcon6,
     imageUrl: benefitImage2,
   },
   {
@@ -332,10 +332,10 @@ export const benefits = [
   },
   {
     id: "5",
-    title: "Visualized Animation Package Service",
-    text: "We create a specialized animation packages with a experience of 3.5 years. With years of experience in animated stream package, we bring a great understanding of animation principles & colors to every project. ",
-    backgroundUrl: "./src/assets/benefits/card-6.svg",  
-    iconUrl: benefitIcon6,
+    title: "MORE ADVANCED CREATIVE SERVICE",
+    text: "We can help you to unlock the full potential of your brands visual and graphics identity with our advanced services. From banners, social media post to stream assests and visually stunning animations.",
+    backgroundUrl: "./src/assets/benefits/card-3.svg",
+    iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
 ];
