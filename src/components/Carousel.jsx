@@ -1,41 +1,114 @@
+import React, { useEffect, useState } from "react";
+import { motion, useMotionValue } from "framer-motion";
 
-export default function Carousel (){
+// Array of image URLs
+const imgs = [
+  "/imgs/nature/1.jpg",
+  "/imgs/nature/2.jpg",
+  "/imgs/nature/3.jpg",
+  "/imgs/nature/4.jpg",
+  "/imgs/nature/5.jpg",
+  "/imgs/nature/6.jpg",
+  "/imgs/nature/7.jpg",
+];
 
-    return (
-        <>
+// Constants for timing and drag buffer
+const ONE_SECOND = 1000;
+const AUTO_DELAY = ONE_SECOND * 10;
+const DRAG_BUFFER = 50;
 
-        <Cards/>
-        <Cards/>
-        <Cards/>
-  
-        </>
-    );
-}
+// Spring animation configuration
+const SPRING_OPTIONS = {
+  type: "spring",
+  mass: 3,
+  stiffness: 400,
+  damping: 50,
+};
 
-function Cards(){
+export const SwipeCarousel = () => {
+  const [imgIndex, setImgIndex] = useState(0);
+  const dragX = useMotionValue(0);
+
+  useEffect(() => {
+    const intervalRef = setInterval(() => {
+      const x = dragX.get();
+      if (x === 0) {
+        setImgIndex((prevIndex) => (prevIndex === imgs.length - 1 ? 0 : prevIndex + 1));
+      }
+    }, AUTO_DELAY);
+
+    return () => clearInterval(intervalRef);
+  }, [dragX]);
+
+  const onDragEnd = () => {
+    const x = dragX.get();
+    if (x <= -DRAG_BUFFER && imgIndex < imgs.length - 1) {
+      setImgIndex((prevIndex) => prevIndex + 1);
+    } else if (x >= DRAG_BUFFER && imgIndex > 0) {
+      setImgIndex((prevIndex) => prevIndex - 1);
+    }
+  };
+
+  return (
+    <div className="relative overflow-hidden bg-neutral-950 py-8">
+      <motion.div
+        drag="x"
+        dragConstraints={{ left: 0, right: 0 }}
+        style={{ x: dragX }}
+        animate={{ translateX: `-${imgIndex * 100}%` }}
+        transition={SPRING_OPTIONS}
+        onDragEnd={onDragEnd}
+        className="flex cursor-grab items-center active:cursor-grabbing"
+      >
+        <Images imgIndex={imgIndex} />
+      </motion.div>
+      <Dots imgIndex={imgIndex} setImgIndex={setImgIndex} />
+      <GradientEdges />
+    </div>
+  );
+};
+
+const Images = ({ imgIndex }) => {
+  return (
     <>
-          <article className="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-  <img
-    alt=""
-    src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-    className="h-56 w-full object-cover"
-  />
-
-  <div className="bg-white p-4 sm:p-6">
-    <time datetime="2022-10-10" className="block text-xs text-gray-500"> 10th Oct 2022 </time>
-
-    <a href="#">
-      <h3 className="mt-0.5 text-lg text-gray-900">How to position your furniture for positivity</h3>
-    </a>
-
-    <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-      pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis quidem,
-      mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius atque
-      dignissimos. Molestias explicabo corporis voluptatem?
-    </p>
-  </div>
-</article>
-
+      {imgs.map((imgSrc, idx) => (
+        <motion.div
+          key={idx}
+          style={{
+            backgroundImage: `url(${imgSrc})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+          animate={{ scale: imgIndex === idx ? 0.95 : 0.85 }}
+          transition={SPRING_OPTIONS}
+          className="aspect-video w-screen shrink-0 rounded-xl bg-neutral-800 object-cover"
+        />
+      ))}
     </>
-}
+  );
+};
+
+const Dots = ({ imgIndex, setImgIndex }) => {
+  return (
+    <div className="mt-4 flex w-full justify-center gap-2">
+      {imgs.map((_, idx) => (
+        <button
+          key={idx}
+          onClick={() => setImgIndex(idx)}
+          className={`h-3 w-3 rounded-full transition-colors ${
+            idx === imgIndex ? "bg-neutral-50" : "bg-neutral-500"
+          }`}
+        />
+      ))}
+    </div>
+  );
+};
+
+const GradientEdges = () => {
+  return (
+    <>
+      <div className="pointer-events-none absolute bottom-0 left-0 top-0 w-[10vw] max-w-[100px] bg-gradient-to-r from-neutral-950/50 to-neutral-950/0" />
+      <div className="pointer-events-none absolute bottom-0 right-0 top-0 w-[10vw] max-w-[100px] bg-gradient-to-l from-neutral-950/50 to-neutral-950/0" />
+    </>
+  );
+};
