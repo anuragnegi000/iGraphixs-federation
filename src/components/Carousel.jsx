@@ -11,7 +11,7 @@ export default function Carousel() {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 4000,            // changed speed from 2000 to 4000, now speed is looking fair enough
         cssEase: "linear",
         responsive: [
             {
@@ -55,7 +55,7 @@ function Cards() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 1.5 }}
             className="overflow-hidden rounded-lg shadow-lg transition hover:shadow-xl card"
         >
             <img
