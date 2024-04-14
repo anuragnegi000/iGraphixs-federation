@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import {  RouterProvider } from "react-router-dom";
 import { createBrowserRouter } from "react-router-dom";
-import { ClerkProvider, SignIn, SignUp } from '@clerk/clerk-react'
+import { ClerkProvider,  SignInButton, SignUpButton } from '@clerk/clerk-react'
  
 import App from "./App.jsx";
 import "./index.css";
@@ -20,11 +20,11 @@ element:<App/>,
 errorElement: <div className="flex flex-col items-center justify-center h-screen text-4xl m-6 p-4"> 404 not found!</div>
 },{
 path: '/login',
-element: <SignIn mode="model" />
+element: <SignInButton mode="model" />
 },
 {
   path: '/signup',
-  element: <SignUp mode="model" />
+  element: <SignUpButton mode="model" />
 }
 
 ]);
