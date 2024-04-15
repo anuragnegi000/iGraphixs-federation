@@ -9,7 +9,8 @@ import "./index.css";
 import Carousel from "./components/Carousel.jsx";
 import Thumbnail from "./components/Pages/Thumbnail.jsx";
 import Logo from "./components/Pages/Logo.jsx";
-
+import Animation from "./components/Pages/Logo.jsx";
+import Illustration from "./components/Pages/Illustration.jsx";
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
  
 if (!PUBLISHABLE_KEY) {
@@ -40,7 +41,16 @@ element: <SignIn mode="model" />
 {
   path:'/logo',
   element:<Logo/>
+},
+{
+  path:"/animation",
+  element:<Animation/>
+},
+{
+  path:"/illustrations",
+  element:<Illustration/>
 }
+
 
 ]);
 

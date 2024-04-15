@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../Header'
-
-export default function Animation (){
+import Footer from "../Footer"
+export default function Illustration (){
   return (
     <>
     <Header/>
