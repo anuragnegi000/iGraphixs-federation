@@ -17,7 +17,7 @@ const router = createBrowserRouter([
 {
 path: '/',
 element:<App/>,
-errorElement: <div className="flex flex-col items-center justify-center h-screen text-4xl m-6 p-4"> 👻404 not found! 👻</div>
+errorElement: <div className="flex flex-col items-center justify-center h-screen text-4xl m-6 p-4"> 👻404👻</div>
 },{
 path: '/login',
 element: <SignInButton mode="model" />
