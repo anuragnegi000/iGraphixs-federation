@@ -56,8 +56,8 @@ function Cards() {
 
 
 
-                initial={{ x: 300, opacity: 100 }}
-                animate={{ x: 0, y: 20, opacity: 100 }}
+                initial={{ x: 300, opacity: 4 }}
+                animate={{ x: 0, y: 20, opacity: 1 }}
                 exit={{ x: -300, y: 20, opacity: 100}}
                 transition={{ duration: 0.5 }}
                 className="overflow-hidden rounded-lg shadow-lg transition hover:shadow-xl card"
