@@ -6,6 +6,7 @@ import { ClerkProvider,  SignIn, SignUp } from '@clerk/clerk-react'
  
 import App from "./App.jsx";
 import "./index.css";
+import Carousel from "./components/Carousel.jsx";
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
  
@@ -17,7 +18,10 @@ const router = createBrowserRouter([
 {
 path: '/',
 element:<App/>,
-errorElement: <div className="flex flex-col items-center justify-center h-screen text-4xl m-6 p-4"> 👻404👻</div>
+errorElement: <div className="grid h-screen place-content-center bg-white px-4 dark:bg-gray-900">
+<h1 className="uppercase tracking-widest text-gray-500 dark:text-gray-400">404 | Not Found</h1>
+</div>
+
 },{
 path: '/login',
 element: <SignIn mode="model" />
@@ -25,6 +29,11 @@ element: <SignIn mode="model" />
 {
   path: '/signup',
   element: <SignUp mode="model" />
+},
+{
+  path:'/Hero',
+  element: <Carousel/>
+
 }
 
 ]);

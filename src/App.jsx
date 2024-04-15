@@ -10,6 +10,7 @@ import Roadmap from "./components/Roadmap";
 import Services from "./components/Services";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { MinPages } from "./components/Pages/MinPages";
 
 const App = () => {
 
@@ -27,6 +28,7 @@ const App = () => {
         <Roadmap />
         <Benefits />
         <Carousel/>
+  
         <Footer />
       </div>
 
