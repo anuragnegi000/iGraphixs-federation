@@ -11,7 +11,7 @@ export default function Carousel() {
         slidesToShow: 3,
         slidesToScroll: 2,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 4000,            // changed speed from 2000 to 4000, now speed is looking fair enough
         cssEase: "linear",
         responsive: [
             {
