@@ -1,24 +1,24 @@
 
+import ButtonGradient from "../../assets/svg/ButtonGradient";
+import Footer from "../Footer";
+import Header from "../Header";
+
 export const MinPages = () => {
+  return <></>;
+};
+
+export default function MainPage() {
   return (
-   <>
-   
-   <MainPage name={"aditya"} />
-   <MainPage name={"anurag"}/>
-   <MainPage name={"aditya"}/>
-   <MainPage name={"aditya"}/>
-   <MainPage name={"aditya"}/>
-   <MainPage name={"aditya"}/>
-   
-   </>
-  )
-}
+    <>
+      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+        <Header />
+<div className="mt-5 p-4 ">
 
-
-function MainPage({name}){
-    return (
-        <>
-        <h1>hello {name}</h1>
-        </>
-    )
+  Hello i am Pager 👻
+</div>
+        <Footer />
+      </div>
+      <ButtonGradient />
+    </>
+  );
 }

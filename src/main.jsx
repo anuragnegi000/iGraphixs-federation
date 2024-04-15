@@ -6,7 +6,7 @@ import { ClerkProvider,  SignIn, SignUp } from '@clerk/clerk-react'
  
 import App from "./App.jsx";
 import "./index.css";
-import Carousel from "./components/Carousel.jsx";
+import MinPages from  "./components/Pages/MinPages"
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
  
@@ -31,10 +31,11 @@ element: <SignIn mode="model" />
   element: <SignUp mode="model" />
 },
 {
-  path:'/Hero',
-  element: <Carousel/>
+  path:'/Creative',
+  element: <MinPages/>
 
 }
+
 
 ]);
 

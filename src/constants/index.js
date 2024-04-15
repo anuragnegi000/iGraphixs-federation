@@ -334,7 +334,7 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
-    url : "/Hero"
+    url : "/Creative"
   },
   { 
     id: "1",
