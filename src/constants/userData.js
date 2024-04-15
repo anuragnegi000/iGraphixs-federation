@@ -17,7 +17,7 @@ export const userData = [
         id: 3,
         name: "Carol Taylor",
         description: "Carol is an avid reader and writer, focusing on contemporary fiction.",
-        image: "https://images.unsplash.com/photo-1558981408-db0ecd8a1ee1",
+        image: "https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg",
         date: "2023-03-10"
     },
     {
