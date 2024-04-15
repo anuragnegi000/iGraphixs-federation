@@ -7,6 +7,8 @@ import { ClerkProvider,  SignIn, SignUp } from '@clerk/clerk-react'
 import App from "./App.jsx";
 import "./index.css";
 import Carousel from "./components/Carousel.jsx";
+import Thumbnail from "./components/Pages/Thumbnail.jsx";
+import Logo from "./components/Pages/Logo.jsx";
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
  
@@ -31,9 +33,13 @@ element: <SignIn mode="model" />
   element: <SignUp mode="model" />
 },
 {
-  path:'/Hero',
-  element: <Carousel/>
+  path:'/thumbnail',
+  element: <Thumbnail/>
 
+},
+{
+  path:'/logo',
+  element:<Logo/>
 }
 
 ]);

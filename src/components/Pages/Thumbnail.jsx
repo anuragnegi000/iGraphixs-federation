@@ -1,7 +1,12 @@
+import ButtonGradient from "../../assets/svg/ButtonGradient"
+import Footer from "../Footer"
+import Header from "../Header"
 
-export const MinPages = () => {
+export const Thumbnail = () => {
   return (
    <>
+
+   <Header/>
    
    <MainPage name={"aditya"} />
    <MainPage name={"anurag"}/>
@@ -9,6 +14,9 @@ export const MinPages = () => {
    <MainPage name={"aditya"}/>
    <MainPage name={"aditya"}/>
    <MainPage name={"aditya"}/>
+
+   <Footer/>
+   <ButtonGradient/>
    
    </>
   )
@@ -22,3 +30,5 @@ function MainPage({name}){
         </>
     )
 }
+
+export default Thumbnail;

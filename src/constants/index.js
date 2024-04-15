@@ -334,7 +334,7 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
-    url : "/Hero"
+    url : "/thumbnail"
   },
   { 
     id: "1",
@@ -344,7 +344,7 @@ export const benefits = [
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
     light: true,
-    url : "#/thumbnail"
+    url : "/logo"
   },
   {
     id: "2",
@@ -353,7 +353,7 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-6.svg",  
     iconUrl: benefitIcon6,
     imageUrl: benefitImage2,
-    url : "#/thumbnail"
+    url : "/animation"
   },
   {
     id: "3",
@@ -363,7 +363,7 @@ export const benefits = [
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
     light: true,
-    url : "#/thumbnail"
+    url : "/illustrations"
   },
   {
     id: "4",
@@ -372,7 +372,7 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon5,
     imageUrl: benefitImage2,
-    url : "#/thumbnail"
+    url : "/brand"
   },
   {
     id: "5",
@@ -381,7 +381,7 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
-    url : "#/thumbnail"
+    url : "/advanced"
   },
 ];
 
