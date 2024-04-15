@@ -7,9 +7,9 @@ export default function Carousel() {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed:1200,
         slidesToShow: 3,
-        slidesToScroll: 1,
+        slidesToScroll: 2,
         autoplay: true,
         autoplaySpeed: 2000,
         cssEase: "linear",
@@ -51,12 +51,13 @@ export default function Carousel() {
 
 function Cards() {
     return (
-        <motion.div
+        <div className='object-scale-down p-4'>
+            <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.5 }}
-            className="overflow-hidden rounded-lg shadow-lg transition hover:shadow-xl card"
+            transition={{ duration: 0.10 }}
+            className=" overflow-hidden place-se rounded-lg shadow-lg transition hover:shadow-xl card place-self-center"
         >
             <img
                 alt=""
@@ -77,6 +78,7 @@ function Cards() {
                 </p>
             </div>
         </motion.div>
+        </div>
     );
 }
 
