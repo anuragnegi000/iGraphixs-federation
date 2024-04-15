@@ -1,38 +1,40 @@
+
 import Slider from 'react-slick';
 import { motion } from 'framer-motion';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { userData } from '../constants/userData'; // Adjust the import path as necessary
 
 export default function Carousel() {
     const settings = {
         dots: true,
         infinite: true,
         speed: 1200,
-        slidesToShow: 3,
-        slidesToScroll: 2,
+        slidesToShow: 3,  // Default setting for larger screens
+        slidesToScroll: 2, // Default setting for larger screens
         autoplay: true,
-        autoplaySpeed: 4000,            // changed speed from 2000 to 4000, now speed is looking fair enough
+        autoplaySpeed: 4000,
         cssEase: "linear",
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1024, // Devices less than 1024px
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1
                 }
             },
             {
-                breakpoint: 768,
+                breakpoint: 768, // Devices less than 768px
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 480, // Devices less than 480px
                 settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToShow: 1, // Only show one slide at a time
+                    slidesToScroll: 1 // Scroll one slide at a time
                 }
             }
         ]
@@ -40,48 +42,42 @@ export default function Carousel() {
 
     return (
         <div className='gap-3 p-3 m-3 carousel-container'>
-            <Slider className='gap-2'{...settings}>
-                <Cards />
-                <Cards />
-                <Cards />
+            <Slider {...settings}>
+                {userData.map(user => (
+                    <Card key={user.id} user={user} />
+                ))}
             </Slider>
         </div>
     );
 }
 
-function Cards() {
+function Card({ user }) {
     return (
         <div className='object-scale-down p-4'>
             <motion.div
-
-
-
-                initial={{ x: 300, opacity: 4 }}
+                initial={{ x: 300, opacity: 0 }}
                 animate={{ x: 0, y: 20, opacity: 1 }}
-                exit={{ x: -300, y: 20, opacity: 100}}
+                exit={{ x: -300, y: 20, opacity: 0 }}
                 transition={{ duration: 0.5 }}
                 className="overflow-hidden rounded-lg shadow-lg transition hover:shadow-xl card"
             >
                 <img
-                    alt=""
-                    src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaGootby1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                    alt={user.name}
+                    src={user.image}
                     className="h-56 w-full object-cover"
                 />
                 <div className="bg-white p-4 sm:p-6">
-                    <time dateTime="2022-10-10" className="block text-xs text-gray-500">
-                        10th Oct 2022
+                    <time dateTime={user.date} className="block text-xs text-gray-500">
+                        {new Date(user.date).toLocaleDateString()}
                     </time>
-                    <a href="#">
-                        <h3 className="mt-0.5 text-lg text-gray-900">
-                            How to position your furniture for positivity
-                        </h3>
-                    </a>
+                    <h3 className="mt-0.5 text-lg text-gray-900">
+                        {user.name}
+                    </h3>
                     <p className="mt-2 line-clamp-3 text-sm text-gray-500">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        {user.description}
                     </p>
                 </div>
             </motion.div>
         </div>
     );
 }
-
