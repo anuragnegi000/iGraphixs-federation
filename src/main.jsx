@@ -6,8 +6,13 @@ import { ClerkProvider,  SignIn, SignUp } from '@clerk/clerk-react'
  
 import App from "./App.jsx";
 import "./index.css";
-import MinPages from  "./components/Pages/MinPages"
-import Demo from "./components/Pages/Demo.jsx";
+
+import Thumbnail from "./components/Pages/Thumbnail.jsx";
+import Logo from "./components/Pages/Logo.jsx";
+import Animation from "./components/Pages/Logo.jsx";
+import Illustration from "./components/Pages/Illustration.jsx";
+import Brand from "./components/Pages/Brand.jsx";
+import Advanced from "./components/Pages/Advanced.jsx";
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
  
@@ -32,9 +37,30 @@ element: <SignIn mode="model" />
   element: <SignUp mode="model" />
 },
 {
-  path:'/Demo',
-  element:<Demo/>
 
+  path:'/thumbnail',
+  element: <Thumbnail/>
+
+},
+{
+  path:'/logo',
+  element:<Logo/>
+},
+{
+  path:"/animation",
+  element:<Animation/>
+},
+{
+  path:"/illustrations",
+  element:<Illustration/>
+},
+{
+  path:"/brand",
+  element:<Brand/>
+},
+{
+  path:"/advanced",
+  element:<Advanced/>
 }
 
 

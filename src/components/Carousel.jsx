@@ -64,7 +64,7 @@ function Card({ user }) {
                 <img
                     alt={user.name}
                     src={user.image}
-                    className="h-56 w-full object-cover"
+                    className="h-70 w-full object-cover"
                 />
                 <div className="bg-white p-4 sm:p-6">
                     <time dateTime={user.date} className="block text-xs text-gray-500">
