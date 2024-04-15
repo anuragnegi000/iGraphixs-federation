@@ -7,6 +7,7 @@ import { ClerkProvider,  SignIn, SignUp } from '@clerk/clerk-react'
 import App from "./App.jsx";
 import "./index.css";
 import MinPages from  "./components/Pages/MinPages"
+import Demo from "./components/Pages/Demo.jsx";
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
  
@@ -31,8 +32,8 @@ element: <SignIn mode="model" />
   element: <SignUp mode="model" />
 },
 {
-  path:'/Creative',
-  element: <MinPages/>
+  path:'/Demo',
+  element:<Demo/>
 
 }
 
