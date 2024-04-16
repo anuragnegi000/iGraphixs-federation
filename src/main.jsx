@@ -6,7 +6,7 @@ import { ClerkProvider,  SignIn, SignUp } from '@clerk/clerk-react'
  
 import App from "./App.jsx";
 import "./index.css";
-import Carousel from "./components/Carousel.jsx";
+
 import Thumbnail from "./components/Pages/Thumbnail.jsx";
 import Logo from "./components/Pages/Logo.jsx";
 import Animation from "./components/Pages/Logo.jsx";
@@ -37,6 +37,7 @@ element: <SignIn mode="model" />
   element: <SignUp mode="model" />
 },
 {
+
   path:'/thumbnail',
   element: <Thumbnail/>
 
