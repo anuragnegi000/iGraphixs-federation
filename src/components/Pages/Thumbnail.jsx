@@ -1,51 +1,140 @@
-import ButtonGradient from "../../assets/svg/ButtonGradient"
-import Footer from "../Footer"
-import Header from "../Header"
+import { motion } from 'framer-motion';
+import Header from '../Header';
+import Footer from '../Footer';
+import Cards from './A2Components/Cards';
 
-<<<<<<< HEAD:src/components/Pages/MinPages.jsx
-import ButtonGradient from "../../assets/svg/ButtonGradient";
-import Footer from "../Footer";
-import Header from "../Header";
-
-export const MinPages = () => {
-  return <></>;
-};
-
-export default function MainPage() {
+const Service = () => {
   return (
     <>
-      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
-        <Header />
-<div className="mt-5 p-4 ">
-=======
-export const Thumbnail = () => {
-  return (
-   <>
-
-   <Header/>
-   
-   <MainPage name={"aditya"} />
-   <MainPage name={"anurag"}/>
-   <MainPage name={"aditya"}/>
-   <MainPage name={"aditya"}/>
-   <MainPage name={"aditya"}/>
-   <MainPage name={"aditya"}/>
-
-   <Footer/>
-   <ButtonGradient/>
-   
-   </>
-  )
-}
->>>>>>> d7ccb5f335bbdfe7cfda702910a2658dcd25310d:src/components/Pages/Thumbnail.jsx
-
-  Hello i am Pager 👻
-</div>
+      <div style={{ margin: '16px', padding: '12px' }}>
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          style={{ marginBottom: '20px' }}
+        >
+          <Header />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
+         
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+        >
+          <Cards />
+        </motion.div>
+        <FAQ/>
         <Footer />
       </div>
-      <ButtonGradient />
     </>
   );
 }
 
-export default Thumbnail;
+const FAQ =()=>{
+  return (
+    <>
+    <div>
+    <div className="space-y-4">
+  <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden" open>
+    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
+      <h2 className="font-medium">Lorem ipsum dolor sit amet consectetur adipisicing?</h2>
+
+      <span className="relative size-5 shrink-0">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="absolute inset-0 size-5 opacity-100 group-open:opacity-0"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth="2"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="absolute inset-0 size-5 opacity-0 group-open:opacity-100"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth="2"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+      </span>
+    </summary>
+
+    <p className="mt-4 leading-relaxed text-gray-700">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa in,
+      recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis explicabo
+      consequuntur distinctio corporis earum similique!
+    </p>
+  </details>
+
+  <details className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900">
+      <h2 className="font-medium">Lorem ipsum dolor sit amet consectetur adipisicing?</h2>
+
+      <span className="relative size-5 shrink-0">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="absolute inset-0 opacity-100 group-open:opacity-0"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth="2"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="absolute inset-0 opacity-0 group-open:opacity-100"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth="2"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+      </span>
+    </summary>
+
+    <p className="mt-4 leading-relaxed text-gray-700">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa in,
+      recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis explicabo
+      consequuntur distinctio corporis earum similique!
+    </p>
+  </details>
+</div>
+
+    </div>
+    </>
+  )
+}
+
+
+
+export default  Service
