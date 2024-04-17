@@ -45,8 +45,8 @@ function ServicePage() {
       try {
         const response = await axios.get('https://api.pexels.com/v1/search?query=art', {
           headers: {
-            Authorization:  import.meta.env.PEXELS_KEY  
-          }
+            Authorization: import.meta.env.PEXELS_KEY  
+                }
         });
         const images = response.data.photos.map(photo => ({
           id: photo.id,
