@@ -12,6 +12,9 @@ const settings = {
   speed: 500,
   slidesToShow: 3,
   slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  cssEase: "linear",
   responsive: [
     {
       breakpoint: 1024,
@@ -41,7 +44,7 @@ function ServicePage() {
       try {
         const response = await axios.get('https://api.pexels.com/v1/search?query=art', {
           headers: {
-            Authorization: 'YOUR_PEXELS_API_KEY'
+            Authorization: 'Bearer YOUR_PEXELS_API_KEY' // Replace 'YOUR_PEXELS_API_KEY' with your actual Pexels API key
           }
         });
         const images = response.data.photos.map(photo => ({
@@ -62,15 +65,17 @@ function ServicePage() {
     <div className='mt-12 pt-9'>
       <Header />
       <main className="container mx-auto p-4 relative z-0">
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
+        <motion.div initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.5 }}>
           <h1 className="text-2xl font-bold">Logo Design</h1>
           <p className="mb-4">Description of the logo design service, including the process and approach.</p>
           <section>
             <h2 className="text-xl font-semibold">Portfolio Examples</h2>
             <Slider {...settings}>
               {portfolioExamples.map(example => (
-                <div key={example.id} className="p-2">
-                  <img src={example.imgSrc} alt={example.description} className="w-full h-auto" />
+                <div key={example.id} className="p-2 image-container">
+                  <img src={example.imgSrc} alt={example.description} style={{ width: '100%', height: 'auto', aspectRatio: '16/9', borderRadius: '8px' }} />
                   <p>{example.description}</p>
                 </div>
               ))}
