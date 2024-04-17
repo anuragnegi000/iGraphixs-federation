@@ -39,73 +39,85 @@ const settings = {
 
 function Testimonials({ testimonials }) {
   return (
-    <section>
-      <h2 className="text-xl font-semibold">Testimonials</h2>
-      <ul className="list-disc ml-4">
-        {testimonials.map(testimonial => (
-          <li key={testimonial.id}>
-            <blockquote className="mb-2">{testimonial.quote}</blockquote>
-            <cite>{testimonial.author}</cite>
-          </li>
-        ))}
-      </ul>
+    <section className="bg-gray-100 py-8">
+      <div className="container mx-auto">
+        <h2 className="text-3xl font-semibold mb-4">Testimonials</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {testimonials.map(testimonial => (
+            <div key={testimonial.id} className="bg-white p-6 rounded-lg shadow-md">
+              <blockquote className="mb-4">{testimonial.quote}</blockquote>
+              <cite>{testimonial.author}</cite>
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }
 
 function WhyChoose() {
   return (
-    <section>
-      <h2 className="text-xl font-semibold">Why Choose iGraphixs?</h2>
-      <ul className="list-disc ml-4">
-        <li>Unique and innovative logo designs</li>
-        <li>Personalized approach tailored to your brand</li>
-        <li>Quick turnaround times and responsive support</li>
-        <li>Transparent pricing and competitive rates</li>
-      </ul>
+    <section className="py-8">
+      <div className="container mx-auto">
+        <h2 className="text-3xl font-semibold mb-4">Why Choose iGraphixs?</h2>
+        <ul className="list-disc ml-6">
+          <li className="mb-2">Unique and innovative logo designs</li>
+          <li className="mb-2">Personalized approach tailored to your brand</li>
+          <li className="mb-2">Quick turnaround times and responsive support</li>
+          <li className="mb-2">Transparent pricing and competitive rates</li>
+        </ul>
+      </div>
     </section>
   );
 }
 
 function CustomizationOptions() {
   return (
-    <section>
-      <h2 className="text-xl font-semibold">Customization Options</h2>
-      <p>We offer a range of customization options to ensure your logo reflects your brand identity and vision.</p>
+    <section className="bg-gray-100 py-8">
+      <div className="container mx-auto">
+        <h2 className="text-3xl font-semibold mb-4">Customization Options</h2>
+        <p className="text-lg">We offer a range of customization options to ensure your logo reflects your brand identity and vision.</p>
+      </div>
     </section>
   );
 }
 
 function FAQs({ faqItems }) {
   return (
-    <section>
-      <h2 className="text-xl font-semibold">FAQs</h2>
-      <ul className="list-disc ml-4">
-        {faqItems.map(faq => (
-          <li key={faq.id} className="mb-4">
-            <h3 className="font-semibold">{faq.question}</h3>
-            <p>{faq.answer}</p>
-          </li>
-        ))}
-      </ul>
+    <section className="py-8">
+      <div className="container mx-auto">
+        <h2 className="text-3xl font-semibold mb-4">FAQs</h2>
+        <div>
+          {faqItems.map(faq => (
+            <div key={faq.id} className="mb-6">
+              <h3 className="text-xl font-semibold mb-2">{faq.question}</h3>
+              <p>{faq.answer}</p>
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }
 
 function GetStarted() {
   return (
-    <section>
-      <h2 className="text-xl font-semibold">Get Started</h2>
-      <p>Ready to elevate your brand with a stunning logo design? Contact us today to schedule a consultation!</p>
+    <section className="bg-gray-100 py-8">
+      <div className="container mx-auto">
+        <h2 className="text-3xl font-semibold mb-4">Get Started</h2>
+        <p className="text-lg">Ready to elevate your brand with a stunning logo design? Contact us today to schedule a consultation!</p>
+      </div>
     </section>
   );
 }
 
 function OurTeam() {
   return (
-    <section>
-      <h2 className="text-xl font-semibold">Our Team</h2>
-      {/* Add your team members here */}
+    <section className="py-8">
+      <div className="container mx-auto">
+        <h2 className="text-3xl font-semibold mb-4">Our Team</h2>
+        {/* Add your team members here */}
+      </div>
     </section>
   );
 }
@@ -164,39 +176,29 @@ function ServicePage() {
         <motion.div initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5 }}>
-          <h1 className="text-2xl font-bold">Welcome to iGraphixs</h1>
-          <p className="mb-4">At iGraphixs, we specialize in creating unique and memorable logos tailored to your brand identity. From concept to execution, we'll work closely with you to bring your vision to life.</p>
-
-          {/* Portfolio */}
+          <h1 className="text-4xl font-bold mb-8">Welcome to iGraphixs</h1>
           <section>
-            <h2 className="text-xl font-semibold">Portfolio</h2>
+            <h2 className="text-3xl font-semibold mb-6">Portfolio</h2>
             <Slider {...settings}>
               {portfolioExamples.map(example => (
                 <div key={example.id} className="p-2">
-                  <img src={example.imgSrc} alt={example.description} style={{ width: '100%', height: 'auto', aspectRatio: '16/9', borderRadius: '8px' }} />
+                  <img src={example.imgSrc} alt={example.description} className="rounded-lg shadow-md" />
                 </div>
               ))}
             </Slider>
           </section>
 
-          {/* Testimonials */}
           <Testimonials testimonials={clientTestimonials} />
 
-          {/* Why Choose iGraphixs? */}
           <WhyChoose />
 
-          {/* Customization Options */}
           <CustomizationOptions />
 
-          {/* FAQs */}
           <FAQs faqItems={faqItems} />
 
-          {/* Get Started */}
           <GetStarted />
 
-          {/* Our Team */}
           <OurTeam />
-
         </motion.div>
       </main>
       <Footer />
