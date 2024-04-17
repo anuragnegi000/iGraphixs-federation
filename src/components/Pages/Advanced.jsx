@@ -6,12 +6,7 @@ export default function Advanced (){
   return (
     <>
     <Header/>
-    <Main name={"anurag"}></Main>
-    <Main name={"anurag"}></Main>
-    <Main name={"anurag"}></Main>
-    <Main name={"anurag"}></Main>
-    <Main name={"anurag"}></Main>
-    <Main name={"anurag"}></Main>
+ <h2>hello </h2>
     <Footer/>
     </>   
   )
