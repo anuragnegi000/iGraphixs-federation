@@ -6,47 +6,47 @@ import Header from "../Header";
 import Footer from "../Footer";
 import Slider from 'react-slick';
 
+// Slider settings
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  cssEase: "linear",
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 1
+      }
+    }
+  ]
+};
+
 function ServicePage() {
   const [portfolioExamples, setPortfolioExamples] = useState([]);
-
-  // Define settings inside the component
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    cssEase: "linear",
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1
-        }
-      }
-    ]
-  };
 
   useEffect(() => {
     const fetchImages = async () => {
       try {
         const response = await axios.get('https://api.pexels.com/v1/search?query=art', {
           headers: {
-            Authorization: import.meta.env.PEXELS_KEY   
-             }
+            Authorization:  import.meta.env.PEXELS_KEY  
+          }
         });
         const images = response.data.photos.map(photo => ({
           id: photo.id,
