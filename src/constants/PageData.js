@@ -1,5 +1,5 @@
 // whyChoose us 
-export const cardData = ['Innovation', 'Reliability', 'Support', 'Expertise', 'Quality', 'Efficiency', 'Value', 'Commitment'];
+export const cardData = ['Innovation', 'Reliability', 'Support', 'Expertise', 'Quality', 'Efficiency', 'Value', 'Goal'];
 
 
 // our Team 

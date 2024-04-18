@@ -28,6 +28,69 @@ const testimonials = [
   { id: 8, quote: "iGraphixs has a remarkable ability to capture the essence of a brand and translate it into captivating visuals. We couldn't be happier with the outcome of our collaboration.", author: "Daniel Lee", position: "CEO of GHI Group" }
   
 ];
+
+
+
+// Why Choose u 
+
+export function WhyChoose() {
+  // Animation settings for Framer Motion
+  const containerVariants = {
+    hidden: { opacity: 0, scale: 0.9 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delay: 0.3,
+        duration: 0.6
+      }
+    }
+  };
+
+  const cardVariants = {
+    rest: { scale: 1 },
+    hover: {
+      scale: 1.1,
+      rotateY: 10,
+      transition: {
+        type: 'spring',
+        stiffness: 300
+      }
+    }
+  };
+
+  return (
+    <motion.div
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      className="bg-gradient-to-r from-purple-500 to-blue-500 py-8 text-white"
+      style={{ backdropFilter: 'blur(10px)' }}
+    >
+      <div className="container mx-auto px-4">
+        <h2 className="text-4xl font-bold text-center mb-6">Why Choose Us?</h2>
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {cardData.map((item, index) => (
+            <motion.div
+              key={index}
+              className="p-4 shadow-lg rounded-lg bg-white bg-opacity-10 backdrop-blur-sm cursor-pointer"
+              variants={cardVariants}
+              initial="rest"
+              whileHover="hover"
+              animate="rest"
+            >
+              <h3 className="text-xl font-semibold mb-2">{item}</h3>
+              <p>{`We lead in ${item.toLowerCase()}, pushing the boundaries of what's possible.`}</p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </motion.div>
+  );
+}
+{/* 
+//////////////////////////////////////////////*
+*/}
 export function Testimonials() {
   const settings = {
     // Slider settings
@@ -125,35 +188,9 @@ export function GetStarted() {
   );
 }
 
-// ourTeam 
+
 export function OurTeam() {
- 
-
-  return (
-    <section>
-      <h2 className="text-3xl font-semibold mb-6">Our Team</h2>
-      <div className="flex flex-wrap justify-center items-center">
-        {teamMembers.map(member => (
-          <div key={member.name} className="m-4">
-            <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-lg">
-              <img src={member.imageUrl} alt={member.name} className="w-full h-full object-cover" />
-            </div>
-            <div className="text-center mt-3">
-              <p className="text-lg font-bold">{member.name}</p>
-              <p className="text-sm text-gray-600">{member.role}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-}
-
-// Why Choose u 
-
-export function WhyChoose() {
-  // Animation settings for Framer Motion
-  const containerVariants = {
+  const ourTeamVariants = {
     hidden: { opacity: 0, scale: 0.9 },
     visible: {
       opacity: 1,
@@ -171,7 +208,7 @@ export function WhyChoose() {
       scale: 1.1,
       rotateY: 10,
       transition: {
-        type: 'spring',
+        type: "spring",
         stiffness: 300
       }
     }
@@ -179,30 +216,34 @@ export function WhyChoose() {
 
   return (
     <motion.div
-      variants={containerVariants}
+      variants={ourTeamVariants}
       initial="hidden"
       animate="visible"
-      className="bg-gradient-to-r from-purple-500 to-blue-500 py-8 text-white"
-      style={{ backdropFilter: 'blur(10px)' }}
+      className="bg-gradient-to-r from-gray-900 to-black-500 py-8 text-white"
+      style={{ backdropFilter: "blur(10px)" }}
     >
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-6">Why Choose Us?</h2>
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {cardData.map((item, index) => (
-            <motion.div
-              key={index}
-              className="p-4 shadow-lg rounded-lg bg-white bg-opacity-10 backdrop-blur-sm cursor-pointer"
-              variants={cardVariants}
-              initial="rest"
-              whileHover="hover"
-              animate="rest"
-            >
-              <h3 className="text-xl font-semibold mb-2">{item}</h3>
-              <p>{`We lead in ${item.toLowerCase()}, pushing the boundaries of what's possible.`}</p>
-            </motion.div>
+      <section>
+        <h2 className="lg:text-4xl font-semibold mb-6">
+          Our Team
+        </h2>
+        <div className="flex  lg:flex-row lg:justify-center ">
+          {teamMembers.map((member) => (
+            <div key={member.id} className="lg:m-4 m-4 lg:w-full ">
+              <div className="lg:w-64 w-20  lg:h-64 h-30 rounded-full overflow-hidden mx-auto mb-4">
+                <img
+                  src={member.imageUrl}
+                  alt={member.name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="text-center">
+                <h3 className="text-xl font-bold">{member.name}</h3>
+                <p className="text-md">{member.role}</p>
+              </div>
+            </div>
           ))}
         </div>
-      </div>
+      </section>
     </motion.div>
   );
 }
