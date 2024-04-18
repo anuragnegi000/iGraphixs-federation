@@ -95,7 +95,7 @@ function ServicePage() {
             <Slider {...settings}>
               {portfolioExamples.map(example => (
                 <div key={example.id} className="p-2">
-                  <img src={example.imgSrc} alt={example.description} className="rounded-lg shadow-md" />
+                  <img src={example.imgSrc} alt={example.description} className="rounded-lg shadow-md" style={{ width: '100%', height: 'auto', aspectRatio: '16/9', borderRadius: '8px' }} />
                 </div>
               ))}
             </Slider>
