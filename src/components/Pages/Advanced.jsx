@@ -6,7 +6,7 @@ import Header from "../Header";
 import Footer from "../Footer";
 import Slider from 'react-slick';
 
-import  {Testimonials,WhyChoose}  from "./AdditionalSections"
+import  { ImageGallery, Testimonials,Title,WhyChoose}  from "./AdditionalSections"
 
 // Slider settings
 const settings = {
@@ -89,18 +89,12 @@ function ServicePage() {
         <motion.div initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5 }}>
-          <h1 className="text-4xl font-bold mb-8">Welcome to iGraphixs</h1>
-          <section>
-            <h2 className="text-3xl font-semibold mb-6">Portfolio</h2>
-            <Slider {...settings}>
-              {portfolioExamples.map(example => (
-                <div key={example.id} className="p-2">
-                  <img src={example.imgSrc} alt={example.description} className="rounded-lg shadow-md" style={{ width: '100%', height: 'auto', aspectRatio: '16/9', borderRadius: '8px' }} />
-                </div>
-              ))}
-            </Slider>
-          </section>
-          <Testimonials testimonials={clientTestimonials} />
+        
+        {/* Compoennt  will be passed  as  title */}
+
+       <Title/>   
+    <ImageGallery/>
+          {/* <Testimonials testimonials={clientTestimonials} /> */}
          <WhyChoose/>
           {/* <CustomizationOptions />
           <FAQs faqItems={faqItems} />
