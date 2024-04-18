@@ -127,18 +127,20 @@ export function GetStarted() {
 
 // ourTeam 
 export function OurTeam() {
+ 
+
   return (
     <section>
       <h2 className="text-3xl font-semibold mb-6">Our Team</h2>
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center items-center">
         {teamMembers.map(member => (
-          <div key={member.id} className="m-4">
-            <div className="w-64 h-64 rounded-full overflow-hidden mx-auto mb-4">
+          <div key={member.name} className="m-4">
+            <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-lg">
               <img src={member.imageUrl} alt={member.name} className="w-full h-full object-cover" />
             </div>
-            <div className="text-center">
-              <h3 className="text-xl font-bold">{member.name}</h3>
-              <p className="text-md">{member.role}</p>
+            <div className="text-center mt-3">
+              <p className="text-lg font-bold">{member.name}</p>
+              <p className="text-sm text-gray-600">{member.role}</p>
             </div>
           </div>
         ))}
@@ -146,8 +148,6 @@ export function OurTeam() {
     </section>
   );
 }
-
-
 
 // Why Choose u 
 
