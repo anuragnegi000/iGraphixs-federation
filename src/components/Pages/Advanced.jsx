@@ -112,4 +112,59 @@ function ServicePage() {
   );
 }
 
+// CustomizationOptions 
+
+function CustomizationOptions() {
+  return (
+    <section>
+      <h2 className="text-3xl font-semibold mb-6">Customization Options</h2>
+  
+    </section>
+  );
+}
+
+// FAQs
+
+function FAQs({ faqItems }) {
+  return (
+    <section>
+      <h2 className="text-3xl font-semibold mb-6">FAQs</h2>
+      {faqItems.map(faq => (
+        <div key={faq.id} className="mb-4">
+          <h3 className="text-xl font-semibold">{faq.question}</h3>
+          <p className="text-gray-700">{faq.answer}</p>
+        </div>
+      ))}
+    </section>
+  );
+}
+
+// GetStarted 
+
+function GetStarted() {
+  return (
+    <section>
+      <h2 className="text-3xl font-semibold mb-6">Get Started</h2>
+    
+    </section>
+  );
+}
+
+// OUrTeam 
+
+function OurTeam() {
+  return (
+    <section>
+      <h2 className="text-3xl font-semibold mb-6">Our Team</h2>
+      </section>
+  );
+}
+
+
+
+
+
+
+
+
 export default ServicePage;
