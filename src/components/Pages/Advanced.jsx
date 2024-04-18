@@ -5,8 +5,8 @@ import 'tailwindcss/tailwind.css';
 import Header from "../Header";
 import Footer from "../Footer";
 import Slider from 'react-slick';
-import Testimonials from './Testimonials';
-import { WhyChoose,FAQs, GetStarted, OurTeam,CustomizationOptions } from './AdditionalSections';
+
+import  {Testimonials,WhyChoose}  from "./AdditionalSections"
 
 // Slider settings
 const settings = {
@@ -61,6 +61,13 @@ function ServicePage() {
       }
     };
 
+    const fetchTestimonials = async () => {
+      const testimonialsData = [
+        { id: 1, quote: "iGraphixs exceeded our expectations! Their logo perfectly captures the essence of our brand.", author: "John Doe, CEO of ABC Company" },
+        { id: 2, quote: "Working with iGraphixs was a breeze. They understood our vision and delivered exceptional results.", author: "Jane Smith, Marketing Director of XYZ Inc." }
+      ];
+      setClientTestimonials(testimonialsData);
+    };
 
     const fetchFaqs = async () => {
       const faqData = [
@@ -71,8 +78,8 @@ function ServicePage() {
     };
 
     fetchImages();
- 
-   
+    fetchTestimonials();
+    fetchFaqs();
   }, []);
 
   return (
@@ -88,34 +95,22 @@ function ServicePage() {
             <Slider {...settings}>
               {portfolioExamples.map(example => (
                 <div key={example.id} className="p-2">
-                  <img src={example.imgSrc} alt={example.description} className="rounded-lg shadow-md w-200 h-300" />
+                  <img src={example.imgSrc} alt={example.description} className="rounded-lg shadow-md" />
                 </div>
               ))}
             </Slider>
           </section>
-          {/* <Testimonials /> */}
-          <WhyChoose />
-          {/* <CustomizationOptions /> */}
-          {/* <FAQs faqItems={faqItems} /> */}
-          {/* <GetStarted /> */}
-          {/* <OurTeam /> */}
+          <Testimonials testimonials={clientTestimonials} />
+         <WhyChoose/>
+          {/* <CustomizationOptions />
+          <FAQs faqItems={faqItems} />
+          <GetStarted />
+          <OurTeam /> */}
         </motion.div>
       </main>
       <Footer />
     </div>
   );
 }
-
-// WhyChoose 
-
-
-
-// CustomizationOptions 
-
-
-
-
-
-
 
 export default ServicePage;
