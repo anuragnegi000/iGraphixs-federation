@@ -189,61 +189,30 @@ export function GetStarted() {
 }
 
 
+
+
+
 export function OurTeam() {
-  const ourTeamVariants = {
-    hidden: { opacity: 0, scale: 0.9 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delay: 0.3,
-        duration: 0.6
-      }
-    }
-  };
-
-  const cardVariants = {
-    rest: { scale: 1 },
-    hover: {
-      scale: 1.1,
-      rotateY: 10,
-      transition: {
-        type: "spring",
-        stiffness: 300
-      }
-    }
-  };
-
   return (
-    <motion.div
-      variants={ourTeamVariants}
-      initial="hidden"
-      animate="visible"
-      className="bg-gradient-to-r from-gray-900 to-black-500 py-8 text-white"
-      style={{ backdropFilter: "blur(10px)" }}
-    >
-      <section>
-        <h2 className="lg:text-4xl font-semibold mb-6">
-          Our Team
-        </h2>
-        <div className="flex  lg:flex-row lg:justify-center ">
-          {teamMembers.map((member) => (
-            <div key={member.id} className="lg:m-4 m-4 lg:w-full ">
-              <div className="lg:w-64 w-20  lg:h-64 h-30 rounded-full overflow-hidden mx-auto mb-4">
-                <img
-                  src={member.imageUrl}
-                  alt={member.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="text-center">
-                <h3 className="text-xl font-bold">{member.name}</h3>
-                <p className="text-md">{member.role}</p>
-              </div>
+    <section>
+      <h2 className="text-3xl font-semibold mb-6">Our Team</h2>
+      <div className="flex lg:flex-wrap justify-center">
+        {teamMembers.map((member) => (
+          <div key={member.id} className="m-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+            <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full overflow-hidden mx-auto mb-4">
+              <img 
+                src={member.imageUrl} 
+                alt={member.name} 
+                className="w-full h-full object-cover"
+              />
             </div>
-          ))}
-        </div>
-      </section>
-    </motion.div>
+            <div className="text-center">
+              <h3 className="text-base sm:text-lg font-bold">{member.name}</h3>
+              <p className="text-xs sm:text-sm">{member.role}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }
