@@ -5,7 +5,7 @@ import 'tailwindcss/tailwind.css';
 import Header from "../Header";
 import Footer from "../Footer";
 import Slider from 'react-slick';
-import Testimonials from './Testimonials';
+import {Testimonials, WhyChoose} from './Testimonials';
 
 // Slider settings
 const settings = {
