@@ -5,7 +5,8 @@ import 'tailwindcss/tailwind.css';
 import Header from "../Header";
 import Footer from "../Footer";
 import Slider from 'react-slick';
-import {Testimonials, WhyChoose} from './Testimonials';
+import Testimonials from './Testimonials';
+import WhyChoose  from "./WhyChoose"
 
 // Slider settings
 const settings = {
@@ -100,7 +101,7 @@ function ServicePage() {
             </Slider>
           </section>
           <Testimonials testimonials={clientTestimonials} />
-          <WhyChoose />
+         
           <CustomizationOptions />
           <FAQs faqItems={faqItems} />
           <GetStarted />
