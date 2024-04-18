@@ -6,7 +6,7 @@ import Header from "../Header";
 import Footer from "../Footer";
 import Slider from 'react-slick';
 
-import  { ImageGallery, Testimonials,Title,WhyChoose}  from "./AdditionalSections"
+import  { ImageGallery, Testimonials,Title,WhyChoose, OurTeam}  from "./AdditionalSections"
 
 // Slider settings
 const settings = {
@@ -98,8 +98,8 @@ function ServicePage() {
          <WhyChoose/>
           {/* <CustomizationOptions />
           <FAQs faqItems={faqItems} />
-          <GetStarted />
-          <OurTeam /> */}
+          <GetStarted />*/}
+        <OurTeam/>
         </motion.div>
       </main>
       <Footer />

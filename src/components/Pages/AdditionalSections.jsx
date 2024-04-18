@@ -1,7 +1,6 @@
 // AdditionalSections.js
 import React from 'react';
-
-import { UtilityPole } from 'lucide-react';
+import { cardData,teamMembers } from '../../constants/PageData';
 
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
@@ -126,15 +125,31 @@ export function GetStarted() {
   );
 }
 
+// ourTeam 
 export function OurTeam() {
   return (
     <section>
       <h2 className="text-3xl font-semibold mb-6">Our Team</h2>
+      <div className="flex flex-wrap justify-center">
+        {teamMembers.map(member => (
+          <div key={member.id} className="m-4">
+            <div className="w-64 h-64 rounded-full overflow-hidden mx-auto mb-4">
+              <img src={member.imageUrl} alt={member.name} className="w-full h-full object-cover" />
+            </div>
+            <div className="text-center">
+              <h3 className="text-xl font-bold">{member.name}</h3>
+              <p className="text-md">{member.role}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }
 
 
+
+// Why Choose u 
 
 export function WhyChoose() {
   // Animation settings for Framer Motion
@@ -153,8 +168,8 @@ export function WhyChoose() {
   const cardVariants = {
     rest: { scale: 1 },
     hover: {
-      scale: 1.1, // Restored larger scale effect for larger screens
-      rotateY: 10, // Restored rotation for larger screens
+      scale: 1.1,
+      rotateY: 10,
       transition: {
         type: 'spring',
         stiffness: 300
@@ -171,19 +186,19 @@ export function WhyChoose() {
       style={{ backdropFilter: 'blur(10px)' }}
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-3xl font-bold text-center mb-6">Why Choose Us?</h2> {/* Responsive font size */}
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6"> {/* Responsive grid layout */}
-          {['Innovation', 'Reliability', 'Support', 'Expertise', 'Quality', 'Efficiency', 'Value', 'Commitment', 'Innovation'].map((item, index) => (
+        <h2 className="text-4xl font-bold text-center mb-6">Why Choose Us?</h2>
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {cardData.map((item, index) => (
             <motion.div
               key={index}
-              className="p-4 md:p-3 shadow-lg rounded-lg bg-white bg-opacity-10 backdrop-blur-sm cursor-pointer" // Responsive padding
+              className="p-4 shadow-lg rounded-lg bg-white bg-opacity-10 backdrop-blur-sm cursor-pointer"
               variants={cardVariants}
               initial="rest"
               whileHover="hover"
               animate="rest"
             >
-              <h3 className="text-xl md:text-lg font-semibold mb-2">{item}</h3> {/* Responsive heading size */}
-              <p className="text-base md:text-sm">{`We lead in ${item.toLowerCase()}, pushing the boundaries of what's possible.`}</p> {/* Responsive paragraph text */}
+              <h3 className="text-xl font-semibold mb-2">{item}</h3>
+              <p>{`We lead in ${item.toLowerCase()}, pushing the boundaries of what's possible.`}</p>
             </motion.div>
           ))}
         </div>
