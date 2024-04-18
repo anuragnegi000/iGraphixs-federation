@@ -112,6 +112,17 @@ function ServicePage() {
   );
 }
 
+// WhyChoose 
+
+function WhyChoose() {
+  return (
+    <section>
+      <h2 className="text-3xl font-semibold mb-6">Why Choose Us</h2>
+
+    </section>
+  );
+}
+
 // CustomizationOptions 
 
 function CustomizationOptions() {
