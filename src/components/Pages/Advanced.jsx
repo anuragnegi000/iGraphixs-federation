@@ -6,7 +6,7 @@ import Header from "../Header";
 import Footer from "../Footer";
 import Slider from 'react-slick';
 import Testimonials from './Testimonials';
-import WhyChoose  from "./WhyChoose"
+import { WhyChoose,FAQs, GetStarted, OurTeam,CustomizationOptions } from './AdditionalSections';
 
 // Slider settings
 const settings = {
@@ -61,13 +61,6 @@ function ServicePage() {
       }
     };
 
-    const fetchTestimonials = async () => {
-      const testimonialsData = [
-        { id: 1, quote: "iGraphixs exceeded our expectations! Their logo perfectly captures the essence of our brand.", author: "John Doe, CEO of ABC Company" },
-        { id: 2, quote: "Working with iGraphixs was a breeze. They understood our vision and delivered exceptional results.", author: "Jane Smith, Marketing Director of XYZ Inc." }
-      ];
-      setClientTestimonials(testimonialsData);
-    };
 
     const fetchFaqs = async () => {
       const faqData = [
@@ -78,8 +71,8 @@ function ServicePage() {
     };
 
     fetchImages();
-    fetchTestimonials();
-    fetchFaqs();
+ 
+   
   }, []);
 
   return (
@@ -100,17 +93,29 @@ function ServicePage() {
               ))}
             </Slider>
           </section>
-          <Testimonials testimonials={clientTestimonials} />
-         
-          <CustomizationOptions />
-          <FAQs faqItems={faqItems} />
-          <GetStarted />
-          <OurTeam />
+          {/* <Testimonials /> */}
+          <WhyChoose />
+          {/* <CustomizationOptions /> */}
+          {/* <FAQs faqItems={faqItems} /> */}
+          {/* <GetStarted /> */}
+          {/* <OurTeam /> */}
         </motion.div>
       </main>
       <Footer />
     </div>
   );
 }
+
+// WhyChoose 
+
+
+
+// CustomizationOptions 
+
+
+
+
+
+
 
 export default ServicePage;
