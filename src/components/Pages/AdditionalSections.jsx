@@ -88,6 +88,36 @@ export function WhyChoose() {
     </motion.div>
   );
 }
+
+
+
+
+export function OurTeam() {
+  return (
+    <section>
+      <h2 className="text-3xl font-semibold mb-6">Our Team</h2>
+      <div className="flex lg:flex-wrap justify-center">
+        {teamMembers.map((member) => (
+          <div key={member.id} className="m-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+            <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full overflow-hidden mx-auto mb-4">
+              <img 
+                src={member.imageUrl} 
+                alt={member.name} 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="text-center">
+              <h3 className="text-base sm:text-lg font-bold">{member.name}</h3>
+              <p className="text-xs sm:text-sm">{member.role}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+
 {/* 
 //////////////////////////////////////////////*
 */}
@@ -189,30 +219,3 @@ export function GetStarted() {
 }
 
 
-
-
-
-export function OurTeam() {
-  return (
-    <section>
-      <h2 className="text-3xl font-semibold mb-6">Our Team</h2>
-      <div className="flex lg:flex-wrap justify-center">
-        {teamMembers.map((member) => (
-          <div key={member.id} className="m-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-            <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full overflow-hidden mx-auto mb-4">
-              <img 
-                src={member.imageUrl} 
-                alt={member.name} 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="text-center">
-              <h3 className="text-base sm:text-lg font-bold">{member.name}</h3>
-              <p className="text-xs sm:text-sm">{member.role}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-}

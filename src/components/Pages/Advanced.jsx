@@ -83,27 +83,35 @@ function ServicePage() {
   }, []);
 
   return (
-    <div className='mt-12 pt-9'>
-      <Header />
-      <main className="container mx-auto p-4 relative z-0">
-        <motion.div initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.5 }}>
-        
-        {/* Compoennt  will be passed  as  title */}
 
-       <Title/>   
+     
+      <> 
+      <Header/>
+        {/* Compoennt  will be passed  as  title */}
+    <div className='pt-12'>
+    <section
+      className="pt-[12rem] -mt-[5.25rem]"> 
+
+<Title/>   
+
+
+  
+   
     <ImageGallery/>
-          {/* <Testimonials testimonials={clientTestimonials} /> */}
+          <Testimonials testimonials={clientTestimonials} />
          <WhyChoose/>
           {/* <CustomizationOptions />
           <FAQs faqItems={faqItems} />
           <GetStarted />*/}
         <OurTeam/>
-        </motion.div>
-      </main>
+     
+
       <Footer />
-    </div>
+
+      </section>
+      </div>
+      </>
+        
   );
 }
 
