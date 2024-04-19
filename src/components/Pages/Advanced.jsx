@@ -5,8 +5,8 @@ import 'tailwindcss/tailwind.css';
 import Header from "../Header";
 import Footer from "../Footer";
 import Slider from 'react-slick';
-import Testimonials from './Testimonials';
-import { WhyChoose,FAQs, GetStarted, OurTeam,CustomizationOptions } from './AdditionalSections';
+
+import  { ImageGallery, Testimonials,Title,WhyChoose, OurTeam}  from "./AdditionalSections"
 
 // Slider settings
 const settings = {
@@ -61,6 +61,13 @@ function ServicePage() {
       }
     };
 
+    const fetchTestimonials = async () => {
+      const testimonialsData = [
+        { id: 1, quote: "iGraphixs exceeded our expectations! Their logo perfectly captures the essence of our brand.", author: "John Doe, CEO of ABC Company" },
+        { id: 2, quote: "Working with iGraphixs was a breeze. They understood our vision and delivered exceptional results.", author: "Jane Smith, Marketing Director of XYZ Inc." }
+      ];
+      setClientTestimonials(testimonialsData);
+    };
 
     const fetchFaqs = async () => {
       const faqData = [
@@ -71,51 +78,41 @@ function ServicePage() {
     };
 
     fetchImages();
- 
-   
+    fetchTestimonials();
+    fetchFaqs();
   }, []);
 
   return (
-    <div className='mt-12 pt-9'>
-      <Header />
-      <main className="container mx-auto p-4 relative z-0">
-        <motion.div initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.5 }}>
-          <h1 className="text-4xl font-bold mb-8">Welcome to iGraphixs</h1>
-          <section>
-            <h2 className="text-3xl font-semibold mb-6">Portfolio</h2>
-            <Slider {...settings}>
-              {portfolioExamples.map(example => (
-                <div key={example.id} className="p-2">
-                  <img src={example.imgSrc} alt={example.description} className="rounded-lg shadow-md w-200 h-300" />
-                </div>
-              ))}
-            </Slider>
-          </section>
-          {/* <Testimonials /> */}
-          <WhyChoose />
-          {/* <CustomizationOptions /> */}
-          {/* <FAQs faqItems={faqItems} /> */}
-          {/* <GetStarted /> */}
-          {/* <OurTeam /> */}
-        </motion.div>
-      </main>
+
+     
+      <> 
+      <Header/>
+        {/* Compoennt  will be passed  as  title */}
+    <div className='pt-12'>
+    <section
+      className="pt-[12rem] -mt-[5.25rem]"> 
+
+<Title/>   
+
+
+  
+   
+    <ImageGallery/>
+          <Testimonials testimonials={clientTestimonials} />
+         <WhyChoose/>
+          {/* <CustomizationOptions />
+          <FAQs faqItems={faqItems} />
+          <GetStarted />*/}
+        <OurTeam/>
+     
+
       <Footer />
-    </div>
+
+      </section>
+      </div>
+      </>
+        
   );
 }
-
-// WhyChoose 
-
-
-
-// CustomizationOptions 
-
-
-
-
-
-
 
 export default ServicePage;
