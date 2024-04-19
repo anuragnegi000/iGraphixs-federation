@@ -1,6 +1,6 @@
 // AdditionalSections.js
 import React, { useState } from 'react';
-import { cardData,teamMembers ,testimonials,faqData} from '../../constants/PageData';
+import { cardData, teamMembers, testimonials, faqData } from '../../constants/PageData';
 
 import { Disclosure } from '@headlessui/react';
 import { ChevronUpIcon } from '@heroicons/react/20/solid';
@@ -8,7 +8,7 @@ import { ChevronUpIcon } from '@heroicons/react/20/solid';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const TestimonialCard = styled(motion.div)`
@@ -94,9 +94,9 @@ export function OurTeam() {
         {teamMembers.map((member) => (
           <div key={member.id} className="  m-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
             <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full overflow-hidden mx-auto mb-4">
-              <img 
-                src={member.imageUrl} 
-                alt={member.name} 
+              <img
+                src={member.imageUrl}
+                alt={member.name}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -126,7 +126,7 @@ export function CustomizationOptions() {
 
 
 
-export default function Example() {
+export function FAQ() {
   return (
     <div className="w-full px-4 pt-16 bg-gray-900 text-white"> {/* Dark theme applied */}
       <div className="mx-auto w-full max-w-md rounded-2xl bg-gray-800 p-2">
@@ -173,12 +173,12 @@ export function ImageGallery() {
     </div>
   );
 }
-export function Title(){
+export function Title() {
   return (
     <>
-    <div>
-    <h1 className="text-4xl font-bold mb-8 text-center "> Logo Creation </h1>
-    </div>
+      <div>
+        <h1 className="text-4xl font-bold mb-8 text-center "> Logo Creation </h1>
+      </div>
     </>
   )
 }

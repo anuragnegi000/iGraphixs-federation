@@ -6,7 +6,7 @@ import Header from "../Header";
 import Footer from "../Footer";
 import Slider from 'react-slick';
 
-import  { ImageGallery, Testimonials,Title,WhyChoose, OurTeam}  from "./AdditionalSections"
+import { ImageGallery, Testimonials, Title, WhyChoose, OurTeam, FAQ } from "./AdditionalSections"
 
 // Slider settings
 const settings = {
@@ -84,34 +84,34 @@ function ServicePage() {
 
   return (
 
-     
-      <> 
-      <Header/>
-        {/* Compoennt  will be passed  as  title */}
-    <div className='pt-12'>
-    <section
-      className="pt-[12rem] -mt-[5.25rem]"> 
 
-<Title/>   
+    <>
+      <Header />
+      {/* Compoennt  will be passed  as  title */}
+      <div className='pt-12'>
+        <section
+          className="pt-[12rem] -mt-[5.25rem]">
+
+          <Title />
 
 
-  
-   
-    <ImageGallery/>
+
+
+          <ImageGallery />
           <Testimonials testimonials={clientTestimonials} />
-         <WhyChoose/>
+          <WhyChoose />
           {/* <CustomizationOptions />
-          <FAQs faqItems={faqItems} />
-          <GetStarted />*/}
-        <OurTeam/>
-     
-
-      <Footer />
-
-      </section>
-      </div>
-      </>
         
+          <GetStarted />*/}
+          <OurTeam />
+          <FAQ />
+
+          <Footer />
+
+        </section>
+      </div>
+    </>
+
   );
 }
 
