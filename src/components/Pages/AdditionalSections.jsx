@@ -1,7 +1,9 @@
 // AdditionalSections.js
 import React, { useState } from 'react';
-import { cardData,teamMembers ,testimonials} from '../../constants/PageData';
-
+import { cardData,teamMembers ,testimonials,faqData} from '../../constants/PageData';
+import React from 'react';
+import { Disclosure } from '@headlessui/react';
+import { ChevronUpIcon } from '@heroicons/react/20/solid';
 
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
@@ -16,6 +18,7 @@ const TestimonialCard = styled(motion.div)`
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 `;
+
 
 
 
@@ -89,7 +92,7 @@ export function OurTeam() {
       <h2 className="text-3xl font-semibold mb-6">Our Team</h2>
       <div className="flex lg:flex-wrap justify-center">
         {teamMembers.map((member) => (
-          <div key={member.id} className="m-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+          <div key={member.id} className="  m-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
             <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full overflow-hidden mx-auto mb-4">
               <img 
                 src={member.imageUrl} 
@@ -121,17 +124,31 @@ export function CustomizationOptions() {
   );
 }
 
-export function FAQs({ faqItems }) {
+
+
+export default function Example() {
   return (
-    <section>
-      <h2 className="text-3xl font-semibold mb-6">FAQs</h2>
-      {faqItems.map(faq => (
-        <div key={faq.id} className="mb-4">
-          <h3 className="text-xl font-semibold">{faq.question}</h3>
-          <p className="text-gray-700">{faq.answer}</p>
-        </div>
-      ))}
-    </section>
+    <div className="w-full px-4 pt-16 bg-gray-900 text-white"> {/* Dark theme applied */}
+      <div className="mx-auto w-full max-w-md rounded-2xl bg-gray-800 p-2">
+        {faqData.map((item, index) => (
+          <Disclosure key={index}>
+            {({ open }) => (
+              <>
+                <Disclosure.Button className="flex w-full justify-between rounded-lg bg-purple-700 px-4 py-2 text-left text-sm font-medium text-purple-200 hover:bg-purple-600 focus:outline-none focus-visible:ring focus-visible:ring-purple-500/75">
+                  <span>{item.question}</span>
+                  <ChevronUpIcon
+                    className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-purple-300`}
+                  />
+                </Disclosure.Button>
+                <Disclosure.Panel className="px-4 pb-2 pt-4 text-sm text-gray-300">
+                  {item.answer}
+                </Disclosure.Panel>
+              </>
+            )}
+          </Disclosure>
+        ))}
+      </div>
+    </div>
   );
 }
 
