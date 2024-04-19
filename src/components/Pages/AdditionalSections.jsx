@@ -1,6 +1,7 @@
 // AdditionalSections.js
-import React from 'react';
+import React, { useState } from 'react';
 import { cardData,teamMembers } from '../../constants/PageData';
+
 
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
@@ -121,43 +122,7 @@ export function OurTeam() {
 {/* 
 //////////////////////////////////////////////*
 */}
-export function Testimonials() {
-  const settings = {
-    // Slider settings
-  };
 
-  return (
-    <>
-      <style>
-        {`
-          .testimonial-card {
-            background: rgba(255, 255, 255, 0.8); /* Adjust transparency as needed */
-            backdrop-filter: blur(10px); /* Adjust blur intensity as needed */
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-          }
-        `}
-      </style>
-      <section className="bg-gray-100 py-8">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-semibold mb-4 text-center">What Our Clients Say</h2>
-          <Slider {...settings}>
-            {testimonials.map((testimonial) => (
-              <motion.div key={testimonial.id} className="testimonial-card"
-                whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                <blockquote className="mb-4 italic">"{testimonial.quote}"</blockquote>
-                <cite className="block font-semibold not-italic">{testimonial.author}, {testimonial.position}</cite>
-              </motion.div>
-            ))}
-          </Slider>
-        </div>
-      </section>
-    </>
-  );
-}
 export function CustomizationOptions() {
   return (
     <section>
@@ -219,3 +184,65 @@ export function GetStarted() {
 }
 
 
+
+
+
+export function Testimonials() {
+  const [isPaused, setIsPaused] = useState(false);
+
+  const settings = {
+    dots: false, // Hides slider dots
+    infinite: true,
+    speed: 500, // Adjust speed here (milliseconds)
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000, // Adjust autoplay speed here (milliseconds)
+    pauseOnHover: true,
+    pauseOnFocus: true,
+    pauseOnDotsHover: true,
+    afterChange: (currentSlide) => {
+      if (currentSlide === testimonials.length - 1) {
+        setIsPaused(true); // Pause autoplay after last slide
+        setTimeout(() => {
+          setIsPaused(false); // Resume autoplay after a short delay
+        }, 1000); // Adjust delay time as needed
+      }
+    },
+  };
+
+  return (
+    <>
+      <style>
+        {`
+          .testimonial-card {
+            background: black;
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          }
+        `}
+      </style>
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-semibold mb-4 text-center">What Our Clients Say</h2>
+          <Slider {...settings} autoplay={!isPaused}>
+            {testimonials.map((testimonial) => (
+              <motion.div
+                key={testimonial.id}
+                className="testimonial-card"
+                transition={{ type: "spring", stiffness: 300 }}
+                onMouseEnter={() => setIsPaused(false)} // Start autoplay on mouse enter
+                onMouseLeave={() => setIsPaused(true)} // Pause autoplay on mouse leave
+              >
+                <blockquote className="mb-4 italic">"{testimonial.quote}"</blockquote>
+                <cite className="block font-semibold not-italic">{testimonial.author}, {testimonial.position}</cite>
+              </motion.div>
+            ))}
+          </Slider>
+        </div>
+      </section>
+    </>
+  );
+}
