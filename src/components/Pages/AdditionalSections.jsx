@@ -1,7 +1,7 @@
 // AdditionalSections.js
 import React, { useState } from 'react';
 import { cardData,teamMembers ,testimonials,faqData} from '../../constants/PageData';
-import React from 'react';
+
 import { Disclosure } from '@headlessui/react';
 import { ChevronUpIcon } from '@heroicons/react/20/solid';
 
