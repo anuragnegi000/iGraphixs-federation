@@ -86,24 +86,27 @@ function Card({ user }) {
 
 
 export function FancyCarousel() {
-    const [activeItem, setActiveItem] = useState(5); // Ensure there is at least 6 items in `persons`
+    const [activeItem, setActiveItem] = useState(0); // Ensure there is at least 6 items in `persons`
     const wrapperRef = useRef(null);
     const timeoutRef = useRef(null);
-  
     useEffect(() => {
-      const currentWrapper = wrapperRef.current;
-      if (!currentWrapper) return;
-  
-      const transitionStyle = "600ms cubic-bezier(0.22, 0.61, 0.36, 1)";
-      currentWrapper.style.transition = transitionStyle;
-  
-      const timeout = setTimeout(() => {
-        currentWrapper.style.transition = "";
-      }, 900);
-      timeoutRef.current = timeout;
-  
-      return () => clearTimeout(timeout);
-    }, [activeItem]);
+        console.log("Active item index:", activeItem);
+        const currentWrapper = wrapperRef.current;
+        if (!currentWrapper) return;
+      
+        const transitionStyle = "600ms cubic-bezier(0.22, 0.61, 0.36, 1)";
+        currentWrapper.style.transition = transitionStyle;
+      
+        const timeout = setTimeout(() => {
+          currentWrapper.style.transition = "";
+        }, 900);
+        timeoutRef.current = timeout;
+      
+        return () => {
+          console.log("Cleaning up...");
+          clearTimeout(timeout);
+        };
+      },[activeItem]);
   
     return (
       <div style={{ display: 'flex', height: '100%', width: '100%', alignItems: 'center', justifyContent: 'center' }}>
@@ -121,7 +124,7 @@ export function FancyCarousel() {
                   opacity: index === 0 || index === persons.length - 1 ? 0 : 1,
                   pointerEvents: index === 0 || index === persons.length - 1 ? 'none' : 'auto'
                 }}
-                key={person.name}
+                key={index}
               >
                 <div style={{ position: 'relative', height: '100%', width: '100%', overflow: 'hidden', borderRadius: '16px', backgroundColor: '#c9c6c7' }}>
                   <img
