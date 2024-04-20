@@ -1,12 +1,14 @@
 // AdditionalSections.js
 import React, { useState } from 'react';
-import { cardData,teamMembers ,testimonials} from '../../constants/PageData';
+import { cardData, teamMembers, testimonials, faqData } from '../../constants/PageData';
 
+import { Disclosure } from '@headlessui/react';
+import { ChevronUpIcon } from '@heroicons/react/20/solid';
 
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const TestimonialCard = styled(motion.div)`
@@ -16,6 +18,7 @@ const TestimonialCard = styled(motion.div)`
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 `;
+
 
 
 
@@ -89,11 +92,11 @@ export function OurTeam() {
       <h2 className="text-3xl font-semibold mb-6">Our Team</h2>
       <div className="flex lg:flex-wrap justify-center">
         {teamMembers.map((member) => (
-          <div key={member.id} className="m-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+          <div key={member.id} className="  m-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
             <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full overflow-hidden mx-auto mb-4">
-              <img 
-                src={member.imageUrl} 
-                alt={member.name} 
+              <img
+                src={member.imageUrl}
+                alt={member.name}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -121,20 +124,32 @@ export function CustomizationOptions() {
   );
 }
 
-export function FAQs({ faqItems }) {
+
+export function FAQ() {
   return (
-    <section>
-      <h2 className="text-3xl font-semibold mb-6">FAQs</h2>
-      {faqItems.map(faq => (
-        <div key={faq.id} className="mb-4">
-          <h3 className="text-xl font-semibold">{faq.question}</h3>
-          <p className="text-gray-700">{faq.answer}</p>
-        </div>
-      ))}
-    </section>
+    <div className="w-full px-4 pt-16 bg-gray-900 text-white lg:px-8 lg:pt-24">
+      <div className="mx-auto w-full max-w-4xl rounded-2xl bg-gray-800 p-2 lg:p-8">
+        {faqData.map((item, index) => (
+          <Disclosure key={index}>
+            {({ open }) => (
+              <>
+                <Disclosure.Button className="flex w-full justify-between rounded-lg bg-purple-600 px-4 py-2 text-left text-sm font-medium text-purple-200 hover:bg-purple-600 focus:outline-none focus-visible:ring focus-visible:ring-purple-500/75 lg:text-lg lg:px-6 lg:py-3">
+                  <span>{item.question}</span>
+                  <ChevronUpIcon
+                    className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-purple-300 lg:h-6 lg:w-6`}
+                  />
+                </Disclosure.Button>
+                <Disclosure.Panel className="px-4 pb-2 pt-4 text-sm text-gray-300 lg:text-base lg:px-6 lg:pb-4 lg:pt-6">
+                  {item.answer}
+                </Disclosure.Panel>
+              </>
+            )}
+          </Disclosure>
+        ))}
+      </div>
+    </div>
   );
 }
-
 
 
 export function ImageGallery() {
@@ -156,12 +171,12 @@ export function ImageGallery() {
     </div>
   );
 }
-export function Title(){
+export function Title() {
   return (
     <>
-    <div>
-    <h1 className="text-4xl font-bold mb-8 text-center "> Logo Creation </h1>
-    </div>
+      <div>
+        <h1 className="text-4xl font-bold mb-8 text-center "> Logo Creation </h1>
+      </div>
     </>
   )
 }
