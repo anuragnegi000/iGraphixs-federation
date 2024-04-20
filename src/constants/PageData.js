@@ -1,4 +1,7 @@
 // whyChoose us 
+import {anurag} from "../assets";
+import {aditya} from "../assets";
+import {gunthar} from "../assets";
 export const cardData = ['Innovation', 'Reliability', 'Support', 'Expertise', 'Quality', 'Efficiency', 'Value', 'Goal'];
 
 
@@ -9,19 +12,19 @@ export const teamMembers = [
       id: 1,
       name: "Aditya ",
       role: "Full Developer Developer",
-      imageUrl: "../assets/ServicePage/outTeam/Aditya.jpg"
+      imageUrl: aditya
     },
     {
       id: 2,
       name: "Rust Dev",
       role: "Manager",
-      imageUrl:"/src/assets/ServicePage/outTeam/gunthar.JPG"
+      imageUrl:gunthar
     },
     {
       id: 3,
       name: "Anurag Negi",
       role: "MERN STACK Developer",
-      imageUrl: "/src/assets/ServicePage/outTeam/Anurag.JPG"
+      imageUrl:anurag
     }
   ];
 
