@@ -8,6 +8,7 @@ import Footer from "../Footer";
 import Slider from 'react-slick';
 
 import { ImageGallery, Testimonials, Title, WhyChoose, OurTeam, FAQ } from "./AdditionalSections"
+import Carousel, { FancyCarousel } from '../Carousel';
 
 // Slider settings
 const settings = {
@@ -98,12 +99,13 @@ function ServicePage() {
 
 
 
-          <ImageGallery />
+          <Carousel/>
+          <FancyCarousel/>
           <Testimonials testimonials={clientTestimonials} />
           <WhyChoose />
-           <CustomizationOptions />
         
-          <GetStarted />*/
+        
+         
           <OurTeam />
           <FAQ />
 

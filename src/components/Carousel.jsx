@@ -1,10 +1,10 @@
-
+import React, { useEffect, useRef, useState } from 'react';
 import Slider from 'react-slick';
 import { motion } from 'framer-motion';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { userData } from '../constants/userData'; // Adjust the import path as necessary
-
+import { persons } from '../constants/PageData';
 export default function Carousel() {
     const settings = {
         dots: true,
@@ -79,5 +79,93 @@ function Card({ user }) {
                 </div>
             </motion.div>
         </div>
+    );
+}
+
+
+
+
+export function FancyCarousel() {
+    const [activeItem, setActiveItem] = useState(5); // Ensure there is at least 6 items in `persons`
+    const wrapperRef = useRef(null);
+    const timeoutRef = useRef(null);
+  
+    useEffect(() => {
+      const currentWrapper = wrapperRef.current;
+      if (!currentWrapper) return;
+  
+      const transitionStyle = "600ms cubic-bezier(0.22, 0.61, 0.36, 1)";
+      currentWrapper.style.transition = transitionStyle;
+  
+      const timeout = setTimeout(() => {
+        currentWrapper.style.transition = "";
+      }, 900);
+      timeoutRef.current = timeout;
+  
+      return () => clearTimeout(timeout);
+    }, [activeItem]);
+  
+    return (
+      <div style={{ display: 'flex', height: '100%', width: '100%', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ width: '1200px', maxWidth: '100%' }}>
+          <ul ref={wrapperRef} style={{ display: 'flex', flexDirection: 'column', gap: '3px', height: '640px', flexWrap: 'wrap', padding: '1.5%' }}>
+            {persons.map((person, index) => (
+              <li
+                onClick={() => setActiveItem(index)}
+                aria-current={activeItem === index ? 'true' : 'false'}
+                style={{
+                  position: 'relative',
+                  cursor: 'pointer',
+                  width: activeItem === index ? '48%' : '8%',
+                  transition: 'width 600ms cubic-bezier(0.22, 0.61, 0.36, 1)',
+                  opacity: index === 0 || index === persons.length - 1 ? 0 : 1,
+                  pointerEvents: index === 0 || index === persons.length - 1 ? 'none' : 'auto'
+                }}
+                key={person.name}
+              >
+                <div style={{ position: 'relative', height: '100%', width: '100%', overflow: 'hidden', borderRadius: '16px', backgroundColor: '#c9c6c7' }}>
+                  <img
+                    style={{
+                      position: 'absolute',
+                      right: 0,
+                      top: '50%',
+                      height: 'auto',
+                      width: '24px',
+                      transform: 'translateY(-50%)',
+                      objectFit: 'cover',
+                      filter: 'grayscale(100%)'
+                    }}
+                    src={person.img}
+                    alt={person.name}
+                  />
+                  <div
+                    style={{
+                      position: 'absolute',
+                      inset: 0,
+                      opacity: activeItem === index ? 0.25 : 0,
+                      transition: 'opacity 300ms'
+                    }}
+                  />
+                  <div
+                    style={{
+                      position: 'absolute',
+                      left: '32px',
+                      top: '32px',
+                      width: '590px',
+                      padding: '16px',
+                      transform: activeItem === index ? 'translateX(0)' : 'translateX(16px)',
+                      opacity: activeItem === index ? 1 : 0,
+                      transition: 'transform 300ms, opacity 300ms'
+                    }}
+                  >
+                    <p style={{ fontSize: 'small', textTransform: 'uppercase', color: '#007bff' }}>{person.title}</p>
+                    <p style={{ fontSize: 'large', fontWeight: 'bold' }}>{person.name}</p>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     );
 }
