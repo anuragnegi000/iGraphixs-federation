@@ -88,7 +88,7 @@
   @apply rotate-[-360deg]
 }
 .why-choose-background {
-  background-image: url('/assets/brainwave-symbol.svg');
+  /* background-image: url('/assets/brainwave-symbol.svg'); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
