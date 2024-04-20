@@ -6,9 +6,9 @@ import top from "./TopNotch.png";
 import brainwaveSymbol from "./brainwave-symbol.svg";
 import brainwaveWhiteSymbol from "./brainwave-symbol-white.svg";
 
-import anurag from "./ServicePage/outTeam/Anurag.jpg";
+import anurag from "./ServicePage/outTeam/negi.jpg";
 import aditya from "./ServicePage/outTeam/Aditya.jpg";
-import gunthar from "./ServicePage/outTeam/gunthar.jpg";
+import gunthar from "./ServicePage/outTeam/negi.jpg";
 
 import play from "./play.svg";
 import gradient from "./gradient.png";
