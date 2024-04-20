@@ -3,6 +3,7 @@ import axios from 'axios';
 import { motion } from 'framer-motion';
 import 'tailwindcss/tailwind.css';
 import Header from "../Header";
+ 
 import Footer from "../Footer";
 import Slider from 'react-slick';
 
@@ -100,9 +101,9 @@ function ServicePage() {
           <ImageGallery />
           <Testimonials testimonials={clientTestimonials} />
           <WhyChoose />
-          {/* <CustomizationOptions />
+           <CustomizationOptions />
         
-          <GetStarted />*/}
+          <GetStarted />*/
           <OurTeam />
           <FAQ />
 
