@@ -39,7 +39,7 @@ const settings = {
   ]
 };
 
-function Thumbnail() {
+function Animation() {
   const [portfolioExamples, setPortfolioExamples] = useState([]);
   const [clientTestimonials, setClientTestimonials] = useState([]);
   const [faqItems, setFaqItems] = useState([]);
@@ -115,4 +115,4 @@ function Thumbnail() {
   );
 }
 
-export default Thumbnail;
+export default Animation;
