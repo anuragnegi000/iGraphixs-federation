@@ -41,9 +41,10 @@ const router = createBrowserRouter([
     element: <Thumbnail />
 
   },
- 
- 
-  
+  {
+    path:"/"
+
+  },
   {
     path: "/advanced",
     element: <Advanced /> // comment
@@ -52,7 +53,6 @@ const router = createBrowserRouter([
     path:"/logo",
     element:<LogoPage/>
   }
-
 
 ]);
 
