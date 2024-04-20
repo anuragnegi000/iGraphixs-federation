@@ -11,6 +11,7 @@ import Thumbnail from "./components/Pages/Thumbnail.jsx";
 
 
 import Advanced from "./components/Pages/Advanced.jsx";
+import LogoPage from "./components/Pages/Logo.jsx";
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
 
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
   {
     path: "/advanced",
     element: <Advanced /> // comment
+  },
+  {
+    path:"/logo",
+    element:<LogoPage/>
   }
 
 
