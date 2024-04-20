@@ -9,7 +9,7 @@ export const teamMembers = [
       id: 1,
       name: "Aditya ",
       role: "Full Developer Developer",
-      imageUrl: "/src/assets/ServicePage/outTeam/Aditya.jpg"
+      imageUrl: "../assets/ServicePage/outTeam/Aditya.jpg"
     },
     {
       id: 2,
