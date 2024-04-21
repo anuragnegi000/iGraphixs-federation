@@ -123,8 +123,6 @@ export function CustomizationOptions() {
     </section>
   );
 }
-
-
 export function FAQ() {
   return (
     <div className="w-full px-4 pt-16 bg-gray-900 text-white lg:px-8 lg:pt-24">
