@@ -205,6 +205,15 @@ export function ThumbnailTitle() {
     </>
   )
 }
+export function BrandTitle() {
+  return (
+    <>
+      <div>
+        <h1 className="text-4xl font-bold mb-8 text-center "> Brand and stuff </h1>
+      </div>
+    </>
+  )
+}
 export function GetStarted() {
   return (
     <section>
