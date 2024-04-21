@@ -214,6 +214,15 @@ export function BrandTitle() {
     </>
   )
 }
+export function IllustrationTitle() {
+  return (
+    <>
+      <div>
+        <h1 className="text-4xl font-bold mb-8 text-center "> Illustration </h1>
+      </div>
+    </>
+  )
+}
 export function GetStarted() {
   return (
     <section>
