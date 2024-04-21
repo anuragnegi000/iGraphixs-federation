@@ -196,6 +196,15 @@ export function AnimationTittle() {
     </>
   )
 }
+export function ThumbnailTitle() {
+  return (
+    <>
+      <div>
+        <h1 className="text-4xl font-bold mb-8 text-center "> Thumbnail </h1>
+      </div>
+    </>
+  )
+}
 export function GetStarted() {
   return (
     <section>

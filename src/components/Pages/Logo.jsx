@@ -6,7 +6,7 @@ import Header from "../Header";
 import Footer from "../Footer";
 import Slider from 'react-slick';
 
-import { ImageGallery, Testimonials, Title, WhyChoose, OurTeam, FAQ } from "./AdditionalSections"
+import { ImageGallery, Testimonials, Title, WhyChoose, OurTeam, FAQ, LogoTittle } from "./AdditionalSections"
 
 // Slider settings
 const settings = {
@@ -92,7 +92,7 @@ function LogoPage() {
         <section
           className="pt-[12rem] -mt-[5.25rem]">
 
-          <Title />
+          <LogoTittle/>
 
 
 
