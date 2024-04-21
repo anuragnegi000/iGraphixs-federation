@@ -180,6 +180,24 @@ export function Title() {
     </>
   )
 }
+export function LogoTittle() {
+  return (
+    <>
+      <div>
+        <h1 className="text-4xl font-bold mb-8 text-center "> Logo Creation </h1>
+      </div>
+    </>
+  )
+}
+export function AnimationTittle() {
+  return (
+    <>
+      <div>
+        <h1 className="text-4xl font-bold mb-8 text-center "> Animation and stuff </h1>
+      </div>
+    </>
+  )
+}
 export function GetStarted() {
   return (
     <section>
