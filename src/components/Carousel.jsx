@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { userData } from '../constants/userData'; // Adjust the import path as necessary
 import { persons } from '../constants/PageData';
+
 export default function Carousel() {
     const settings = {
         dots: true,
@@ -66,10 +67,10 @@ function Card({ user }) {
                     src={user.image}
                     className="h-56 w-full object-cover"
                 />
-                <div className="bg-white p-4 sm:p-6">
-                    <time dateTime={user.date} className="block text-xs text-gray-500">
-                        {new Date(user.date).toLocaleDateString()}
-                    </time>
+                <div className="bg-white block text-xs text-gray-500 p-4 sm:p-6">
+                   {user.date} 
+                       
+                    
                     <h3 className="mt-0.5 text-lg text-gray-900">
                         {user.name}
                     </h3>

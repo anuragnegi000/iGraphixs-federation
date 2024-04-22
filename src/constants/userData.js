@@ -1,38 +1,44 @@
+import { uday } from '../assets';
+import { akash } from '../assets';
+import { akki } from '../assets';
+import { arpit } from '../assets';
+import { abhay } from '../assets';
+
 export const userData = [
     {
         id: 1,
         name: "Uday Shukla",
         description: "UDAY IS A PASSIONATE FOUNDER WITH A EXPERIENCE OF 4 YEARS AT MANAGEMENT",
-        image: "https://images.unsplash.com/photo-1558981285-6f0c94958bb6",
+        image: uday,
         date: "FOUNDER AND CEO"
     },
     {
         id: 2,
-        name: "Bob Smith",
-        description: "Bob is a software developer with a keen interest in open source projects.",
-        image: "https://images.unsplash.com/photo-1558981359-219d6364c9c8",
-        date: "2023-02-20"
+        name: "Akki singh",
+        description: "AKKI IS A PROFFESIONAL DESIGNER WITH A EXPERIENCE OF 4 YEARS AT DESIGNING & CONTENT PLANNING EXPERIENCE OF 2 YEARS",
+        image: akki,
+        date: "CO-Founder"
     },
     {
         id: 3,
-        name: "Carol Taylor",
-        description: "Carol is an avid reader and writer, focusing on contemporary fiction.",
-        image: "https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg",
-        date: "2023-03-10"
+        name: "Arpit singh",
+        description: "ARPIT HAVE A KNOWLEDGE OF TECHNOLOGY AND FINANCE WITH 3 YEARS OF EXPERIENCE",
+        image: arpit,
+        date: "CTO & CFO"
     },
     {
         id: 4,
-        name: "David Lee",
-        description: "David is an entrepreneur who has started multiple successful businesses in the tech industry.",
-        image: "https://images.unsplash.com/photo-1558980335-8e0c25f7f673",
-        date: "2023-04-05"
+        name: "Akash Kapruwan",
+        description: "AKASH IS A PROFFESIONAL DESIGNER WITH A EXPERIENCE OF 4 YEARS AT DESIGNING & 2 YEARS OF EXPERIENCE IN SOCIAL MEDIA MANAGEMENT",
+        image: akash,
+        date: "Cheif Operating Officer"
     },
     {
         id: 5,
-        name: "Eva Green",
-        description: "Eva is a professional landscape architect who designs sustainable and beautiful outdoor spaces.",
-        image: "https://images.unsplash.com/photo-1558980394-0cb3f55d4b4c",
-        date: "2023-05-25"
+        name: "Mr. Abhay",
+        description: "ABHAY IS A PROFFESIONAL DESIGNER WITH A EXPERIENCE OF 5 YEARS AT DESIGNING",
+        image: abhay,
+        date: "SENIOR MANAGER"
     }
 ];
 

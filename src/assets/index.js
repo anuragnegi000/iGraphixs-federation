@@ -11,6 +11,7 @@ import uday from "./creators/uday.jpg";
 import akki from "./creators/akki.jpg";
 import arpit from "./creators/arpit.jpg";
 import akash from "./creators/akash.jpg";
+import abhay from "./creators/abhay.jpg";
 
 import anurag from "./ServicePage/outTeam/negi.jpg";
 import aditya from "./ServicePage/outTeam/Aditya.jpg";
@@ -209,4 +210,5 @@ export {
   akki,
   arpit,
   akash,
+  abhay,
 };
