@@ -6,6 +6,12 @@ import top from "./TopNotch.png";
 import brainwaveSymbol from "./brainwave-symbol.svg";
 import brainwaveWhiteSymbol from "./brainwave-symbol-white.svg";
 
+
+import uday from "./creators/uday.jpg";
+import akki from "./creators/akki.jpg";
+import arpit from "./creators/arpit.jpg";
+import akash from "./creators/akash.jpg";
+
 import anurag from "./ServicePage/outTeam/negi.jpg";
 import aditya from "./ServicePage/outTeam/Aditya.jpg";
 import gunthar from "./ServicePage/outTeam/negi.jpg";
@@ -198,5 +204,9 @@ export {
   mainstory,
   anurag,
   aditya,
-  gunthar
+  gunthar,
+  uday,
+  akki,
+  arpit,
+  akash,
 };
