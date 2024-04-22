@@ -1,10 +1,10 @@
 export const userData = [
     {
         id: 1,
-        name: "Alice Johnson",
-        description: "Alice is a passionate photographer who loves to capture the beauty of nature.",
+        name: "Uday Shukla",
+        description: "UDAY IS A PASSIONATE FOUNDER WITH A EXPERIENCE OF 4 YEARS AT MANAGEMENT",
         image: "https://images.unsplash.com/photo-1558981285-6f0c94958bb6",
-        date: "2023-01-15"
+        date: "FOUNDER AND CEO"
     },
     {
         id: 2,
