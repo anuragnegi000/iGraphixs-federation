@@ -65,13 +65,13 @@ function Card({ user }) {
                 <img
                     alt={user.name}
                     src={user.image}
-                    className="h-56 w-full object-cover"
+                    className="h-56 w-full object-scale-down"
                 />
-                <div className="bg-white block text-xs text-gray-500 p-4 sm:p-6">
+                <div className=" block text-xs text-gray-500 p-4 sm:p-6">
                    {user.date} 
                        
                     
-                    <h3 className="mt-0.5 text-lg text-gray-900">
+                    <h3 className="mt-0.5 text-lg text-white-900">
                         {user.name}
                     </h3>
                     <p className="mt-2 line-clamp-3 text-sm text-gray-500">
