@@ -335,7 +335,7 @@ export const benefits = [
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
 
-    url : "/thumbnail"
+    url : ""
 
   },
   { 
@@ -357,7 +357,7 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-6.svg",  
     iconUrl: benefitIcon6,
     imageUrl: benefitImage2,
-    url : "/animation"
+    url : "https://www.behance.net/gallery/135129329/Stream-Animated-Pack"
   },
   {
     id: "3",

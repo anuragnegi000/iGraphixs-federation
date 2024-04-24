@@ -45,8 +45,7 @@ const router = createBrowserRouter([
 
   },
   {
-    path:"/animation",
-    element:<Animation/>
+   
   },
   {
     path: "/advanced",
