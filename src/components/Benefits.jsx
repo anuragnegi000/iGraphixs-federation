@@ -4,6 +4,8 @@ import Section from "./Section";
 import Arrow from "../assets/svg/Arrow";
 import { GradientLight } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
+import Modal from "react-responsive-modal";
+import ModalButton from "./simUtility/ModalButton";
 
 const Benefits = () => {
     return (
@@ -31,7 +33,7 @@ const Benefits = () => {
                                             alt={item.title}
                                         />
                                         <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
-                                            portfolio
+                                          <button> <ModalButton/> </button>
                                         </p>
                                         <Arrow />
                                     </div>
