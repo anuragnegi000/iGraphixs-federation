@@ -7,8 +7,6 @@ import { ClerkProvider, SignIn, SignUp } from "@clerk/clerk-react";
 import App from "./App.jsx";
 import "./index.css";
 
-
-
 import Advanced from "./components/Pages/Advanced.jsx";
 import LogoPage from "./components/Pages/Logo.jsx";
 import Animation from "./components/Pages/Animation.jsx";
@@ -45,9 +43,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/thumbnail",
-    element:<Advanced/>
+    element: <Advanced />,
   },
-  {},
+  {
+    path: "/ImageSelector",
+    element: <h1>Image Selector </h1>,
+  },
   {
     path: "/advanced",
     element: <Advanced />, // comment
