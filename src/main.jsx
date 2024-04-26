@@ -6,14 +6,7 @@ import { ClerkProvider, SignIn, SignUp } from "@clerk/clerk-react";
 
 import App from "./App.jsx";
 import "./index.css";
-
-import Advanced from "./components/Pages/Advanced.jsx";
-import LogoPage from "./components/Pages/Logo.jsx";
-import Animation from "./components/Pages/Animation.jsx";
-import Illustration from "./components/Pages/Illustration.jsx";
-import Brand from "./components/Pages/Brand.jsx";
-
-import Modal from "react-responsive-modal";
+import ServiceModal from "./components/simUtility/Modal.jsx";
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
@@ -41,6 +34,21 @@ const router = createBrowserRouter([
     path: "/signup",
     element: <SignUp mode="model" />,
   },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
+      <RouterProvider router={router} />
+    </ClerkProvider>
+  </React.StrictMode>,
+);
+
+{
+  /*  
+
+
+ default Benefits.jsx routers element path combination  
   {
     path: "/thumbnail",
     element: <Advanced />,
@@ -65,12 +73,8 @@ const router = createBrowserRouter([
     path: "/brand",
     element: <Brand />,
   },
-]);
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
-      <RouterProvider router={router} />
-    </ClerkProvider>
-  </React.StrictMode>,
-);
+
+
+*/
+}
