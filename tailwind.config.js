@@ -92,7 +92,13 @@ export default {
       },
     },
   },
+ 
+    // ... the rest of your config
+  
+  
   plugins: [
+    ("rippleui"),
+    
     flowbite.plugin(),
     plugin(function ({ addBase, addComponents, addUtilities }) {
       addBase({});
