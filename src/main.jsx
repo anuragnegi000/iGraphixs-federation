@@ -6,7 +6,6 @@ import { ClerkProvider, SignIn, SignUp } from "@clerk/clerk-react";
 
 import App from "./App.jsx";
 import "./index.css";
-import ServiceModal from "./components/simUtility/Modal.jsx";
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
