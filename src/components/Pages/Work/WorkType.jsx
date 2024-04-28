@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 import Footer from "../../Footer";
-
+import GridTree from "./GridTree";
 export const WorkType = () => {
   const slides = [
     {
@@ -74,10 +74,67 @@ export const WorkType = () => {
           </div>
         </div>
 
+        <div className="second-card flex  justify-center gap-10 m-4 p-4  border border-purple-700 grid-3  md:grid flex-wrap ">
+          <SecCard
+            url={
+              "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80"
+            }
+          />
+          <SecCard
+            url={
+              "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80"
+            }
+          />
+          <SecCard
+            url={
+              "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80"
+            }
+          />
+          <GridTree />
+        </div>
         <Footer />
       </div>
     </>
   );
 };
 
+const SecCard = ({ url }) => {
+  return (
+    <>
+      <div className="sec-card">
+        <div className="card-wrapper">
+          <div className="card-image">
+            <img
+              alt="Woman listening to music"
+              src={url}
+              style={{
+                width: "500px",
+                height: "500px",
+                objectFit: "cover",
+                rounded: "large",
+              }}
+            />
+          </div>
+          <div className="card-footer">
+            <p style={{ fontSize: "12px", color: "rgba(255, 255, 255, 0.8)" }}>
+              Available soon.
+            </p>
+            <button
+              style={{
+                fontSize: "12px",
+                color: "rgba(255, 255, 255, 0.8)",
+                background: "rgba(0, 0, 0, 0.2)",
+                border: "none",
+                borderRadius: "4px",
+                padding: "6px 12px",
+              }}
+            >
+              Notify me
+            </button>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 export default WorkType;
