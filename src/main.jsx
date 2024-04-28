@@ -6,6 +6,7 @@ import { ClerkProvider, SignIn, SignUp } from "@clerk/clerk-react";
 
 import App from "./App.jsx";
 import "./index.css";
+import WorkType from "./components/Pages/Work/WorkType.jsx";
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
   {
     path: "/signup",
     element: <SignUp mode="model" />,
+  },
+  {
+    path: "/WorkType",
+    element: <WorkType />,
   },
 ]);
 
