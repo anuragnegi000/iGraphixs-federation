@@ -354,7 +354,7 @@ export const benefits = [
     imageUrl: benefitImage2,
     light: true,
 
-    url: "/logo",
+    url: "/Logo",
   },
   {
     id: "2",
