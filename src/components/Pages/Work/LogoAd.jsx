@@ -1,15 +1,16 @@
 import Header from "../../Header";
 import Footer from "../../Footer";
-const BigText = "Creative Logo Creation and Service ";
+
 export const LogoAd = () => {
+  const BigText = "Creative Logo Creation and Service ";
   return (
     <>
       <div className="main-container  z-10 m-5 !px-0 !py-10  md-9 pt-16 ">
         <div className="header-container">
           <Header />
         </div>
-        <Heading />
-        <div className="  md:flex md:flex-row  sm:gap-4  md:flex-shrink-0 border border-t-black border-l-black border-pink-600 m-5 p-9 mt-28  ">
+        <Heading headinContnet={BigText} />
+        <div className="  md:flex md:flex-row  sm:gap-4 md:flex-shrink-0 border border-t-black border-l-black border-pink-600 m-5 p-9 mt-28  ">
           <ImageComponents />
 
           <ImageComponents />
@@ -23,7 +24,7 @@ export const LogoAd = () => {
   );
 };
 
-const Heading = () => {
+export const Heading = () => {
   return (
     <>
       <div className=" mt-28">
@@ -36,7 +37,7 @@ const Heading = () => {
     </>
   );
 };
-const ImageComponents = () => {
+export const ImageComponents = () => {
   return (
     <>
       <div>
