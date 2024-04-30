@@ -1,10 +1,10 @@
 import Header from "../../Header";
 import Footer from "../../Footer";
 
-export const Logo = () => {
+export const AdvanceCreative = () => {
   return (
     <>
-      <div className="main-container">
+      <div className="main-container z-10 m-5 !px-0 !py-10  md-9 pt-16  ">
         <div className="header-container">
           <Header />
         </div>
@@ -16,3 +16,5 @@ export const Logo = () => {
     </>
   );
 };
+
+export default AdvanceCreative;
