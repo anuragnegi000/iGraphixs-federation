@@ -9,7 +9,7 @@ export const LogoAd = () => {
           <Header />
         </div>
         <Heading />
-        <div className="  md:flex md:flex-row  sm:gap-4  md:flex-shrink-0 border border-t-black border-pink-600 m-5 p-9 mt-28  ">
+        <div className="  md:flex md:flex-row  sm:gap-4  md:flex-shrink-0 border border-t-black border-l-black border-pink-600 m-5 p-9 mt-28  ">
           <ImageComponents />
 
           <ImageComponents />
