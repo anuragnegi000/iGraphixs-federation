@@ -421,3 +421,13 @@ export const socials = [
     url: "#",
   },
 ];
+
+export const logo = [{
+  title:"Logo",
+  description:"Description about logo",
+},{
+  title:"Logo",
+  description:"",
+}
+
+]
