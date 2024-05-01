@@ -6,7 +6,7 @@ export const AdvanceCreative = () => {
   return (
     <>
       <div className="main-container z-10 m-5 !px-0 !py-10  md-9 pt-16  ">
-        <div className="header-container">
+        <div className="header-container border border-t-blue-500">
           <Header />
         </div>
         <div className="mt-28">
@@ -15,30 +15,33 @@ export const AdvanceCreative = () => {
           </div>
 
           <div className="m-5 p-5">
-            <div className=" md:grid md:grid-cols-3 sm:flex sm:flex-col p-3 m-5 gap-4  ">
-              <div>
-                {" "}
-                <ImageComponents />{" "}
+            <div className="flex flex-row justify-center">
+              <div className="  flex  w-[75%] justify-center   ">
+                <div className=" m-4 gap-4 justify-center  ">
+                  <ImageComponents />
+                </div>
+                <div className="  m-4 ">
+                  <ImageComponents />
+                </div>
+                <div className="  m-4 ">
+                  <ImageComponents />
+                </div>
               </div>
-              <div>
-                <ImageComponents />{" "}
-              </div>
-              <div>
-                <ImageComponents />{" "}
-              </div>{" "}
-              <div className="col-span-3">
-                <ImageComponents />{" "}
-              </div>{" "}
-              <div className="col-start-1 col-end-3">
-                <ImageComponents />{" "}
-              </div>{" "}
-              <div>
-                <ImageComponents />{" "}
-              </div>
+            </div>
+
+            <div></div>
+          </div>
+        </div>
+        <div className="flex flex-row justify-center">
+          <div className="  flex  w-[50%] justify-center   ">
+            <div className=" m-4 gap-6 justify-center  ">
+              <ImageComponents />
+            </div>
+            <div className="  m-4 ">
+              <ImageComponents />
             </div>
           </div>
         </div>
-
         <div className="body-container">
           <Footer />
         </div>
