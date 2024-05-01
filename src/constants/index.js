@@ -55,49 +55,44 @@ import {
   icon_IP,
   AdobePR,
 } from "../assets";
-// carousel  data
+// carousel  data 
 
 export const userData = [
   {
-    id: 1,
-    name: "Alice Johnson",
-    description:
-      "Alice is a passionate photographer who loves to capture the beauty of nature.",
-    image: "https://images.unsplash.com/photo-1558981285-6f0c94958bb6",
-    date: "2023-01-15",
+      id: 1,
+      name: "Alice Johnson",
+      description: "Alice is a passionate photographer who loves to capture the beauty of nature.",
+      image: "https://images.unsplash.com/photo-1558981285-6f0c94958bb6",
+      date: "2023-01-15"
   },
   {
-    id: 2,
-    name: "Bob Smith",
-    description:
-      "Bob is a software developer with a keen interest in open source projects.",
-    image: "https://images.unsplash.com/photo-1558981359-219d6364c9c8",
-    date: "2023-02-20",
+      id: 2,
+      name: "Bob Smith",
+      description: "Bob is a software developer with a keen interest in open source projects.",
+      image: "https://images.unsplash.com/photo-1558981359-219d6364c9c8",
+      date: "2023-02-20"
   },
   {
-    id: 3,
-    name: "Carol Taylor",
-    description:
-      "Carol is an avid reader and writer, focusing on contemporary fiction.",
-    image: "https://images.unsplash.com/photo-1558981408-db0ecd8a1ee1",
-    date: "2023-03-10",
+      id: 3,
+      name: "Carol Taylor",
+      description: "Carol is an avid reader and writer, focusing on contemporary fiction.",
+      image: "https://images.unsplash.com/photo-1558981408-db0ecd8a1ee1",
+      date: "2023-03-10"
   },
   {
-    id: 4,
-    name: "David Lee",
-    description:
-      "David is an entrepreneur who has started multiple successful businesses in the tech industry.",
-    image: "https://images.unsplash.com/photo-1558980335-8e0c25f7f673",
-    date: "2023-04-05",
+      id: 4,
+      name: "David Lee",
+      description: "David is an entrepreneur who has started multiple successful businesses in the tech industry.",
+      image: "https://images.unsplash.com/photo-1558980335-8e0c25f7f673",
+      date: "2023-04-05"
   },
   {
-    id: 5,
-    name: "Eva Green",
-    description:
-      "Eva is a professional landscape architect who designs sustainable and beautiful outdoor spaces.",
-    image: "https://images.unsplash.com/photo-1558980394-0cb3f55d4b4c",
-    date: "2023-05-25",
-  },
+      id: 5,
+      name: "Eva Green",
+      description: "Eva is a professional landscape architect who designs sustainable and beautiful outdoor spaces.",
+      image: "https://images.unsplash.com/photo-1558980394-0cb3f55d4b4c",
+      date: "2023-05-25"
+  }
 ];
 export const navigation = [
   {
@@ -177,6 +172,7 @@ export const brainwaveServicesIcons = [
   sliders04,
 ];
 
+
 export const roadmap = [
   {
     id: "0",
@@ -225,8 +221,7 @@ export const collabContent = [
   },
   {
     id: "1",
-    title:
-      "24/7 service available! We are able to deliver graphics in your expected time.",
+    title: "24/7 service available! We are able to deliver graphics in your expected time.",
     img: seam,
   },
   {
@@ -299,8 +294,7 @@ export const pricing = [
   {
     id: "0",
     title: "Basic Branding Package",
-    description:
-      "At iGraphixs we understand the critcal role a cohesive brand identity plays a establishing your presence in market. Our brand provide you with the tools and knowledge necessary to maintain a consistent and compelling brand existence",
+    description: "At iGraphixs we understand the critcal role a cohesive brand identity plays a establishing your presence in market. Our brand provide you with the tools and knowledge necessary to maintain a consistent and compelling brand existence",
     price: "150",
     features: [
       "We provide you social media kit, vector file, source file, logo transparency",
@@ -311,8 +305,7 @@ export const pricing = [
   {
     id: "1",
     title: "Basic Stream Animated Package",
-    description:
-      "Enhance your streaming setup with our stream pack, mericuluosly crafted to provide you with everything yiu need for a captivating streaming journey. Designed with both quality and affordability in mind, the pack is tailored to empower streamers of all levels to standout and angage their audience effectively! ",
+    description: "Enhance your streaming setup with our stream pack, mericuluosly crafted to provide you with everything yiu need for a captivating streaming journey. Designed with both quality and affordability in mind, the pack is tailored to empower streamers of all levels to standout and angage their audience effectively! ",
     price: "175",
     features: [
       "We provide you animated overlay, facecam, live chat box, stream screens, stinger transition, and alerts",
@@ -323,8 +316,7 @@ export const pricing = [
   {
     id: "2",
     title: "Premium Branding/Stream Package",
-    description:
-      "Our brand provide you with the knowledge and graphics necessary to maintain a consitent and compelling brand/content presence, empowering you yo communicate effectively with your audience and standout in crowded market place.",
+    description: "Our brand provide you with the knowledge and graphics necessary to maintain a consitent and compelling brand/content presence, empowering you yo communicate effectively with your audience and standout in crowded market place.",
     price: "225",
     features: [
       "We provide you everything what you want for your brand/streaming in best possible quality with full satisfaction of your money you invested",
@@ -343,27 +335,29 @@ export const benefits = [
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
 
-    url: "/WorkType",
+    url : ""
+
   },
-  {
+  { 
     id: "1",
-    title: "Creative Logo creation service",
+    title: "Creative Logo creation service" ,
     text: "We spealize in creating mascot, vector, wordmark, modern, minimalist and others logo style. We will represent your brands identity and vision. Checkout our diverse portfolio showcasing a different styles of logo!",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
     light: true,
 
-    url: "/logo",
+    url : "/logo"
+
   },
   {
     id: "2",
     title: "Visualized Animation Package Service",
     text: "We create a specialized animation packages with a experience of 3.5 years. With years of experience in animated stream package, we bring a great understanding of animation principles & colors to every project. ",
-    backgroundUrl: "./src/assets/benefits/card-6.svg",
+    backgroundUrl: "./src/assets/benefits/card-6.svg",  
     iconUrl: benefitIcon6,
     imageUrl: benefitImage2,
-    url: "https://www.behance.net/gallery/135129329/Stream-Animated-Pack",
+    url : "https://www.behance.net/gallery/135129329/Stream-Animated-Pack"
   },
   {
     id: "3",
@@ -373,7 +367,7 @@ export const benefits = [
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
     light: true,
-    url: "/illustration",
+    url : "/illustration"
   },
   {
     id: "4",
@@ -382,7 +376,7 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon5,
     imageUrl: benefitImage2,
-    url: "/brand",
+    url : "/brand"
   },
   {
     id: "5",
@@ -391,7 +385,7 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
-    url: "/advanced",
+    url : "/advanced"
   },
 ];
 
