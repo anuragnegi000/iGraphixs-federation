@@ -7,6 +7,8 @@ import { ClerkProvider, SignIn, SignUp } from "@clerk/clerk-react";
 import App from "./App.jsx";
 import "./index.css";
 import WorkType from "./components/Pages/Work/WorkType.jsx";
+import LogoAd from "./components/Pages/Work/LogoAd.jsx";
+import AdvanceCreative from "./components/Pages/Work/AdvanceCreative.jsx";
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
@@ -37,6 +39,14 @@ const router = createBrowserRouter([
   {
     path: "/WorkType",
     element: <WorkType />,
+  },
+  {
+    path: "/Logo",
+    element: <LogoAd />,
+  },
+  {
+    path: "/advanced",
+    element: <AdvanceCreative />,
   },
 ]);
 
