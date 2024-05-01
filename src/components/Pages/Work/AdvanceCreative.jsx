@@ -9,39 +9,34 @@ export const AdvanceCreative = () => {
         <div className="header-container border border-t-blue-500">
           <Header />
         </div>
-        <div className="mt-28">
-          <div className="heading">
-            <Heading />
-          </div>
+        <div className="justify-center mt-28">
+  <div className="sm:flex sm:flex-col-1 sm:flex-col-1 md:flex-wrap md:justify-center">
+    <div className="flex sm:w-[75%] md:w-[75%] justify-center flex-col sm:flex-row items-center md:grid md:grid-cols-3 md:gap-4 md:justify-center">
+      <div class="m-4 gap-4 justify-center">
+        <ImageComponents class="w-auto h-auto max-w-full" />
+      </div>
+      <div class="m-4 gap-4 justify-center">
+        <ImageComponents class="w-auto h-auto max-w-full" />
+      </div>
+      <div class="m-4 gap-4 justify-center">
+        <ImageComponents class="w-auto h-auto max-w-full" />
+      </div>
+    </div>
+  </div>
+</div>
 
-          <div className="m-5 p-5">
-            <div className="flex flex-row justify-center">
-              <div className="  flex  w-[75%] justify-center   ">
-                <div className=" m-4 gap-4 justify-center  ">
-                  <ImageComponents />
-                </div>
-                <div className="  m-4 ">
-                  <ImageComponents />
-                </div>
-                <div className="  m-4 ">
-                  <ImageComponents />
-                </div>
-              </div>
-            </div>
 
-            <div></div>
-          </div>
-        </div>
-        <div className="flex flex-row justify-center">
-          <div className="  flex  w-[50%] justify-center   ">
-            <div className=" m-4 gap-6 justify-center  ">
-              <ImageComponents />
+        <div className="md:flex justify-center">
+          <div className="sm:flex sm:flex-col-1 sm:w-[50%] md:w-[50%] md:grid md:grid-cols-2 md:gap-6 md:justify-center">
+            <div className="m-4 justify-center">
+              <ImageComponents class="w-auto h-auto max-w-full" />
             </div>
-            <div className="  m-4 ">
-              <ImageComponents />
+            <div className="m-4 justify-center">
+              <ImageComponents class="w-auto h-auto max-w-full" />
             </div>
           </div>
         </div>
+
         <div className="body-container">
           <Footer />
         </div>
