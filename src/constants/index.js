@@ -347,12 +347,8 @@ export const benefits = [
     imageUrl: benefitImage2,
     light: true,
 
-<<<<<<< HEAD
-    url : "/logo"
 
-=======
     url: "/Logo",
->>>>>>> refs/remotes/origin/main
   },
   {
     id: "2",
