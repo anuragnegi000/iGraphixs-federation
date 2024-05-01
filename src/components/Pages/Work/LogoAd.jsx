@@ -1,5 +1,6 @@
 import Header from "../../Header";
 import Footer from "../../Footer";
+import { Logo2 } from "../../../constants/index";
 
 export const LogoAd = () => {
   const BigText = "Creative Logo Creation and Service ";
@@ -41,6 +42,7 @@ export const ImageComponents = () => {
   return (
     <>
       <div>
+        <a href="https://www.behance.net/gallery/135017457/Mascot-Logo">
         <article className=" mt-4 relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
           <img
             alt=""
@@ -59,22 +61,20 @@ export const ImageComponents = () => {
               </time>
 
               <a href="#">
-                <h3 className="mt-0.5 text-lg text-white">
-                  How to position your furniture for positivity
-                </h3>
+                <h3 className="mt-0.5 text-lg text-white">Mascot logo</h3>
               </a>
 
               <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Recusandae dolores, possimus pariatur animi temporibus nesciunt
-                praesentium dolore sed nulla ipsum eveniet corporis quidem,
-                mollitia itaque minus soluta, voluptates neque explicabo tempora
-                nisi culpa eius atque dignissimos. Molestias explicabo corporis
-                voluptatem?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                laborum neque quibusdam dolore odio maxime, cupiditate
+                voluptatum quas modi natus suscipit unde fugiat. Illo, numquam
+                aperiam odio ad vel quisquam tempora officia praesentium dolore
+                asperiores nulla dolorum labore eveniet aut?
               </p>
             </div>
           </div>
         </article>
+        </a>
       </div>
     </>
   );
@@ -84,6 +84,7 @@ export const ImageComponents2 = () => {
   return (
     <>
       <div>
+        <a href="https://www.behance.net/gallery/135020029/Vector-Sketch-Logo">
         <article className=" mt-4 relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
           <img
             alt=""
@@ -102,22 +103,20 @@ export const ImageComponents2 = () => {
               </time>
 
               <a href="#">
-                <h3 className="mt-0.5 text-lg text-white">
-                  How to position your furniture for positivity
-                </h3>
+                <h3 className="mt-0.5 text-lg text-white">Vector Logo</h3>
               </a>
 
               <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Recusandae dolores, possimus pariatur animi temporibus nesciunt
-                praesentium dolore sed nulla ipsum eveniet corporis quidem,
-                mollitia itaque minus soluta, voluptates neque explicabo tempora
-                nisi culpa eius atque dignissimos. Molestias explicabo corporis
-                voluptatem?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
+                unde qui, odit vitae similique doloremque amet ullam expedita
+                fugiat quae dicta consectetur sunt porro asperiores consequuntur
+                atque quibusdam sapiente corrupti eaque blanditiis enim
+                voluptates quo libero aspernatur? A, reprehenderit placeat.
               </p>
             </div>
           </div>
         </article>
+        </a>
       </div>
     </>
   );
@@ -127,6 +126,7 @@ export const ImageComponents3 = () => {
   return (
     <>
       <div>
+        <a href="https://www.behance.net/gallery/135021326/Concept-Logo">
         <article className=" mt-4 relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
           <img
             alt=""
@@ -145,22 +145,20 @@ export const ImageComponents3 = () => {
               </time>
 
               <a href="#">
-                <h3 className="mt-0.5 text-lg text-white">
-                  How to position your furniture for positivity
-                </h3>
+                <h3 className="mt-0.5 text-lg text-white">Concept Logo</h3>
               </a>
 
               <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Recusandae dolores, possimus pariatur animi temporibus nesciunt
-                praesentium dolore sed nulla ipsum eveniet corporis quidem,
-                mollitia itaque minus soluta, voluptates neque explicabo tempora
-                nisi culpa eius atque dignissimos. Molestias explicabo corporis
-                voluptatem?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                natus non, facere accusamus quasi, praesentium eaque ducimus
+                voluptatibus est optio itaque recusandae, quam doloribus
+                molestias. Quis consectetur itaque ad excepturi cupiditate earum
+                maxime quia nemo dolores ipsum, error esse quae.
               </p>
             </div>
           </div>
         </article>
+        </a>
       </div>
     </>
   );

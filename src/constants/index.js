@@ -422,12 +422,18 @@ export const socials = [
   },
 ];
 
-export const logo = [{
+export const Logo2 = [
+{
   title:"Logo",
   description:"Description about logo",
-},{
+},
+{
   title:"Logo",
-  description:"",
+  description:"Description about logo",
+},
+{
+  title:"Logo",
+  description:"Description about logo"
 }
 
 ]
