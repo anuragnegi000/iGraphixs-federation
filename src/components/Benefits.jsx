@@ -40,10 +40,10 @@ const Benefits = () => {
                       height={48}
                       alt={item.title}
                     />
-                    <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
-                   
-                    </p>
-                    <Arrow />
+                    <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider"></p>
+                    <Button className="bg-transparent border  border-t-fuchsia-950 border-b-blue-950  hover:border-blue-500">
+                      Checkout more
+                    </Button>
                   </div>
                 </div>
                 {item.light && <GradientLight />}
@@ -70,10 +70,7 @@ const Benefits = () => {
         </div>
       </div>
 
-      <div className=" opacity-25 ">
-
-      
-      </div>
+      <div className=" opacity-25 "></div>
     </Section>
   );
 };
