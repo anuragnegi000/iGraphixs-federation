@@ -37,6 +37,9 @@ const router = createBrowserRouter([
     element: <SignUp mode="model" />,
   },
   {
+    path:"thumbnail"
+  },
+  {
     path: "/WorkType",
     element: <WorkType />,
   },
