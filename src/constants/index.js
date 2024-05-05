@@ -367,7 +367,7 @@ export const benefits = [
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
     light: true,
-    url : "/illustration"
+    url : "https://www.behance.net/gallery/192852981/ILLUSTRATION"
   },
   {
     id: "4",
