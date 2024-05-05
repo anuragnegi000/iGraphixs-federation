@@ -1,6 +1,6 @@
 import Header from "../../Header";
 import Footer from "../../Footer";
-import { ImageComponents } from "./LogoAd";
+import { ImageComponents, ImageComponentsADV1, ImageComponentsADV2, ImageComponentsADV3, ImageComponentsADV4, ImageComponentsADV5 } from "./LogoAd";
 const HeadingText = "More Craetive ";
 export const AdvanceCreative = () => {
   return (
@@ -13,13 +13,13 @@ export const AdvanceCreative = () => {
   <div className="sm:flex sm:flex-col-1 sm:flex-col-1 md:flex-wrap md:justify-center">
     <div className="flex sm:w-[75%] md:w-[75%] justify-center flex-col sm:flex-row items-center md:grid md:grid-cols-3 md:gap-4 md:justify-center">
       <div class="m-4 gap-4 justify-center">
-        <ImageComponents class="w-auto h-auto max-w-full" />
+        <ImageComponentsADV1 class="w-auto h-auto max-w-full" />
       </div>
       <div class="m-4 gap-4 justify-center">
-        <ImageComponents class="w-auto h-auto max-w-full" />
+        <ImageComponentsADV2 class="w-auto h-auto max-w-full" />
       </div>
       <div class="m-4 gap-4 justify-center">
-        <ImageComponents
+        <ImageComponentsADV3
         ponents class="w-auto h-auto max-w-full" />
       </div>
     </div>
@@ -30,10 +30,10 @@ export const AdvanceCreative = () => {
         <div className="md:flex justify-center">
           <div className="sm:flex sm:flex-col-1 sm:w-[50%] md:w-[50%] md:grid md:grid-cols-2 md:gap-6 md:justify-center">
             <div className="m-4 justify-center">
-              <ImageComponents class="w-auto h-auto max-w-full" />
+              <ImageComponentsADV4 class="w-auto h-auto max-w-full" />
             </div>
             <div className="m-4 justify-center">
-              <ImageComponents class="w-auto h-auto max-w-full" />
+              <ImageComponentsADV5 class="w-auto h-auto max-w-full" />
             </div>
           </div>
         </div>
