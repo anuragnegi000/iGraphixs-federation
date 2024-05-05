@@ -122,7 +122,7 @@ export const ImageComponents2 = () => {
   );
 };
 
-export const ImageComponents3 = () => {
+export const ImageComponentsADV1 = () => {
   return (
     <>
       <div>
@@ -145,7 +145,7 @@ export const ImageComponents3 = () => {
               </time>
 
               <a href="#">
-                <h3 className="mt-0.5 text-lg text-white">Concept Logo</h3>
+                <h3 className="mt-0.5 text-lg text-white">Jersey</h3>
               </a>
 
               <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
@@ -163,5 +163,173 @@ export const ImageComponents3 = () => {
     </>
   );
 };
+export const ImageComponentsADV2 = () => {
+  return (
+    <>
+      <div>
+        <a href="https://www.behance.net/gallery/135021326/Concept-Logo">
+        <article className=" mt-4 relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+          <img
+            alt=""
+            src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+
+          <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
+            <div className="p-4 sm:p-6">
+              <time
+                datetime="2022-10-10"
+                className="block text-xs text-white/90"
+              >
+                {" "}
+                10th Oct 2022{" "}
+              </time>
+
+              <a href="#">
+                <h3 className="mt-0.5 text-lg text-white">Emotes</h3>
+              </a>
+
+              <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                natus non, facere accusamus quasi, praesentium eaque ducimus
+                voluptatibus est optio itaque recusandae, quam doloribus
+                molestias. Quis consectetur itaque ad excepturi cupiditate earum
+                maxime quia nemo dolores ipsum, error esse quae.
+              </p>
+            </div>
+          </div>
+        </article>
+        </a>
+      </div>
+    </>
+  );
+};
+
+export const ImageComponentsADV3 = () => {
+  return (
+    <>
+      <div>
+        <a href="https://www.behance.net/gallery/135021326/Concept-Logo">
+        <article className=" mt-4 relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+          <img
+            alt=""
+            src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+
+          <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
+            <div className="p-4 sm:p-6">
+              <time
+                datetime="2022-10-10"
+                className="block text-xs text-white/90"
+              >
+                {" "}
+                10th Oct 2022{" "}
+              </time>
+
+              <a href="#">
+                <h3 className="mt-0.5 text-lg text-white">Animated Logos</h3>
+              </a>
+
+              <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                natus non, facere accusamus quasi, praesentium eaque ducimus
+                voluptatibus est optio itaque recusandae, quam doloribus
+                molestias. Quis consectetur itaque ad excepturi cupiditate earum
+                maxime quia nemo dolores ipsum, error esse quae.
+              </p>
+            </div>
+          </div>
+        </article>
+        </a>
+      </div>
+    </>
+  );
+};
+
+export const ImageComponentsADV4 = () => {
+  return (
+    <>
+      <div>
+        <a href="https://www.behance.net/gallery/135021326/Concept-Logo">
+        <article className=" mt-4 relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+          <img
+            alt=""
+            src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+
+          <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
+            <div className="p-4 sm:p-6">
+              <time
+                datetime="2022-10-10"
+                className="block text-xs text-white/90"
+              >
+                {" "}
+                10th Oct 2022{" "}
+              </time>
+
+              <a href="#">
+                <h3 className="mt-0.5 text-lg text-white">Banners</h3>
+              </a>
+
+              <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                natus non, facere accusamus quasi, praesentium eaque ducimus
+                voluptatibus est optio itaque recusandae, quam doloribus
+                molestias. Quis consectetur itaque ad excepturi cupiditate earum
+                maxime quia nemo dolores ipsum, error esse quae.
+              </p>
+            </div>
+          </div>
+        </article>
+        </a>
+      </div>
+    </>
+  );
+};
+
+export const ImageComponentsADV5 = () => {
+  return (
+    <>
+      <div>
+        <a href="https://www.behance.net/gallery/135021326/Concept-Logo">
+        <article className=" mt-4 relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+          <img
+            alt=""
+            src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+
+          <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
+            <div className="p-4 sm:p-6">
+              <time
+                datetime="2022-10-10"
+                className="block text-xs text-white/90"
+              >
+                {" "}
+                10th Oct 2022{" "}
+              </time>
+
+              <a href="#">
+                <h3 className="mt-0.5 text-lg text-white">Posters</h3>
+              </a>
+
+              <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                natus non, facere accusamus quasi, praesentium eaque ducimus
+                voluptatibus est optio itaque recusandae, quam doloribus
+                molestias. Quis consectetur itaque ad excepturi cupiditate earum
+                maxime quia nemo dolores ipsum, error esse quae.
+              </p>
+            </div>
+          </div>
+        </article>
+        </a>
+      </div>
+    </>
+  );
+};
+
 
 export default LogoAd;

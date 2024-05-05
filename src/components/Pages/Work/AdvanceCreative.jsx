@@ -19,7 +19,7 @@ export const AdvanceCreative = () => {
         <ImageComponents class="w-auto h-auto max-w-full" />
       </div>
       <div class="m-4 gap-4 justify-center">
-        <ImageCom
+        <ImageComponents
         ponents class="w-auto h-auto max-w-full" />
       </div>
     </div>
