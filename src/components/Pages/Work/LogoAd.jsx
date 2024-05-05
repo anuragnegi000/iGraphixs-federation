@@ -126,7 +126,7 @@ export const ImageComponentsADV1 = () => {
   return (
     <>
       <div>
-        <a href="https://www.behance.net/gallery/135021326/Concept-Logo">
+        <a href="https://www.behance.net/gallery/135127959/Jersey">
         <article className=" mt-4 relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
           <img
             alt=""
@@ -167,7 +167,7 @@ export const ImageComponentsADV2 = () => {
   return (
     <>
       <div>
-        <a href="https://www.behance.net/gallery/135021326/Concept-Logo">
+        <a href="https://www.behance.net/gallery/169076589/Emotes">
         <article className=" mt-4 relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
           <img
             alt=""
@@ -209,7 +209,7 @@ export const ImageComponentsADV3 = () => {
   return (
     <>
       <div>
-        <a href="https://www.behance.net/gallery/135021326/Concept-Logo">
+        <a href="https://www.behance.net/gallery/135128469/Animated-Logos">
         <article className=" mt-4 relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
           <img
             alt=""
@@ -251,7 +251,7 @@ export const ImageComponentsADV4 = () => {
   return (
     <>
       <div>
-        <a href="https://www.behance.net/gallery/135021326/Concept-Logo">
+        <a href="https://www.behance.net/gallery/135127853/Banners">
         <article className=" mt-4 relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
           <img
             alt=""
@@ -293,7 +293,7 @@ export const ImageComponentsADV5 = () => {
   return (
     <>
       <div>
-        <a href="https://www.behance.net/gallery/135021326/Concept-Logo">
+        <a href="https://www.behance.net/gallery/135127683/Posters">
         <article className=" mt-4 relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
           <img
             alt=""
