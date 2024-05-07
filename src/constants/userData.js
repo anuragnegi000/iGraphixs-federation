@@ -3,6 +3,9 @@ import { akash } from '../assets';
 import { akki } from '../assets';
 import { arpit } from '../assets';
 import { abhay } from '../assets';
+import {swati} from "../assets";
+import {parth} from "../assets";
+import {tony} from "../assets";
 
 export const userData = [
     {
@@ -39,6 +42,27 @@ export const userData = [
         description: "ABHAY IS A PROFFESIONAL DESIGNER WITH A EXPERIENCE OF 5 YEARS AT DESIGNING",
         image: abhay,
         date: "SENIOR MANAGER"
+    },
+    {
+        id:6,
+        name:"Swati Pandey",
+        description:"SWATI IS A CONTENT VOICE ARTIST WITH A EXPERIENCE OF ONE YEAR",
+        image: swati,
+        date:"VOICE ARTIST"
+    },
+    {
+        id:7,
+        name:"Tony ( Tronix )",
+        description:"Tony is a proffesional content creator with a experience of 4 years and work with many big organisations",
+        image: tony,
+        date:"Content Creator"
+    },
+    {
+        id:8,
+        name:"Parth Pandey",
+        description:"Parth is a proffesional content writer with a experience of two year at content writing at many different platforms",
+        image: parth,
+        date:"Content Writer"
     }
 ];
 
