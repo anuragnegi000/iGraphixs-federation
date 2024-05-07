@@ -1,6 +1,14 @@
 import Header from "../../Header";
 import Footer from "../../Footer";
 import { Logo2 } from "../../../constants/index";
+import {mascot_logo} from "../../../assets/index"
+import { vector_logo } from "../../../assets/index";
+import { concept_logo } from "../../../assets/index";
+import { emotes } from "../../../assets/index";
+import { jersey_design } from "../../../assets/index";
+import { animated_logo } from "../../../assets/index";
+import { posters } from "../../../assets/index";
+import { banner } from "../../../assets/index";
 
 export const LogoAd = () => {
   const BigText = "Creative Logo Creation and Service ";
@@ -46,7 +54,7 @@ export const ImageComponents = () => {
         <article className=" mt-4 relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
           <img
             alt=""
-            src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+            src={mascot_logo}
             className="absolute inset-0 h-full w-full object-cover"
           />
 
@@ -57,19 +65,15 @@ export const ImageComponents = () => {
                 className="block text-xs text-white/90"
               >
                 {" "}
-                10th Oct 2022{" "}
+                
               </time>
 
               <a href="#">
-                <h3 className="mt-0.5 text-lg text-white">Mascot logo</h3>
+                <h3 className="mt-0.5 text-lg text-white ">Mascot logo</h3>
               </a>
 
               <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-                laborum neque quibusdam dolore odio maxime, cupiditate
-                voluptatum quas modi natus suscipit unde fugiat. Illo, numquam
-                aperiam odio ad vel quisquam tempora officia praesentium dolore
-                asperiores nulla dolorum labore eveniet aut?
+              Exclusive Mascot Logo designs created By our  Designers for different organisations, teams and individuals creators!
               </p>
             </div>
           </div>
@@ -88,7 +92,7 @@ export const ImageComponents2 = () => {
         <article className=" mt-4 relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
           <img
             alt=""
-            src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+            src={vector_logo}
             className="absolute inset-0 h-full w-full object-cover"
           />
 
@@ -99,7 +103,7 @@ export const ImageComponents2 = () => {
                 className="block text-xs text-white/90"
               >
                 {" "}
-                10th Oct 2022{" "}
+                
               </time>
 
               <a href="#">
@@ -107,11 +111,7 @@ export const ImageComponents2 = () => {
               </a>
 
               <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
-                unde qui, odit vitae similique doloremque amet ullam expedita
-                fugiat quae dicta consectetur sunt porro asperiores consequuntur
-                atque quibusdam sapiente corrupti eaque blanditiis enim
-                voluptates quo libero aspernatur? A, reprehenderit placeat.
+              Exclusive Vector logo designs created By our  Designers for different organisations, teams and individuals creators!
               </p>
             </div>
           </div>
@@ -130,7 +130,7 @@ export const ImageComponents3 = () => {
         <article className=" mt-4 relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
           <img
             alt=""
-            src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+            src={concept_logo}
             className="absolute inset-0 h-full w-full object-cover"
           />
 
@@ -141,7 +141,7 @@ export const ImageComponents3 = () => {
                 className="block text-xs text-white/90"
               >
                 {" "}
-                10th Oct 2022{" "}
+               
               </time>
 
               <a href="#">
@@ -149,11 +149,7 @@ export const ImageComponents3 = () => {
               </a>
 
               <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-                laborum neque quibusdam dolore odio maxime, cupiditate
-                voluptatum quas modi natus suscipit unde fugiat. Illo, numquam
-                aperiam odio ad vel quisquam tempora officia praesentium dolore
-                asperiores nulla dolorum labore eveniet aut?
+              Exclusive Concept logo designs created By our  Designers for different organisations, teams and individuals creators!
               </p>
             </div>
           </div>
@@ -172,7 +168,7 @@ export const ImageComponentsADV1 = () => {
         <article className=" mt-4 relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
           <img
             alt=""
-            src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+            src={jersey_design}
             className="absolute inset-0 h-full w-full object-cover"
           />
 
@@ -183,7 +179,7 @@ export const ImageComponentsADV1 = () => {
                 className="block text-xs text-white/90"
               >
                 {" "}
-                10th Oct 2022{" "}
+                
               </time>
 
               <a href="#">
@@ -213,7 +209,7 @@ export const ImageComponentsADV2 = () => {
         <article className=" mt-4 relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
           <img
             alt=""
-            src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+            src={emotes}
             className="absolute inset-0 h-full w-full object-cover"
           />
 
@@ -224,7 +220,7 @@ export const ImageComponentsADV2 = () => {
                 className="block text-xs text-white/90"
               >
                 {" "}
-                10th Oct 2022{" "}
+                
               </time>
 
               <a href="#">
@@ -255,7 +251,7 @@ export const ImageComponentsADV3 = () => {
         <article className=" mt-4 relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
           <img
             alt=""
-            src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+            src={animated_logo}
             className="absolute inset-0 h-full w-full object-cover"
           />
 
@@ -266,7 +262,7 @@ export const ImageComponentsADV3 = () => {
                 className="block text-xs text-white/90"
               >
                 {" "}
-                10th Oct 2022{" "}
+               
               </time>
 
               <a href="#">
@@ -297,7 +293,7 @@ export const ImageComponentsADV4 = () => {
         <article className=" mt-4 relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
           <img
             alt=""
-            src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+            src={banner}
             className="absolute inset-0 h-full w-full object-cover"
           />
 
@@ -308,7 +304,7 @@ export const ImageComponentsADV4 = () => {
                 className="block text-xs text-white/90"
               >
                 {" "}
-                10th Oct 2022{" "}
+               
               </time>
 
               <a href="#">
@@ -339,7 +335,7 @@ export const ImageComponentsADV5 = () => {
         <article className=" mt-4 relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
           <img
             alt=""
-            src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+            src={posters}
             className="absolute inset-0 h-full w-full object-cover"
           />
 
@@ -350,7 +346,7 @@ export const ImageComponentsADV5 = () => {
                 className="block text-xs text-white/90"
               >
                 {" "}
-                10th Oct 2022{" "}
+               
               </time>
 
               <a href="#">

@@ -15,6 +15,14 @@ import abhay from "./creators/abhay.jpg";
 import swati from "./creators/swati.jpg";
 import parth from "./creators/parth.jpg";
 import tony from "./creators/tony.jpg";
+import animated_logo from "./sub-cards/animated_logo.jpg";
+import banner from "./sub-cards/banner.jpg";
+import concept_logo from "./sub-cards/concept_logo.jpg";
+import emotes from "./sub-cards/emotes.jpg";
+import jersey_design from "./sub-cards/jersey_design.jpg";
+import mascot_logo from "./sub-cards/mascot_logo.jpg";
+import posters from "./sub-cards/posters.jpg";
+import vector_logo from "./sub-cards/vector_logo.jpg";
 
 import anurag from "./ServicePage/outTeam/negi.jpg";
 import aditya from "./ServicePage/outTeam/Aditya.jpg";
@@ -216,5 +224,13 @@ export {
   abhay,
   swati,
   parth,
-  tony
+  tony,
+  mascot_logo,
+  animated_logo,
+  banner,
+  concept_logo,
+  emotes,
+  jersey_design,
+  posters,
+  vector_logo
 };
