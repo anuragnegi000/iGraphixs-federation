@@ -17,7 +17,7 @@ export const userData = [
         name: "Akki singh",
         description: "AKKI IS A PROFFESIONAL DESIGNER WITH A EXPERIENCE OF 4 YEARS AT DESIGNING & CONTENT PLANNING EXPERIENCE OF 2 YEARS",
         image: akki,
-        date: "CO-Founder"
+        date: "CO-Founder and COO"
     },
     {
         id: 3,
