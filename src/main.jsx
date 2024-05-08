@@ -9,6 +9,7 @@ import "./index.css";
 import WorkType from "./components/Pages/Work/WorkType.jsx";
 import LogoAd from "./components/Pages/Work/LogoAd.jsx";
 import AdvanceCreative from "./components/Pages/Work/AdvanceCreative.jsx";
+import PrizeSection from "./components/Pages/Work/PrizeSection.jsx";
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
     path: "/advanced",
     element: <AdvanceCreative />,
   },
+  {
+    path:"/pricing",
+    element:<PrizeSection/>
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
