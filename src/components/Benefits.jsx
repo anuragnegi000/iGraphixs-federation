@@ -41,8 +41,8 @@ const Benefits = () => {
                       alt={item.title}
                     />
                     <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider"></p>
-                    <Button className="bg-transparent border  border-t-fuchsia-950 border-b-blue-950  hover:border-blue-500">
-                      Checkout Works
+                    <Button  className="bg-transparent border  border-t-fuchsia-950 border-b-blue-950  hover:border-blue-500">
+                      {item.id === '4' ? "Under Construction ": "Checkout Works"}
                     </Button>
                   </div>
                 </div>
@@ -74,5 +74,18 @@ const Benefits = () => {
     </Section>
   );
 };
+
+
+export const BrandComponent =() =>{
+
+  return (
+
+    <>
+
+     
+   
+    </>
+  )
+}
 
 export default Benefits;
