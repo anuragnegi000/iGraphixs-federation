@@ -10,6 +10,8 @@ import WorkType from "./components/Pages/Work/WorkType.jsx";
 import LogoAd from "./components/Pages/Work/LogoAd.jsx";
 import AdvanceCreative from "./components/Pages/Work/AdvanceCreative.jsx";
 import { BrandComponent } from "./components/Benefits.jsx";
+import { Modal } from "flowbite-react";
+import SelectionProduct from "./components/SelectionProduct.jsx";
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
@@ -38,7 +40,7 @@ const router = createBrowserRouter([
     element: <SignUp mode="model" />,
   },
   {
-    path:"thumbnail"
+    path: "thumbnail",
   },
   {
     path: "/WorkType",
@@ -53,11 +55,13 @@ const router = createBrowserRouter([
     element: <AdvanceCreative />,
   },
   {
-
-    // path:"/Brand",
-    // element: <BrandCompojjnent/>
-  }
-  ,
+    path: "/brand",
+    element: <Modal />,
+  },
+  {
+    path: "/pricing",
+    element: <SelectionProduct />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
