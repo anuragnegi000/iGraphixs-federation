@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 import { Button, Modal } from "flowbite-react";
-import { HiOutlineExclamationCircle } from "react-icons/hi";
-
 import { benefits } from "../constants";
 import Heading from "./Heading";
 import Section from "./Section";
 import Arrow from "../assets/svg/Arrow";
 import { GradientLight } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
+import ButtonGradient from "../assets/svg/ButtonGradient";
 
 const Benefits = () => {
   const [openModal, setOpenModal] = useState(false);
 
-  const stopAlert = (event) => {
-    event.preventDefault();
+  const handleClick = (itemId) => {
+    if (itemId === "4") {
+      setOpenModal(true);
+    }
   };
 
   return (
@@ -41,8 +42,13 @@ const Benefits = () => {
                       alt={item.title}
                     />
                     <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider"></p>
-                    <Button  className="bg-transparent border  border-t-fuchsia-950 border-b-blue-950  hover:border-blue-500">
-                      {item.id === '4' ? "Under Construction ": "Checkout Works"}
+                    <Button
+                      className="bg-transparent border  border-t-fuchsia-950 border-b-blue-950  hover:border-blue-500"
+                      onClick={() => handleClick(item.id)}
+                    >
+                      {item.id === "4"
+                        ? "Under Construction"
+                        : "Checkout Works"}
                     </Button>
                   </div>
                 </div>
@@ -69,23 +75,21 @@ const Benefits = () => {
           ))}
         </div>
       </div>
+      <div className="opacity-25"></div>
+      {/* Render modal outside the loop to ensure only one modal is rendered */}
+      {openModal && (
+        <Modal isOpen={openModal} onClose={() => setOpenModal(false)}>
+          {/* Modal content goes here */}
+        </Modal>
+      )}
 
-      <div className=" opacity-25 "></div>
+      <ButtonGradient />
     </Section>
   );
 };
 
-
-export const BrandComponent =() =>{
-
-  return (
-
-    <>
-
-     
-   
-    </>
-  )
-}
+export const BrandComponent = () => {
+  return <></>;
+};
 
 export default Benefits;
