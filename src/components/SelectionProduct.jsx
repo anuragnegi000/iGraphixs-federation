@@ -11,7 +11,8 @@ const SelectionProduct = () => {
 
       <div
         className=" border border-blue-800 mt-28
-        md:flex flex-wrap  justify-center  m-8 p-16 gap-y-7.5 gap-x-9 "
+        md:flex flex-wrap  justify-center  md:m-8 md:p-16 md:gap-y-7.5 md:gap-x-9  p-4  grid grid-cols-1 gap-y-8 
+          "
       >
         <BlogCard />
         <BlogCard />
