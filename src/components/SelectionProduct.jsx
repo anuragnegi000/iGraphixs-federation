@@ -9,7 +9,21 @@ const SelectionProduct = () => {
         <Header />
       </div>
 
-      <div className=" ">
+      <div
+        className=" border border-blue-800 mt-28
+        md:flex flex-wrap  justify-center  m-8 p-16 gap-y-7.5 gap-x-9 "
+      >
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
         <BlogCard />
       </div>
 
@@ -22,7 +36,7 @@ const SelectionProduct = () => {
 const BlogCard = () => {
   return (
     <div className="max-w-sm bg-transparent border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <a href="#">
+      <a className="w-4/5" href="#">
         <img
           className="rounded-t-lg"
           src="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c811571b-bd4f-48fb-b13f-f5371c00113a/illustrator-artworks-showcase-106.jpg"
