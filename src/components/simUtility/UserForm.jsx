@@ -452,7 +452,7 @@ const UserForm = () => {
 
   return (
     <>
-      <div className="h-auto">
+      <div className="m-4 p-4 ">
         <div className="rounded-lg bg-transparent shadow-sky-800 mb-6 p-4 sm:p-8">
           <h1 className="text-2xl text-center font-bold text-blue-700 mb-4">
             Form
@@ -463,7 +463,7 @@ const UserForm = () => {
             onSubmit={onSubmit}
           >
             {({ isSubmitting }) => (
-              <Form className="flex flex-col sm:grid-cols-2 gap-4 bg-transparent rounded-lg ">
+              <Form className="sm:flex sm:flex-col md:grid grid-row-3 md:gap-2  gap-4 bg-transparent rounded-lg ">
                 <div className="mb-4">
                   <label htmlFor="name" className="block text-green ">
                     Name:
@@ -573,7 +573,7 @@ const UserForm = () => {
                     className="text-red-600"
                   />
                 </div>
-                <div className="mb-4">
+                <div className="mb-4  ">
                   <label
                     htmlFor="attachment"
                     className="block  bg-transparent  rounded-lg border-t-blue-300 border-b-pink-300"
@@ -618,6 +618,7 @@ const UserForm = () => {
                     id="suggestion1"
                     name="suggestion1"
                     rows="3"
+                    resize="none"
                     className="input-field bg-transparent text-white border w-auto  h-auto  rounded-lg border-t-blue-300 border-b-pink-300"
                   />
                   <ErrorMessage
