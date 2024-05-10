@@ -1,7 +1,9 @@
 import ButtonGradient from "../assets/svg/ButtonGradient";
 import Footer from "./Footer";
 import Header from "./Header";
-
+import { useForm } from "react-hook-form";
+import { useState } from "react";
+import UserForm from "./simUtility/UserForm";
 const SelectionProduct = () => {
   return (
     <>
@@ -28,7 +30,11 @@ const SelectionProduct = () => {
         <BlogCard />
       </div>
 
+      <div className=" w-full h-full border  border-blue-600 ">
+        <UserForm />
+      </div>
       <ButtonGradient />
+
       <Footer />
     </>
   );
