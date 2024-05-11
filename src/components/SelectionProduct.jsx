@@ -1,6 +1,6 @@
 import ButtonGradient from "../assets/svg/ButtonGradient";
 import Footer from "./Footer";
-import Header from "./Header";
+import Header from "./main.jsx";
 import UserForm from "./simUtility/UserForm";
 const SelectionProduct = () => {
   return (
@@ -29,7 +29,7 @@ const SelectionProduct = () => {
           <BlogCard />
         </div>
 
-        <div className=" w-full h-full border  border-blue-600 ">
+        <div className=" space-y-4    z-10 m-5 !px-0 !py-10  md-9 pt-16  ">
           <UserForm />
         </div>
         <ButtonGradient />
