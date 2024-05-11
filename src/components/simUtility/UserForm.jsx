@@ -423,7 +423,7 @@ const UserForm = () => {
                     type="file"
                     id="attachment"
                     name="attachment"
-                    className="input-field border  sm:max-w-14 max-w-md bg-transparent rounded-lg "
+                    className="input-field border  sm:max-w-28 max-w-md bg-transparent rounded-lg "
                   />
                   <ErrorMessage
                     name="attachment"
@@ -469,7 +469,7 @@ const UserForm = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                  className=" bg-green-300 bg-opacity-20 rounded-lg inline-flex hover:bg-pink border border-e-fuchsia-50 active:bg-transparent focus:outline-yellow-300 focus:ring focus:ring-transparent font-bold  w-fit p-2 rounded"
                 >
                   Submit
                 </button>
