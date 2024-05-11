@@ -469,7 +469,7 @@ const UserForm = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className=" bg-green-300 bg-opacity-20 rounded-lg inline-flex hover:bg-pink border border-e-fuchsia-50 active:bg-transparent focus:outline-yellow-300 focus:ring focus:ring-transparent font-bold  w-fit p-2 rounded"
+                  className=" bg-green-300 bg-opacity-20 border rounded-lg  inline-flex hover:bg-pink  border-e-fuchsia-50 active:bg-transparent focus:outline-yellow-300 focus:ring focus:ring-transparent font-bold  w-fit p-2 "
                 >
                   Submit
                 </button>
