@@ -9,8 +9,9 @@ import "./index.css";
 import WorkType from "./components/Pages/Work/WorkType.jsx";
 import LogoAd from "./components/Pages/Work/LogoAd.jsx";
 import AdvanceCreative from "./components/Pages/Work/AdvanceCreative.jsx";
-
-import PrizeSection from "./components/Pages/Work/PrizeSection.jsx";
+import { BrandComponent } from "./components/Benefits.jsx";
+import { Modal } from "flowbite-react";
+import SelectionProduct from "./components/SelectionProduct.jsx";
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
@@ -54,12 +55,12 @@ const router = createBrowserRouter([
     element: <AdvanceCreative />,
   },
   {
-    path: "/pricing",
-    element: <PrizeSection />,
-  },
-  {
     path: "/brand",
     element: <Modal />,
+  },
+  {
+    path: "/pricing",
+    element: <SelectionProduct />,
   },
 ]);
 
