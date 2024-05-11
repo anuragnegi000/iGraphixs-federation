@@ -40,7 +40,7 @@ const SelectionProduct = () => {
 
 const BlogCard = () => {
   return (
-    <div className="max-w-60 bg-transparent border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div className="md:max-w-60  max-w-xs  bg-transparent border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <a className="w-4/5" href="#">
         <img
           className="rounded-t-lg"
