@@ -417,16 +417,16 @@ const UserForm = () => {
                     htmlFor="attachment"
                     className="block  bg-transparent  rounded-lg border-t-blue-300 border-b-pink-300"
                   >
-                    Attachment (e.g., sample suggestion):
+                    Attachment ( sample suggestion):
                   </label>
                   <Field
                     type="file"
                     id="attachment"
                     name="attachment"
-                    className="input-field border  sm:max-w-28 max-w-md bg-transparent rounded-lg "
+                    className="input-field border w-20 bg-transparent rounded-lg "
                   />
                   <ErrorMessage
-                    name="attachment"
+                    name="file"
                     component="div"
                     className="text-red-600"
                   />
@@ -440,7 +440,7 @@ const UserForm = () => {
                     type="date"
                     id="deadline"
                     name="deadline"
-                    className="input-field bg-transparent rounded-lg border-t-blue-300 border-b-pink-300"
+                    className=" bg-transparent rounded-lg border-t-blue-300 border-b-pink-300"
                   />
                   <ErrorMessage
                     name="deadline"
