@@ -423,10 +423,10 @@ const UserForm = () => {
                     type="file"
                     id="attachment"
                     name="attachment"
-                    className="input-field border w-20 bg-transparent rounded-lg "
+                    className="input-field rounded-lg mt-4 bg-transparent border border-none"
                   />
                   <ErrorMessage
-                    name="file"
+                    name="file rounded-lg"
                     component="div"
                     className="text-red-600"
                   />
@@ -456,7 +456,7 @@ const UserForm = () => {
                     as="textarea"
                     id="suggestion1"
                     name="suggestion1"
-                    rows="3"
+                    rows="1"
                     resize="none"
                     className="input-field bg-transparent text-white border w-auto  h-auto  rounded-lg border-t-blue-300 border-b-pink-300"
                   />
