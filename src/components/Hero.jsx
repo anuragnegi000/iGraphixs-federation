@@ -10,6 +10,7 @@ import Notification from "./Notification";
 import CompanyLogos from "./CompanyLogos";
 import {works} from "../assets";
 import {mainstory} from "../assets";
+import PrizeSection from "./Pages/Work/PrizeSection";
 
 const Hero = () => {
   const amount = 500;
@@ -108,7 +109,7 @@ const Hero = () => {
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
           Lets elevate your brand with top notch graphics and visual creative and transform your imagination into reality together!
           </p>
-          <Button onClick={paymentHandler} href="/pricing" white>
+          <Button onClick={PrizeSection} href="/pricing" white>
             ORDER ASAP!!
           </Button>
         </div>
