@@ -1,8 +1,6 @@
 import ButtonGradient from "../assets/svg/ButtonGradient";
 import Footer from "./Footer";
 import Header from "./Header";
-import { useForm } from "react-hook-form";
-import { useState } from "react";
 import UserForm from "./simUtility/UserForm";
 const SelectionProduct = () => {
   return (
@@ -42,7 +40,7 @@ const SelectionProduct = () => {
 
 const BlogCard = () => {
   return (
-    <div className="max-w-sm bg-transparent border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div className="md:max-w-60  max-w-xs  bg-transparent border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <a className="w-4/5" href="#">
         <img
           className="rounded-t-lg"
