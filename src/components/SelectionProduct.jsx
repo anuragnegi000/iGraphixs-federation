@@ -28,14 +28,14 @@ const SelectionProduct = () => {
           <BlogCard />
           <BlogCard />
         </div>
-      </div>
 
-      <div className=" w-full h-full border  border-blue-600 ">
-        <UserForm />
-      </div>
-      <ButtonGradient />
+        <div className=" w-full h-full border  border-blue-600 ">
+          <UserForm />
+        </div>
+        <ButtonGradient />
 
-      <Footer />
+        <Footer />
+      </div>
     </>
   );
 };
