@@ -1,39 +1,41 @@
 import ButtonGradient from "../assets/svg/ButtonGradient";
 import Footer from "./Footer";
-import Header from "./Header";
+import Header from "./main.jsx";
 import UserForm from "./simUtility/UserForm";
 const SelectionProduct = () => {
   return (
     <>
       <div className="main-container z-10 m-5 !px-0 !py-10  md-9 pt-16  ">
-        <Header />
-      </div>
+        <div className="header-container border border-t-blue-500">
+          <Header />
+        </div>
+        <div
+          className=" border border-blue-800 mt-28 md:flex flex-wrap
+        justify-center md:m-8 md:p-16 md:gap-y-7.5 md:gap-x-9 p-4 grid
+        grid-cols-1 gap-y-8 "
+        >
+          {" "}
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+        </div>
 
-      <div
-        className=" border border-blue-800 mt-28
-        md:flex flex-wrap  justify-center  md:m-8 md:p-16 md:gap-y-7.5 md:gap-x-9  p-4  grid grid-cols-1 gap-y-8 
-          "
-      >
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-      </div>
+        <div className=" space-y-4    z-10 m-5 !px-0 !py-10  md-9 pt-16  ">
+          <UserForm />
+        </div>
+        <ButtonGradient />
 
-      <div className=" w-full h-full border  border-blue-600 ">
-        <UserForm />
+        <Footer />
       </div>
-      <ButtonGradient />
-
-      <Footer />
     </>
   );
 };
@@ -43,7 +45,7 @@ const BlogCard = () => {
     <div className="md:max-w-60  max-w-xs  bg-transparent border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <a className="w-4/5" href="#">
         <img
-          className="rounded-t-lg"
+          className="rounded-t-lg "
           src="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c811571b-bd4f-48fb-b13f-f5371c00113a/illustrator-artworks-showcase-106.jpg"
           alt="product.img"
         />
