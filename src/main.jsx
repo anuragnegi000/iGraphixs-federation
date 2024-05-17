@@ -59,8 +59,7 @@ const router = createBrowserRouter([
     element: <AdvanceCreative />,
   },
   {
-
-    path:"/pricing",
+  path:"/pricing",
     element:<PrizeSection/>
   }
 ,{

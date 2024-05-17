@@ -287,172 +287,11 @@ const UserForm = () => {
     { code: "ZM", name: "Zambia" },
     { code: "ZW", name: "Zimbabwe" },
   ];
-  const currencies = [
-    "AED",
-    "AFN",
-    "ALL",
-    "AMD",
-    "ANG",
-    "AOA",
-    "ARS",
-    "AUD",
-    "AWG",
-    "AZN",
-    "BAM",
-    "BBD",
-    "BDT",
-    "BGN",
-    "BHD",
-    "BIF",
-    "BMD",
-    "BND",
-    "BOB",
-    "BRL",
-    "BSD",
-    "BTN",
-    "BWP",
-    "BYN",
-    "BZD",
-    "CAD",
-    "CDF",
-    "CHF",
-    "CLP",
-    "CNY",
-    "COP",
-    "CRC",
-    "CUP",
-    "CVE",
-    "CZK",
-    "DJF",
-    "DKK",
-    "DOP",
-    "DZD",
-    "EGP",
-    "ERN",
-    "ETB",
-    "EUR",
-    "FJD",
-    "FKP",
-    "FOK",
-    "GBP",
-    "GEL",
-    "GGP",
-    "GHS",
-    "GIP",
-    "GMD",
-    "GNF",
-    "GTQ",
-    "GYD",
-    "HKD",
-    "HNL",
-    "HRK",
-    "HTG",
-    "HUF",
-    "IDR",
-    "ILS",
-    "IMP",
-    "INR",
-    "IQD",
-    "IRR",
-    "ISK",
-    "JEP",
-    "JMD",
-    "JOD",
-    "JPY",
-    "KES",
-    "KGS",
-    "KHR",
-    "KID",
-    "KMF",
-    "KRW",
-    "KWD",
-    "KYD",
-    "KZT",
-    "LAK",
-    "LBP",
-    "LKR",
-    "LRD",
-    "LSL",
-    "LYD",
-    "MAD",
-    "MDL",
-    "MGA",
-    "MKD",
-    "MMK",
-    "MNT",
-    "MOP",
-    "MRU",
-    "MUR",
-    "MVR",
-    "MWK",
-    "MXN",
-    "MYR",
-    "MZN",
-    "NAD",
-    "NGN",
-    "NIO",
-    "NOK",
-    "NPR",
-    "NZD",
-    "OMR",
-    "PAB",
-    "PEN",
-    "PGK",
-    "PHP",
-    "PKR",
-    "PLN",
-    "PYG",
-    "QAR",
-    "RON",
-    "RSD",
-    "RUB",
-    "RWF",
-    "SAR",
-    "SBD",
-    "SCR",
-    "SDG",
-    "SEK",
-    "SGD",
-    "SHP",
-    "SLL",
-    "SOS",
-    "SRD",
-    "SSP",
-    "STN",
-    "SYP",
-    "SZL",
-    "THB",
-    "TJS",
-    "TMT",
-    "TND",
-    "TOP",
-    "TRY",
-    "TTD",
-    "TVD",
-    "TWD",
-    "TZS",
-    "UAH",
-    "UGX",
-    "USD",
-    "UYU",
-    "UZS",
-    "VES",
-    "VND",
-    "VUV",
-    "WST",
-    "XAF",
-    "XCD",
-    "XOF",
-    "XPF",
-    "YER",
-    "ZAR",
-    "ZMW",
-    "ZWL",
-  ];
+  const currencies = ["USD", "INR"];
 
   return (
     <>
-      <div className="m-4 p-4 ">
+      <div className="">
         <div className="rounded-lg bg-transparent shadow-sky-800 mb-6 p-4 sm:p-8">
           <h1 className="text-2xl text-center font-bold text-blue-700 mb-4">
             Form
@@ -578,16 +417,16 @@ const UserForm = () => {
                     htmlFor="attachment"
                     className="block  bg-transparent  rounded-lg border-t-blue-300 border-b-pink-300"
                   >
-                    Attachment (e.g., sample suggestion):
+                    Attachment ( sample suggestion):
                   </label>
                   <Field
                     type="file"
                     id="attachment"
                     name="attachment"
-                    className="input-field border  bg-transparent rounded-lg "
+                    className="input-field rounded-lg mt-4 bg-transparent border border-none"
                   />
                   <ErrorMessage
-                    name="attachment"
+                    name="file rounded-lg"
                     component="div"
                     className="text-red-600"
                   />
@@ -601,7 +440,7 @@ const UserForm = () => {
                     type="date"
                     id="deadline"
                     name="deadline"
-                    className="input-field bg-transparent rounded-lg border-t-blue-300 border-b-pink-300"
+                    className=" bg-transparent rounded-lg border-t-blue-300 border-b-pink-300"
                   />
                   <ErrorMessage
                     name="deadline"
@@ -617,7 +456,7 @@ const UserForm = () => {
                     as="textarea"
                     id="suggestion1"
                     name="suggestion1"
-                    rows="3"
+                    rows="1"
                     resize="none"
                     className="input-field bg-transparent text-white border w-auto  h-auto  rounded-lg border-t-blue-300 border-b-pink-300"
                   />
@@ -630,7 +469,7 @@ const UserForm = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                  className=" bg-green-300 bg-opacity-20 border rounded-lg  inline-flex hover:bg-pink  border-e-fuchsia-50 active:bg-transparent focus:outline-yellow-300 focus:ring focus:ring-transparent font-bold  w-fit p-2 "
                 >
                   Submit
                 </button>
