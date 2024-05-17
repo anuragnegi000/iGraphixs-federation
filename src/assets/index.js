@@ -111,6 +111,19 @@ import benefitIcon5 from "./benefits/DBiGraphixs.png";
 import benefitIcon6 from "./benefits/CiGraphixs.png";
 import benefitImage2 from "./benefits/image-2.png";
 
+import Animated from "./pricing/Animated.jpg";
+import banner1 from "./pricing/banner1.jpg";
+import Concept from "./pricing/Concept.jpg";
+import emotes1 from "./pricing/emotes1.jpg";
+import illustration from "./pricing/illustration.jpg";
+import Jersey from "./pricing/Jersey.jpg";
+import Mascot from "./pricing/Mascot.jpg";
+import Poster from "./pricing/Poster.jpg";
+import Stream from "./pricing/Stream.jpg";
+import Thumbnail from "./pricing/Thumbnail.jpg";
+import Vector from "./pricing/Vector.jpg";
+
+
 import discordBlack from "./socials/discord.svg";
 import facebook from "./socials/facebook.svg";
 import instagram from "./socials/instagram.svg";
@@ -124,6 +137,17 @@ import twitterX from "../works/twitterX.png";
 import insta from "../works/insta.png";
 
 export {
+  Animated,
+  banner1,
+  Concept,
+  emotes1,
+  illustration,
+  Jersey,
+  Mascot,
+  Poster,
+  Stream,
+  Thumbnail,
+  Vector,
   upwork,
   behance,
   youtube,
