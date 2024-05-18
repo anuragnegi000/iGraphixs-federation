@@ -3,6 +3,18 @@ import Footer from "./Footer";
 import Header from "./main.jsx";
 import UserForm from "./simUtility/UserForm";
 import {Animated} from "../assets/index.js";
+import {banner1} from "../assets/index.js";
+import {Concept} from "../assets/index.js";
+import {emotes1} from "../assets/index.js";
+import {illustration} from "../assets/index.js";
+import {Jersey} from "../assets/index.js";
+import {Mascot} from "../assets/index.js";
+import {Poster} from "../assets/index.js";
+import {Stream} from "../assets/index.js";
+import {Thumbnail} from "../assets/index.js";
+import {Vector} from "../assets/index.js";
+
+
 const SelectionProduct = () => {
   return (
     <>
@@ -91,7 +103,7 @@ const BlogCard1 = () => {
       <a className="w-4/5" href="#">
         <img
           className="rounded-t-lg "
-          src="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c811571b-bd4f-48fb-b13f-f5371c00113a/illustrator-artworks-showcase-106.jpg"
+          src={banner1}
           alt="product.img"
         />
       </a>
@@ -135,7 +147,7 @@ const BlogCard2 = () => {
       <a className="w-4/5" href="#">
         <img
           className="rounded-t-lg "
-          src="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c811571b-bd4f-48fb-b13f-f5371c00113a/illustrator-artworks-showcase-106.jpg"
+          src={Concept}
           alt="product.img"
         />
       </a>
@@ -179,7 +191,7 @@ const BlogCard3 = () => {
       <a className="w-4/5" href="#">
         <img
           className="rounded-t-lg "
-          src="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c811571b-bd4f-48fb-b13f-f5371c00113a/illustrator-artworks-showcase-106.jpg"
+          src={emotes1}
           alt="product.img"
         />
       </a>
@@ -223,7 +235,7 @@ const BlogCard4 = () => {
       <a className="w-4/5" href="#">
         <img
           className="rounded-t-lg "
-          src="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c811571b-bd4f-48fb-b13f-f5371c00113a/illustrator-artworks-showcase-106.jpg"
+          src={illustration}
           alt="product.img"
         />
       </a>
@@ -267,7 +279,7 @@ const BlogCard5 = () => {
       <a className="w-4/5" href="#">
         <img
           className="rounded-t-lg "
-          src="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c811571b-bd4f-48fb-b13f-f5371c00113a/illustrator-artworks-showcase-106.jpg"
+          src={Jersey}
           alt="product.img"
         />
       </a>
@@ -311,7 +323,7 @@ const BlogCard6 = () => {
       <a className="w-4/5" href="#">
         <img
           className="rounded-t-lg "
-          src="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c811571b-bd4f-48fb-b13f-f5371c00113a/illustrator-artworks-showcase-106.jpg"
+          src={Mascot}
           alt="product.img"
         />
       </a>
@@ -355,7 +367,7 @@ const BlogCard7 = () => {
       <a className="w-4/5" href="#">
         <img
           className="rounded-t-lg "
-          src="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c811571b-bd4f-48fb-b13f-f5371c00113a/illustrator-artworks-showcase-106.jpg"
+          src={Poster}
           alt="product.img"
         />
       </a>
@@ -399,7 +411,7 @@ const BlogCard8 = () => {
       <a className="w-4/5" href="#">
         <img
           className="rounded-t-lg "
-          src="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c811571b-bd4f-48fb-b13f-f5371c00113a/illustrator-artworks-showcase-106.jpg"
+          src={Stream}
           alt="product.img"
         />
       </a>
@@ -443,7 +455,7 @@ const BlogCard9 = () => {
       <a className="w-4/5" href="#">
         <img
           className="rounded-t-lg "
-          src="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c811571b-bd4f-48fb-b13f-f5371c00113a/illustrator-artworks-showcase-106.jpg"
+          src={Thumbnail}
           alt="product.img"
         />
       </a>
@@ -487,7 +499,7 @@ const BlogCard10 = () => {
       <a className="w-4/5" href="#">
         <img
           className="rounded-t-lg "
-          src="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c811571b-bd4f-48fb-b13f-f5371c00113a/illustrator-artworks-showcase-106.jpg"
+          src={Thumbnail}
           alt="product.img"
         />
       </a>
@@ -531,7 +543,7 @@ const BlogCard11 = () => {
       <a className="w-4/5" href="#">
         <img
           className="rounded-t-lg "
-          src="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c811571b-bd4f-48fb-b13f-f5371c00113a/illustrator-artworks-showcase-106.jpg"
+          src={Vector}
           alt="product.img"
         />
       </a>
