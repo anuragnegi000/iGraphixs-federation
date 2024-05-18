@@ -13,68 +13,68 @@ import {Vector} from "../assets/index.js";
 export const priceData = [
     {
         id: 1,
-        name:"Mascot logo",
+        name:"Animated",
         img:Animated,
         
     },
     {
         id: 2,
-        name:"Mascot logo",
-        img:Animated,
+        name:"Banner Designs",
+        img:banner1,
         
     },
     {
         id: 3,
-        name:"Mascot logo",
-        img:Animated,
+        name:"Concept logo",
+        img:Concept,
         
     },
     {
         id: 4,
-        name:"Mascot logo",
-        img:Animated,
+        name:"Custom Emotes",
+        img:emotes1,
         
     },
     {
         id: 5,
-        name:"Mascot logo",
-        img:Animated,
+        name:"Illustration",
+        img:illustration,
         
     },
     {
         id: 6,
-        name:"Mascot logo",
-        img:Animated,
+        name:"Custom Jersey",
+        img:Jersey,
         
     },
     {
         id: 7,
         name:"Mascot logo",
-        img:Animated,
+        img:Mascot,
         
     },
     {
         id: 8,
-        name:"Mascot logo",
-        img:Animated,
+        name:"Poster Design",
+        img:Poster,
         
     },
     {
         id: 9,
-        name:"Mascot logo",
-        img:Animated,
+        name:"Stream Packages",
+        img:Stream,
         
     },
     {
         id: 10,
-        name:"Mascot logo",
-        img:Animated,
+        name:"Thumbnail Designs",
+        img:Thumbnail,
         
     },
     {
         id: 11,
-        name:"Mascot logo",
-        img:Animated,
+        name:"Vector logo",
+        img:Vector,
         
     },
 ];
