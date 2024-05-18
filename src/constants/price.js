@@ -14,58 +14,69 @@ export const priceData = [
     {
         id: 1,
         name:"Mascot logo",
-        img:"sfs",
+        img:Animated,
         
     },
     {
         id: 2,
-        name: "Akki singh",
-        description: "AKKI IS A PROFFESIONAL DESIGNER WITH A EXPERIENCE OF 4 YEARS AT DESIGNING & CONTENT PLANNING EXPERIENCE OF 2 YEARS",
-        image: akki,
-        date: "CO-Founder and COO"
+        name:"Mascot logo",
+        img:Animated,
+        
     },
     {
         id: 3,
-        name: "Arpit singh",
-        description: "ARPIT HAVE A KNOWLEDGE OF TECHNOLOGY AND FINANCE WITH 3 YEARS OF EXPERIENCE",
-        image: arpit,
-        date: "CTO & CFO"
+        name:"Mascot logo",
+        img:Animated,
+        
     },
     {
         id: 4,
-        name: "Akash Kapruwan",
-        description: "AKASH IS A PROFFESIONAL DESIGNER WITH A EXPERIENCE OF 4 YEARS AT DESIGNING & 2 YEARS OF EXPERIENCE IN SOCIAL MEDIA MANAGEMENT",
-        image: akash,
-        date: "Cheif Operating Officer"
+        name:"Mascot logo",
+        img:Animated,
+        
     },
     {
         id: 5,
-        name: "Mr. Abhay",
-        description: "ABHAY IS A PROFFESIONAL DESIGNER WITH A EXPERIENCE OF 5 YEARS AT DESIGNING",
-        image: abhay,
-        date: "SENIOR MANAGER"
+        name:"Mascot logo",
+        img:Animated,
+        
     },
     {
-        id:6,
-        name:"Swati Pandey",
-        description:"SWATI IS A CONTENT VOICE ARTIST WITH A EXPERIENCE OF ONE YEAR",
-        image: swati,
-        date:"VOICE ARTIST"
+        id: 6,
+        name:"Mascot logo",
+        img:Animated,
+        
     },
     {
-        id:7,
-        name:"Tony ( Tronix )",
-        description:"Tony is a proffesional content creator with a experience of 4 years and work with many big organisations",
-        image: tony,
-        date:"Content Creator"
+        id: 7,
+        name:"Mascot logo",
+        img:Animated,
+        
     },
     {
-        id:8,
-        name:"Parth Pandey",
-        description:"Parth is a proffesional content writer with a experience of two year at content writing at many different platforms",
-        image: parth,
-        date:"Content Writer"
-    }
+        id: 8,
+        name:"Mascot logo",
+        img:Animated,
+        
+    },
+    {
+        id: 9,
+        name:"Mascot logo",
+        img:Animated,
+        
+    },
+    {
+        id: 10,
+        name:"Mascot logo",
+        img:Animated,
+        
+    },
+    {
+        id: 11,
+        name:"Mascot logo",
+        img:Animated,
+        
+    },
 ];
 
 
