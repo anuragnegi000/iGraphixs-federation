@@ -16,7 +16,6 @@ import { BrandComponent } from "./components/Benefits.jsx";
 import { Modal } from "flowbite-react";
 import SelectionProduct from "./components/SelectionProduct.jsx";
 
-
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
 if (!PUBLISHABLE_KEY) {
@@ -59,18 +58,17 @@ const router = createBrowserRouter([
     element: <AdvanceCreative />,
   },
   {
-  path:"/pricing",
-    element:<PrizeSection/>
-  }
-,{
+    path: "/pricing",
+    element: <PrizeSection />,
+  },
+  {
     path: "/brand",
     element: <Modal />,
   },
   {
-    path: "/pricing",
+    path: "/Package pricing",
     element: <SelectionProduct />,
   },
-
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
