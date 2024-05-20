@@ -4,20 +4,20 @@ const testimonials = [
     {
       id:1,
       quote:"This service is amazing. Highly recommend!",
-      author:"Aditya singh",
-      position:"Dev"
+      author:"Andrew Carlos",
+      position:"Hive.gg"
     },
      {
       id:2,
-      quote:"This service is amazing. Highly recommend!",
-      author:"Alex",
-      position:"Dev"
+      quote:"I am working with this team from past 2 years, and they are making providing top class graphics and animations with price worth",
+      author:"Azaly",
+      position:"Strut Esports"
     },
     {
       id:1,
-      quote:"This service is amazing. Highly recommend!",
-      author:"Anurag negi",
-      position:"Dev"
+      quote:"The services are better than what I expected, love your team and your team efforts. I will keep working with you guys",
+      author:"Elizabeth",
+      position:"Hardcore Bases"
     }
   // Add more testimonials as needed
 ];
