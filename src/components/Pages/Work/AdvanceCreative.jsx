@@ -16,7 +16,7 @@ export const AdvanceCreative = () => {
         <ImageComponentsADV1 class="w-auto h-auto max-w-full" />
       </div>
       <div class="m-4 gap-4 justify-center">
-        <ImageComponentsADV2 class="w-auto h-auto max-w-full" />
+          <ImageComponentsADV2 class="w-auto h-auto max-w-full" />
       </div>
       <div class="m-4 gap-4 justify-center">
         <ImageComponentsADV3

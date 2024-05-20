@@ -187,11 +187,7 @@ export const ImageComponentsADV1 = () => {
               </a>
 
               <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                natus non, facere accusamus quasi, praesentium eaque ducimus
-                voluptatibus est optio itaque recusandae, quam doloribus
-                molestias. Quis consectetur itaque ad excepturi cupiditate earum
-                maxime quia nemo dolores ipsum, error esse quae.
+              Premium Jersey Designs created by our Designers for Esports team or Organisations
               </p>
             </div>
           </div>
@@ -228,11 +224,7 @@ export const ImageComponentsADV2 = () => {
               </a>
 
               <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                natus non, facere accusamus quasi, praesentium eaque ducimus
-                voluptatibus est optio itaque recusandae, quam doloribus
-                molestias. Quis consectetur itaque ad excepturi cupiditate earum
-                maxime quia nemo dolores ipsum, error esse quae.
+              Customized Emotes created by our Designers for Streamers
               </p>
             </div>
           </div>
@@ -270,11 +262,7 @@ export const ImageComponentsADV3 = () => {
               </a>
 
               <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                natus non, facere accusamus quasi, praesentium eaque ducimus
-                voluptatibus est optio itaque recusandae, quam doloribus
-                molestias. Quis consectetur itaque ad excepturi cupiditate earum
-                maxime quia nemo dolores ipsum, error esse quae.
+              Premium Animated logos designs created by our Designers for Organisation, Streamers or Teams
               </p>
             </div>
           </div>
@@ -312,11 +300,7 @@ export const ImageComponentsADV4 = () => {
               </a>
 
               <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                natus non, facere accusamus quasi, praesentium eaque ducimus
-                voluptatibus est optio itaque recusandae, quam doloribus
-                molestias. Quis consectetur itaque ad excepturi cupiditate earum
-                maxime quia nemo dolores ipsum, error esse quae.
+              Proffesional banner designs created by our Designers for Organisation, Streamers or Esports Teams
               </p>
             </div>
           </div>
@@ -354,11 +338,7 @@ export const ImageComponentsADV5 = () => {
               </a>
 
               <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                natus non, facere accusamus quasi, praesentium eaque ducimus
-                voluptatibus est optio itaque recusandae, quam doloribus
-                molestias. Quis consectetur itaque ad excepturi cupiditate earum
-                maxime quia nemo dolores ipsum, error esse quae.
+              Proffesional Social media poster designs created by our Designers for Organisation, Streamers or Teams
               </p>
             </div>
           </div>
