@@ -19,7 +19,7 @@ const SelectionProduct = () => {
               </h5>
             </a>
             <p className="mb-3 font-normal text-white">
-              <h1 className="text-xl">${p.price}</h1>
+              <h1 className="text-xl">Designs</h1>
             </p>
             <a
               href="https://wa.me/message/ZPEYAJ2WUS26C1"

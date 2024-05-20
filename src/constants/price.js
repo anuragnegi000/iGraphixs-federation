@@ -13,7 +13,7 @@ import {Vector} from "../assets/index.js";
 export const priceData = [
     {
         id: 1,
-        name:"Animated",
+        name:"Animated Logos",
         img:Animated,
         
     },
