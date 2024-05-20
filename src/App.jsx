@@ -8,6 +8,7 @@ import Hero from "./components/Hero";
 import Pricing from "./components/Pricing";
 import Roadmap from "./components/Roadmap";
 import Services from "./components/Services";
+import Testimonials from "./components/Pages/Testimonials";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -26,6 +27,7 @@ const App = () => {
         <Pricing />
         <Roadmap />
         <Benefits />
+        {/* <Testimonials/> */}
         <Carousel/>
   
         <Footer />
