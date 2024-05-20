@@ -4,27 +4,27 @@ const testimonials = [
   {
     id: 1,
     quote: "This service is amazing. Highly recommend!",
-    author: "Aditya singh",
+    author: "Andrew Carlos",
     image:
       "https://i.pinimg.com/736x/1b/5c/83/1b5c8318b295f1019a74fc47f24c606e.jpg",
-    position: "Dev",
+    position: "Hive.gg",
   },
   {
     id: 2,
-    quote: "This service is amazing. Highly recommend!",
-    author: "Alex",
+    quote: "I am working with this team from past 2 years, and they are making providing top class graphics and animations with price worth",
+    author: "Azaly",
 
     image:
       "https://i.pinimg.com/736x/1b/5c/83/1b5c8318b295f1019a74fc47f24c606e.jpg",
-    position: "Dev",
+    position: "Strut Esports",
   },
   {
     id: 1,
-    quote: "This service is amazing. Highly recommend!",
-    author: "Anurag negi",
+    quote: "The services are better than what I expected, love your team and your team efforts. I will keep working with you guys",
+    author: "Elizabeth",
     image:
       "https://i.pinimg.com/736x/1b/5c/83/1b5c8318b295f1019a74fc47f24c606e.jpg",
-    position: "Dev",
+    position: "Hardcore Bases",
   },
   // Add more testimonials as needed
 ];
