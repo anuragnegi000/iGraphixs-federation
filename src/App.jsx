@@ -11,7 +11,7 @@ import Services from "./components/Services";
 import Testimonials from "./components/Pages/Testimonials";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import WhyChoose from "./components/Pages/WhyChoose";
+import { FAQ } from "./components/FAQ";
 
 const App = () => {
   return (
@@ -25,6 +25,7 @@ const App = () => {
         <Roadmap />
         <Benefits />
         <Testimonials />
+        <FAQ />
         <Carousel />
         <Footer />
       </div>
