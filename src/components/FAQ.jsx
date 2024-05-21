@@ -6,7 +6,7 @@ export const FAQ = () => {
           className="group [&_summary::-webkit-details-marker]:hidden"
           open
         >
-          <summary className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900">
+          <summary className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-transparent  p-4 text-white border border-t-yellow-900 border-r-cyan-500 border-b-green-600">
             <h2 className="font-medium">
               Lorem ipsum dolor sit amet consectetur adipisicing?
             </h2>
@@ -36,7 +36,7 @@ export const FAQ = () => {
         </details>
 
         <details className="group [&_summary::-webkit-details-marker]:hidden">
-          <summary className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900">
+          <summary className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg  p-4  bg-transparent   text-white border border-t-yellow-900 border-r-cyan-500 border-b-green-600">
             <h2 className="font-medium">
               Lorem ipsum dolor sit amet consectetur adipisicing?
             </h2>
