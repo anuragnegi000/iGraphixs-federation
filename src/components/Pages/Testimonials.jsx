@@ -1,4 +1,7 @@
 import { motion } from "framer-motion";
+import { carlos } from "../../assets";
+import {azaly}  from "../../assets";
+import { elizabeth } from "../../assets";
 
 const testimonials = [
   {
@@ -6,7 +9,7 @@ const testimonials = [
     quote: "This service is amazing. Highly recommend!",
     author: "Andrew Carlos",
     image:
-      "https://i.pinimg.com/736x/1b/5c/83/1b5c8318b295f1019a74fc47f24c606e.jpg",
+      carlos,
     position: "Hive.gg",
   },
   {
@@ -15,7 +18,7 @@ const testimonials = [
     author: "Azaly",
 
     image:
-      "https://i.pinimg.com/736x/1b/5c/83/1b5c8318b295f1019a74fc47f24c606e.jpg",
+      {azaly},
     position: "Strut Esports",
   },
   {
@@ -23,7 +26,7 @@ const testimonials = [
     quote: "The services are better than what I expected, love your team and your team efforts. I will keep working with you guys",
     author: "Elizabeth",
     image:
-      "https://i.pinimg.com/736x/1b/5c/83/1b5c8318b295f1019a74fc47f24c606e.jpg",
+      {elizabeth},
     position: "Hardcore Bases",
   },
   // Add more testimonials as needed

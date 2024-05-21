@@ -97,6 +97,10 @@ import notification2 from "./notification/pfp.jpg";
 import notification3 from "./notification/pfp2.jpg";
 import notification4 from "./notification/pfp3.jpg";
 
+import carlos from "./feedback/carlos.jpg"
+import elizabeth from "./feedback/elizabeth.png"
+import azaly from "./feedback/azaly.png"
+
 import benefitCard1 from "./benefits/card-1.svg";
 import benefitCard2 from "./benefits/card-2.svg";
 import benefitCard3 from "./benefits/card-3.svg";
@@ -137,6 +141,9 @@ import twitterX from "../works/twitterX.png";
 import insta from "../works/insta.png";
 
 export {
+  carlos,
+  elizabeth,
+  azaly,
   Animated,
   banner1,
   Concept,
