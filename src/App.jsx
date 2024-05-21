@@ -11,12 +11,9 @@ import Services from "./components/Services";
 import Testimonials from "./components/Pages/Testimonials";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import WhyChoose from "./components/Pages/WhyChoose";
 
 const App = () => {
-
- 
-
-
   return (
     <>
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
@@ -27,9 +24,8 @@ const App = () => {
         <Pricing />
         <Roadmap />
         <Benefits />
-        <Testimonials/>
-        <Carousel/>
-  
+        <Testimonials />
+        <Carousel />
         <Footer />
       </div>
 
