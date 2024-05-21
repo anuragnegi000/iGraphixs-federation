@@ -18,7 +18,7 @@ const testimonials = [
     author: "Azaly",
 
     image:
-      {azaly},
+      azaly,
     position: "Strut Esports",
   },
   {
@@ -26,7 +26,7 @@ const testimonials = [
     quote: "The services are better than what I expected, love your team and your team efforts. I will keep working with you guys",
     author: "Elizabeth",
     image:
-      {elizabeth},
+      elizabeth,
     position: "Hardcore Bases",
   },
   // Add more testimonials as needed
