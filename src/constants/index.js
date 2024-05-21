@@ -301,7 +301,7 @@ export const pricing = [
     title: "Basic Branding Package",
     description:
       "At iGraphixs we understand the critcal role a cohesive brand identity plays a establishing your presence in market. Our brand provide you with the tools and knowledge necessary to maintain a consistent and compelling brand existence",
-    price: "150",
+    price: "450",
     features: [
       "We provide you social media kit, vector file, source file, logo transparency",
       "Your project will be delivered in approx 7-12 working days!",
@@ -313,7 +313,7 @@ export const pricing = [
     title: "Basic Stream Animated Package",
     description:
       "Enhance your streaming setup with our stream pack, mericuluosly crafted to provide you with everything yiu need for a captivating streaming journey. Designed with both quality and affordability in mind, the pack is tailored to empower streamers of all levels to standout and angage their audience effectively! ",
-    price: "175",
+    price: "250",
     features: [
       "We provide you animated overlay, facecam, live chat box, stream screens, stinger transition, and alerts",
       "Your project will be delivered in approx 7-10 working days! ",
@@ -325,7 +325,7 @@ export const pricing = [
     title: "Premium Branding/Stream Package",
     description:
       "Our brand provide you with the knowledge and graphics necessary to maintain a consitent and compelling brand/content presence, empowering you yo communicate effectively with your audience and standout in crowded market place.",
-    price: "225",
+    price: "750",
     features: [
       "We provide you everything what you want for your brand/streaming in best possible quality with full satisfaction of your money you invested",
       "Your project will be prioritised and delivered in just 1 week time-limit",
