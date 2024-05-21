@@ -1,6 +1,6 @@
 function WhyChoose() {
   return (
-    <section className="py-8 bg-gray-100">
+    <section className="py-8 bg-transparent">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-semibold mb-4">Why Choose iGraphixs?</h2>
         <ul className="list-disc ml-6">
