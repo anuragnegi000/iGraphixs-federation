@@ -3,14 +3,27 @@ import { collabApps, collabContent, collabText } from "../constants";
 import Button from "./Button";
 import Section from "./Section";
 import { LeftCurve, RightCurve } from "./design/Collaboration";
+import React, { useState } from "react";
+import CustomAlert from "./CustomAlert";
 
 const Collaboration = () => {
+  const [showAlert, setShowAlert] = useState(false);
+
+  const handleClick = () => {
+    setShowAlert(true);
+  };
+
+  const handleCloseAlert = () => {
+    setShowAlert(false);
+  };
+
   return (
     <Section crosses>
+      {showAlert && <CustomAlert onClose={handleCloseAlert} />}
       <div className="container lg:flex">
         <div className="max-w-[25rem]">
           <h2 className="h2 mb-4 md:mb-8">
-          Design your Innovation with iGraphixs
+            Design your Innovation with iGraphixs
           </h2>
 
           <ul className="max-w-[22rem] mb-10 md:mb-14">
@@ -27,7 +40,7 @@ const Collaboration = () => {
             ))}
           </ul>
 
-          <Button>Work with us</Button>
+          <Button onClick={handleClick}>Work with us</Button>
         </div>
 
         <div className="lg:ml-auto xl:w-[38rem] mt-4">
