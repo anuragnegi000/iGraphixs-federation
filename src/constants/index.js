@@ -214,7 +214,7 @@ export const roadmap = [
 ];
 
 export const collabText =
-  "Creative Designs,To meet your imagination into reality with top notch works.24/7 service available! We are able to deliver graphics in your expected time.";
+  "Creative Designs,To meet your imagination into reality with top notch works.24/7 service available!";
 
 export const collabContent = [
   {

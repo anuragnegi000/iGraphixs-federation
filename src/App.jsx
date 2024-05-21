@@ -25,7 +25,7 @@ const App = () => {
         <Roadmap />
         <Benefits />
         <Testimonials />
-        <FAQ />
+        {/* <FAQ /> */}
         <Carousel />
         <Footer />
       </div>
