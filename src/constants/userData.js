@@ -6,6 +6,8 @@ import { abhay } from '../assets';
 import {swati} from "../assets";
 import {parth} from "../assets";
 import {tony} from "../assets";
+import { danish } from '../assets';
+
 
 export const userData = [
     {
@@ -63,6 +65,13 @@ export const userData = [
         description:"Parth is a proffesional content writer with a experience of two year at content writing at many different platforms",
         image: parth,
         date:"Content Writer"
+    },
+    {
+        id:9,
+        name:"Danish Raza",
+        description:"Danish have a experience of human resources officer for two years of management.",
+        image: danish,
+        date:"Cheif Human Resource Officer"
     }
 ];
 

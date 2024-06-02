@@ -6,7 +6,7 @@ import top from "./TopNotch.png";
 import brainwaveSymbol from "./brainwave-symbol.svg";
 import brainwaveWhiteSymbol from "./brainwave-symbol-white.svg";
 
-
+import danish from "./creators/danish.jpg"
 import uday from "./creators/uday.jpg";
 import akki from "./creators/akki.jpg";
 import arpit from "./creators/arpit.jpg";
@@ -255,6 +255,7 @@ export {
   abhay,
   swati,
   parth,
+  danish,
   tony,
   mascot_logo,
   animated_logo,
