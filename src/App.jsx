@@ -12,6 +12,7 @@ import Testimonials from "./components/Pages/Testimonials";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FAQ } from "./components/FAQ";
+import Modal1 from "./components/design/Model1";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Benefits />
         <Testimonials />
         {/* <FAQ /> */}
+        <Modal1/>
         <Carousel />
         <Footer />
       </div>
