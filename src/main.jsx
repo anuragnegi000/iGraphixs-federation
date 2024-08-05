@@ -15,7 +15,9 @@ import PrizeSection from "./components/Pages/Work/PrizeSection.jsx";
 import { BrandComponent } from "./components/Benefits.jsx";
 import { Modal } from "flowbite-react";
 import SelectionProduct from "./components/SelectionProduct.jsx";
-import Details from "./components/Pages/Details.jsx";
+import Details1 from "./components/Pages/Details1.jsx";
+import Details2 from "./components/Pages/Details2.jsx";
+import Details3 from "./components/Pages/Details2.jsx";
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
@@ -72,15 +74,15 @@ const router = createBrowserRouter([
   },
   {
     path:"/details1",
-    element:<Details/>,
+    element:<Details1/>,
   },
   {
     path:"/details2",
-    element:<Details/>,
+    element:<Details2/>,
   },
   {
     path:"/details3",
-    element:<Details/>,
+    element:<Details3/>,
   }
 ]);
 
