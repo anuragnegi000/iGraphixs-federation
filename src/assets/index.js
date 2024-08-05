@@ -6,6 +6,12 @@ import top from "./TopNotch.png";
 import brainwaveSymbol from "./brainwave-symbol.svg";
 import brainwaveWhiteSymbol from "./brainwave-symbol-white.svg";
 
+import linkedinBlack from "../assets/linkedin.png";
+import behanceBlack from "../assets/behanceBlack.png";
+import whatsappBlack from "../assets/whatsappBlack.png";
+import youtubeBlack from "../assets/youtubeBlack.png";
+import instagramBlack from "../assets/instagramBlack.png";
+
 import danish from "./creators/danish.jpg"
 import uday from "./creators/uday.jpg";
 import akki from "./creators/akki.jpg";
@@ -264,5 +270,10 @@ export {
   emotes,
   jersey_design,
   posters,
-  vector_logo
+  vector_logo,
+  linkedinBlack,
+  behanceBlack,
+  whatsappBlack,
+  youtubeBlack,
+  instagramBlack
 };

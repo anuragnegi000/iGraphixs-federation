@@ -54,6 +54,11 @@ import {
   illustrator,
   icon_IP,
   AdobePR,
+  youtubeBlack,
+  linkedinBlack,
+  behanceBlack,
+  whatsappBlack,
+  instagramBlack
 } from "../assets";
 // carousel  data
 
@@ -398,33 +403,33 @@ export const benefits = [
 export const socials = [
   {
     id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
+    title: "Youtube",
+    iconUrl: youtubeBlack,
+    url: "https://youtube.com/@igraphixs?si=c_TCB1bVOnq2ufJZ",
   },
   {
     id: "1",
-    title: "Twitter",
-    iconUrl: twitter,
-    url: "#",
+    title: "Whatsapp",
+    iconUrl: whatsappBlack,
+    url: "https://wa.me/message/ZPEYAJ2WUS26C1"
   },
   {
     id: "2",
     title: "Instagram",
-    iconUrl: instagram,
-    url: "#",
+    iconUrl: instagramBlack,
+    url: "https://www.instagram.com/igraphixs?igsh=ZXpja3ZwYTNyM3Y2"
   },
   {
     id: "3",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
+    title: "Linkedin",
+    iconUrl: linkedinBlack,
+    url: "https://www.linkedin.com/company/igraphixs/",
   },
   {
     id: "4",
-    title: "Facebook",
-    iconUrl: facebook,
-    url: "#",
+    title: "Behance",
+    iconUrl: behanceBlack,
+    url: "https://www.behance.net/igraphixs",
   },
 ];
 
