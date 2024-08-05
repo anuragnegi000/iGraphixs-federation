@@ -49,7 +49,7 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
               
               <div className="flex gap-2">
                 
-                <a href="https://drive.google.com/file/d/1ilgsZPrbW__QEeFWdLLZ6Kcgs7hn_BHs/view?usp=drivesdk" className="bg-white hover:opacity-90 transition-opacity text-indigo-600 font-semibold  justify-center text-center w-full py-2 rounded">
+                <a href="/details" className="bg-white hover:opacity-90 transition-opacity text-indigo-600 font-semibold  justify-center text-center w-full py-2 rounded">
                     Portfolio1
                 </a>
                 <a href="https://drive.google.com/file/d/1vH-ociQ1SB3DNkKA9AX0ZWlFVaoBhjV6/view?usp=drivesdk" className="bg-white hover:opacity-90 transition-opacity text-indigo-600 font-semibold  justify-center text-center w-full py-2 rounded">
