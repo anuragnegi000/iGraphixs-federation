@@ -107,6 +107,8 @@ import carlos from "./feedback/carlos.jpg"
 import elizabeth from "./feedback/elizabeth.png"
 import azaly from "./feedback/azaly.png"
 
+import Strut from "./Strut.png";
+
 import benefitCard1 from "./benefits/card-1.svg";
 import benefitCard2 from "./benefits/card-2.svg";
 import benefitCard3 from "./benefits/card-3.svg";
@@ -275,5 +277,6 @@ export {
   behanceBlack,
   whatsappBlack,
   youtubeBlack,
-  instagramBlack
+  instagramBlack,
+  Strut
 };
