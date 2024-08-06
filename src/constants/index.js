@@ -211,7 +211,7 @@ export const roadmap = [
   },
   {
     id: "3",
-    title: "Clash of clans Organisation, Clans & Individual Creators",
+    title: "Work experience: Satisfied 60+ organisations and 250+ individuals clients",
     text: "Collaboration with some of the biggest leaders of various industries, throughout our journey, we accelerated there growth with out graphics.From creating top notch visuals or server graphics for organisation associated with gaming giant like Clash of Clans and Clash Champs,to crafting the perfect visual video animations, stream packages and poster for industry leads in esports, strut esports, we aim to do justice to your trust in us.We have always upheld our promise to create the best quality content for our clients and to satisfy there every graphical need.So be the next brand that we brag about the most, and let us be the ones that you brag about the most! Cause,WE AT IGRAPHCS TAKE CARE OF EVERY SMALL PIXEL OF YOURS, AND DO SOME MAGIC IN THE PROCESS!😉",
     date: "Since 2021",
     status: "Working experience",
