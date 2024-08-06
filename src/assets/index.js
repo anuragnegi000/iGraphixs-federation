@@ -69,6 +69,8 @@ import curve from "./hero/curve.png";
 import robot from "./hero/robot.jpg";
 import heroBackground from "./hero/hero-background.jpg";
 
+import EliPfp from "./EliPfp.jpg";
+
 import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
 import discord from "./collaboration/discord.png";
@@ -278,5 +280,6 @@ export {
   whatsappBlack,
   youtubeBlack,
   instagramBlack,
-  Strut
+  Strut,
+  EliPfp
 };

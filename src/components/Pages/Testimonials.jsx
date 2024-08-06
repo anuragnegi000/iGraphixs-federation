@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { carlos } from "../../assets";
 import {azaly}  from "../../assets";
 import { elizabeth } from "../../assets";
+import { EliPfp } from "../../assets";
 
 const testimonials = [
   {
@@ -26,7 +27,7 @@ const testimonials = [
     quote: "The services are better than what I expected, love your team and your team efforts. I will keep working with you guys",
     author: "Elizabeth",
     image:
-      elizabeth,
+      EliPfp,
     position: "Hardcore Bases",
   },
   // Add more testimonials as needed
